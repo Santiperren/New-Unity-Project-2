@@ -21,6 +21,7 @@ public class caarController : MonoBehaviour
     void Start()
     {
         theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal con razon, aaaaa, soy fan de campa
+        
     }
 
     // Update is called once per frame
