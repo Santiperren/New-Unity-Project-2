@@ -5,7 +5,7 @@ using UnityEngine;
 public class carController : MonoBehaviour
 {
     public Rigidbody theRB;
-    public float aceleracion = 8f, reversa = 4f, maxSpeed = 50f, turnStrenght = 180f, gravityForce = 10f, dragOnGround = 3f;
+    public float aceleracion = 6f, reversa = 3f, maxSpeed = 50f, turnStrenght = 180f, gravityForce = 10f, dragOnGround = 3f;
 
     private float speedInput, turnInput;
     private bool alPiso;

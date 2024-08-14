@@ -5,7 +5,7 @@ using UnityEngine;
 public class caarController : MonoBehaviour
 {
     public Rigidbody theRB;
-    public float aceleracion = 8f, reversa = 4f, maxSpeed = 50f, turnStrenght = 180f, gravityForce = 10f, dragOnGround = 3f;
+    public float aceleracion = 6f, reversa = 3f, maxSpeed = 50f, turnStrenght = 180f, gravityForce = 10f, dragOnGround = 3f;
 
     private float speedInput, turnInput;
     private bool alPiso;
@@ -42,8 +42,8 @@ public class caarController : MonoBehaviour
             transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("WS"), 0f));
         }
 
-        ruedaAdelanteDerecha.localRotation = Quaternion.Euler(ruedaAdelanteDerecha.localRotation.eulerAngles.x, (turnInput * maxGiroRueda) - 180, ruedaAdelanteDerecha.rotation.eulerAngles.z);
-        ruedaAdelanteIzquierda.localRotation = Quaternion.Euler(ruedaAdelanteIzquierda.localRotation.eulerAngles.x, turnInput * maxGiroRueda, ruedaAdelanteIzquierda.rotation.eulerAngles.z);
+        ruedaAdelanteDerecha.localRotation = Quaternion.Euler( (turnInput * maxGiroRueda) , ruedaAdelanteDerecha.localRotation.eulerAngles.y, ruedaAdelanteDerecha.rotation.eulerAngles.z);
+        ruedaAdelanteIzquierda.localRotation = Quaternion.Euler( (turnInput * maxGiroRueda) , ruedaAdelanteIzquierda.localRotation.eulerAngles.y, ruedaAdelanteIzquierda.rotation.eulerAngles.z);
         transform.position = theRB.transform.position;
 
     }
