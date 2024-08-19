@@ -42,7 +42,7 @@ public class caarController : MonoBehaviour
             transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("WS"), 0f));
         }
 
-        ruedaAdelanteDerecha.localRotation = Quaternion.Euler(  ruedaAdelanteDerecha.localRotation.eulerAngles.x, (turnInput * maxGiroRueda) - 180, ruedaAdelanteDerecha.rotation.eulerAngles.z);
+        ruedaAdelanteDerecha.localRotation = Quaternion.Euler(  ruedaAdelanteDerecha.localRotation.eulerAngles.x, turnInput * maxGiroRueda, ruedaAdelanteDerecha.rotation.eulerAngles.z);
         ruedaAdelanteIzquierda.localRotation = Quaternion.Euler(  ruedaAdelanteIzquierda.localRotation.eulerAngles.x, turnInput * maxGiroRueda, ruedaAdelanteIzquierda.rotation.eulerAngles.z);
         transform.position = theRB.transform.position;
 
