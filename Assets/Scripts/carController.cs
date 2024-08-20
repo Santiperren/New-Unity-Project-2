@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class carController : MonoBehaviour
 {
@@ -17,10 +18,12 @@ public class carController : MonoBehaviour
     public ParticleSystem[] dustTrial;
     public float maxEmission = 25f;
     private float emissionRate;
+    public AudioClip soundSpace;
     // Start is called before the first frame update
     void Start()
     {
         theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal
+ 
     }
 
     // Update is called once per frame
