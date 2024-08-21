@@ -24,6 +24,7 @@ public class caarController : MonoBehaviour
     {
         theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal con razon, aaaaa, soy fan de campa
         StartCoroutine(UpdateVariableAfterDelay());
+        theRB.useGravity = false;
     }
 
     // Update is called once per frame
@@ -31,6 +32,7 @@ public class caarController : MonoBehaviour
     {
         if ( canMove == true)
         {
+            theRB.useGravity = true;
             speedInput = 0f;
             if (Input.GetAxis("WS") > 0)
             {

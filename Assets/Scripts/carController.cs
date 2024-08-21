@@ -26,6 +26,7 @@ public class carController : MonoBehaviour
     {
         theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal
         StartCoroutine(UpdateVariableAfterDelay());
+        theRB.useGravity = false;
 
     }
 
@@ -34,6 +35,7 @@ public class carController : MonoBehaviour
     {
         if (canMove == true)
         {
+            theRB.useGravity = true;
             speedInput = 0f;
             if (Input.GetAxis("Vertical") > 0)
             {
