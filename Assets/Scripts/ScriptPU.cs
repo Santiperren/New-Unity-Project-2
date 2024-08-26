@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ScriptPU : MonoBehaviour
 {
-    public float rotationSpeed = 50f;
-    public float bobbingSpeed = 0.5f;
+    public float rotationSpeed = 90f;
+    public float bobbingSpeed = 2f;
     public float bobbingHeight = 1f;
 
     private Vector3 startPosition;
