@@ -19,11 +19,20 @@ public class caarController : MonoBehaviour
     private float emissionRate;
     private float cuentaRegresiva;
     private bool canMove = false;
+    
     // Start is called before the first frame update
     void Start()
     {
-        theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal con razon, aaaaa, soy fan de campa
+        theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal con razon, aaaaa, soy fan de campa        
         StartCoroutine(UpdateVariableAfterDelay());
+        if (theRB == null)
+        {
+            theRB = GetComponent<Rigidbody>();
+        }
+        transform.position = new Vector3(783, -1082, -334);
+        theRB.isKinematic = true;
+        theRB.transform.position = new Vector3(783, -1082, -334);
+        theRB.isKinematic = false;
         theRB.useGravity = false;
     }
 

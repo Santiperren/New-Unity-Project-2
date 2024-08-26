@@ -7,6 +7,7 @@ public class ScriptPU : MonoBehaviour
     public float rotationSpeed = 90f;
     public float bobbingSpeed = 2f;
     public float bobbingHeight = 1f;
+    public float desapareceTiempo = 10f;
 
     private Vector3 startPosition;
     // Start is called before the first frame update
@@ -21,5 +22,22 @@ public class ScriptPU : MonoBehaviour
         transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
         float newY = Mathf.Sin(Time.time * bobbingSpeed) * bobbingHeight;
         transform.position = startPosition + new Vector3(0, newY, 0);
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        StartCoroutine(DisappearTemporarily());
+    }
+
+    IEnumerator DisappearTemporarily()
+    {
+        
+        gameObject.SetActive(false);
+
+        
+        yield return new WaitForSeconds(desapareceTiempo);
+
+        
+        gameObject.SetActive(true);
     }
 }

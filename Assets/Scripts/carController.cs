@@ -21,11 +21,20 @@ public class carController : MonoBehaviour
     public AudioClip soundSpace;
     private float cuentaRegresiva;
     private bool canMove = false;
+    
     // Start is called before the first frame update
     void Start()
     {
-        theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal
+        theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal        
         StartCoroutine(UpdateVariableAfterDelay());
+        if (theRB == null)
+        {
+            theRB = GetComponent<Rigidbody>();
+        }
+        transform.position = new Vector3(820, -1082, -334);
+        theRB.isKinematic = true;
+        theRB.transform.position = new Vector3(820, -1082, -334);
+        theRB.isKinematic = false;
         theRB.useGravity = false;
 
     }
