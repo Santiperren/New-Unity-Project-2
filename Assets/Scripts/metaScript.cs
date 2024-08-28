@@ -26,7 +26,7 @@ public class metaScript : MonoBehaviour
     {
         if (other.CompareTag(autoUno))
         {
-            if (checkPoint1 == 1 && checkPoint2 == 1 && checkPoint3 == 1)
+            if (GameManager.Instance.check1 == 1 && checkPoint2 == 1 && checkPoint3 == 1)
             {
                 vueltasUno = 1;
             }
