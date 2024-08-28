@@ -7,9 +7,9 @@ public class caarController : MonoBehaviour
     public Rigidbody theRB;
     public float aceleracion = 17f, reversa = 6f, maxSpeed = 3200f, turnStrenght = 200f, gravityForce = 10f, dragOnGround = 3f;
     public float vueltasDos = 0;
-    public float checkPoint1 = 0;
-    public float checkPoint2 = 0;
-    public float checkPoint3 = 0;
+    public float checkPointA = 0;
+    public float checkPointB = 0;
+    public float checkPointC = 0;
     private float speedInput, turnInput;
     private bool alPiso;
     public LayerMask estaEnElPiso;
