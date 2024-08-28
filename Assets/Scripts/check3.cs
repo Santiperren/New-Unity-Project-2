@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class check3 : MonoBehaviour
 {
-    public float checkPoint3 = 0;
-    public string autoUno = "autoUno";
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,19 +19,19 @@ public class check3 : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(autoUno))
+        if (other.CompareTag(GameManager.Instance.autoUno))
         {
-            if (checkPoint3 == 0)
+            if (GameManager.Instance.checkPoint3 == 0)
             {
-                checkPoint3 = 1;
+                GameManager.Instance.checkPoint3 = 1;
             }
-            else if (checkPoint3 == 1)
+            else if (GameManager.Instance.checkPoint3 == 1)
             {
-                checkPoint3 = 2;
+                GameManager.Instance.checkPoint3 = 2;
             }
-            else if (checkPoint3 == 2)
+            else if (GameManager.Instance.checkPoint3 == 2)
             {
-                checkPoint3 = 3;
+                GameManager.Instance.checkPoint3 = 3;
             }
         }
     }

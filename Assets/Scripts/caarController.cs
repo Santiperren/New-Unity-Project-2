@@ -6,10 +6,7 @@ public class caarController : MonoBehaviour
 {
     public Rigidbody theRB;
     public float aceleracion = 17f, reversa = 6f, maxSpeed = 3200f, turnStrenght = 200f, gravityForce = 10f, dragOnGround = 3f;
-    public float vueltasDos = 0;
-    public float checkPointA = 0;
-    public float checkPointB = 0;
-    public float checkPointC = 0;
+    
     private float speedInput, turnInput;
     private bool alPiso;
     public LayerMask estaEnElPiso;
@@ -21,7 +18,7 @@ public class caarController : MonoBehaviour
     public float maxEmission = 25f;
     private float emissionRate;
     private float cuentaRegresiva;
-    private bool canMove = false;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -42,7 +39,7 @@ public class caarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ( canMove == true)
+        if (GameManager.Instance.canMove == true)
         {
             theRB.useGravity = true;
             speedInput = 0f;
@@ -103,7 +100,7 @@ public class caarController : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         cuentaRegresiva = 3f;
-        canMove = true;
+        GameManager.Instance.canMove = true;
 
     }
 }

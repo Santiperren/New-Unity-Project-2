@@ -6,7 +6,15 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public float check1;
+    public float checkPoint1 = 0;
+    public float checkPoint2 = 0;
+    public float checkPoint3 = 0;
+    public float checkPointA = 0;
+    public float checkPointB = 0;
+    public float checkPointC = 0;
+    public string autoUno;
+    public string autoDos;
+    public bool canMove = false;
 
 
     private void Awake()

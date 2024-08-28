@@ -5090,7 +5090,7 @@ GameObject:
   - component: {fileID: 325118984}
   m_Layer: 0
   m_Name: GameObject C
-  m_TagString: Untagged
+  m_TagString: autoDos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5107,8 +5107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b89c4ddce90161d40af98044f5dcdcc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkPointC: 0
-  autoDos: autoDos
 --- !u!65 &325118985
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5131,7 +5129,7 @@ Transform:
   m_GameObject: {fileID: 325118983}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 474.8, y: -1086.7, z: -34.3}
-  m_LocalScale: {x: 78.771736, y: 14.455482, z: 1}
+  m_LocalScale: {x: 78.771736, y: 14.455482, z: 4.0113}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
@@ -7295,7 +7293,7 @@ GameObject:
   - component: {fileID: 678788766}
   m_Layer: 0
   m_Name: GameObject (2)
-  m_TagString: Untagged
+  m_TagString: autoUno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7322,7 +7320,7 @@ Transform:
   m_GameObject: {fileID: 678788763}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 562, y: -1087, z: -215}
-  m_LocalScale: {x: 125.70394, y: 34.51391, z: 1}
+  m_LocalScale: {x: 125.70394, y: 34.51391, z: 4.6652}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -7339,8 +7337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c642b3c2d582def488697bd6de36a751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkPoint2: 0
-  autoUno: autoUno
 --- !u!1 &736505202
 GameObject:
   m_ObjectHideFlags: 0
@@ -7354,7 +7350,7 @@ GameObject:
   - component: {fileID: 736505205}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: autoUno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7381,7 +7377,7 @@ Transform:
   m_GameObject: {fileID: 736505202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 792.58, y: -1078, z: -348.5}
-  m_LocalScale: {x: 78.771736, y: 14.455482, z: 1}
+  m_LocalScale: {x: 78.771736, y: 14.455482, z: 3.5463}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -7395,15 +7391,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 736505202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b64e43f45002f542b46431bb6c6f4b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d71c284096eff44ab10864ef5c63df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vueltasDos: 0
-  checkPointA: 0
-  checkPointB: 0
-  checkPointC: 0
-  autoDos: autoDos
-  canMove: 0
+  vueltasUno: 0
 --- !u!64 &817963177
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7468,10 +7459,6 @@ MonoBehaviour:
   turnStrenght: 180
   gravityForce: 10
   dragOnGround: 3
-  vueltasDos: 0
-  checkPointA: 0
-  checkPointB: 0
-  checkPointC: 0
   estaEnElPiso:
     serializedVersion: 2
     m_Bits: 1536
@@ -7642,9 +7629,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 898568268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b5fcb91bab016549999ef9964738960, type: 3}
+  m_Script: {fileID: 11500000, guid: 7447579e4d009e5489287f39028f8fec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkPoint1: 0
+  checkPoint2: 0
+  checkPoint3: 0
+  checkPointA: 0
+  checkPointB: 0
+  checkPointC: 0
+  autoUno: autoUno
+  autoDos: autoDos
+  canMove: 0
 --- !u!4 &898568270
 Transform:
   m_ObjectHideFlags: 0
@@ -7804,7 +7800,7 @@ GameObject:
   - component: {fileID: 1103928226}
   m_Layer: 0
   m_Name: GameObject (4)
-  m_TagString: Untagged
+  m_TagString: autoDos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7822,11 +7818,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vueltasDos: 0
-  checkPointA: 0
-  checkPointB: 0
-  checkPointC: 0
-  autoDos: autoDos
-  canMove: 0
 --- !u!65 &1103928227
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7849,7 +7840,7 @@ Transform:
   m_GameObject: {fileID: 1103928225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 792.58, y: -1078, z: -348.5}
-  m_LocalScale: {x: 78.771736, y: 14.455482, z: 1}
+  m_LocalScale: {x: 78.771736, y: 14.455482, z: 3.8373}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
@@ -7869,7 +7860,7 @@ GameObject:
   - component: {fileID: 1136343971}
   m_Layer: 10
   m_Name: laSphere1
-  m_TagString: Untagged
+  m_TagString: autoDos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12826,7 +12817,7 @@ GameObject:
   - component: {fileID: 1263227476}
   m_Layer: 0
   m_Name: GameObject (1)
-  m_TagString: Untagged
+  m_TagString: autoUno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12853,7 +12844,7 @@ Transform:
   m_GameObject: {fileID: 1263227473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 340.4, y: -1086.2, z: -530}
-  m_LocalScale: {x: 78.771736, y: 24.530952, z: 1}
+  m_LocalScale: {x: 78.771736, y: 24.530952, z: 3.7735}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
@@ -12870,8 +12861,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae990744fc1f854ab658dffae23467c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkPoint1: 0
-  autoUno: autoUno
 --- !u!1 &1263314237
 GameObject:
   m_ObjectHideFlags: 0
@@ -12887,7 +12876,7 @@ GameObject:
   - component: {fileID: 1263314239}
   m_Layer: 10
   m_Name: laSphere1 (1)
-  m_TagString: Untagged
+  m_TagString: autoUno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13369,10 +13358,6 @@ MonoBehaviour:
   turnStrenght: 180
   gravityForce: 10
   dragOnGround: 3
-  vueltasUno: 0
-  checkPoint1: 0
-  checkPoint2: 0
-  checkPoint3: 0
   estaEnElPiso:
     serializedVersion: 2
     m_Bits: 512
@@ -13591,7 +13576,7 @@ GameObject:
   - component: {fileID: 1778353180}
   m_Layer: 0
   m_Name: GameObject A
-  m_TagString: Untagged
+  m_TagString: autoDos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13605,7 +13590,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1778353179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e171a05abe82eb43990e7def3e7911c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9db897da28f94ca41b821161b5024941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &1778353181
@@ -13630,7 +13615,7 @@ Transform:
   m_GameObject: {fileID: 1778353179}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 340.4, y: -1086.2, z: -530}
-  m_LocalScale: {x: 78.771736, y: 24.530952, z: 1}
+  m_LocalScale: {x: 78.771736, y: 24.530952, z: 4.8057265}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
@@ -18496,7 +18481,7 @@ GameObject:
   - component: {fileID: 1984005911}
   m_Layer: 0
   m_Name: GameObject B
-  m_TagString: Untagged
+  m_TagString: autoDos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18513,8 +18498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aec86b8a500fdf46ba839acc7fab67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkPointB: 0
-  autoDos: autoDos
 --- !u!65 &1984005912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18537,7 +18520,7 @@ Transform:
   m_GameObject: {fileID: 1984005910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 562, y: -1087, z: -215}
-  m_LocalScale: {x: 125.70394, y: 34.51391, z: 1}
+  m_LocalScale: {x: 125.70394, y: 34.51391, z: 4.5456}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
@@ -18666,7 +18649,7 @@ GameObject:
   - component: {fileID: 2131647587}
   m_Layer: 0
   m_Name: GameObject (3)
-  m_TagString: Untagged
+  m_TagString: autoUno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18693,7 +18676,7 @@ Transform:
   m_GameObject: {fileID: 2131647584}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 474.8, y: -1086.7, z: -34.3}
-  m_LocalScale: {x: 78.771736, y: 14.455482, z: 1}
+  m_LocalScale: {x: 78.771736, y: 14.455482, z: 5.1313}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -18710,8 +18693,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6653b3b50111a1e43a7764f57feda0f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkPoint3: 0
-  autoUno: autoUno
 --- !u!4 &1682361744096423969
 Transform:
   m_ObjectHideFlags: 0
@@ -24332,10 +24313,6 @@ MonoBehaviour:
   turnStrenght: 200
   gravityForce: 10
   dragOnGround: 3
-  vueltasUno: 0
-  checkPoint1: 0
-  checkPoint2: 0
-  checkPoint3: 0
   estaEnElPiso:
     serializedVersion: 2
     m_Bits: 512
@@ -24853,10 +24830,6 @@ MonoBehaviour:
   turnStrenght: 200
   gravityForce: 10
   dragOnGround: 3
-  vueltasDos: 0
-  checkPointA: 0
-  checkPointB: 0
-  checkPointC: 0
   estaEnElPiso:
     serializedVersion: 2
     m_Bits: 512

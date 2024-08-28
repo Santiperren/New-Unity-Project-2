@@ -6,11 +6,8 @@ using UnityEngine.UI;
 public class carController : MonoBehaviour
 {
     public Rigidbody theRB;
-    public float aceleracion = 17f, reversa = 6f, maxSpeed = 3200f, turnStrenght = 200f, gravityForce = 10f, dragOnGround = 3f;
-    public float vueltasUno = 0;
-    public float checkPoint1 = 0;
-    public float checkPoint2 = 0;
-    public float checkPoint3 = 0;
+    public float aceleracion = 17f, reversa = 6f, maxSpeed = 3200f, turnStrenght = 200f, gravityForce = 10f, dragOnGround = 3f;   
+   
     private float speedInput, turnInput;
     private bool alPiso;
     public LayerMask estaEnElPiso;
@@ -23,7 +20,7 @@ public class carController : MonoBehaviour
     private float emissionRate;
     public AudioClip soundSpace;
     private float cuentaRegresiva;
-    private bool canMove = false;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -45,7 +42,7 @@ public class carController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canMove == true)
+        if (GameManager.Instance.canMove == true)
         {
             theRB.useGravity = true;
             speedInput = 0f;
@@ -105,7 +102,7 @@ public class carController : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         cuentaRegresiva = 3f;
-        canMove = true;
+        GameManager.Instance.canMove = true;
 
     }
 }

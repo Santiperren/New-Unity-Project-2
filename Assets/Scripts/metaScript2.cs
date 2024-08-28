@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class metaScript2 : MonoBehaviour
 {    
-    public float vueltasDos = 0;
-    public float checkPointA = 0;
-    public float checkPointB = 0;
-    public float checkPointC = 0;
-    public string autoDos = "autoDos";
-    public bool canMove = false;
+    public float vueltasDos = 0;   
+    
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -24,20 +21,20 @@ public class metaScript2 : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(autoDos))
+        if (other.CompareTag(GameManager.Instance.autoDos))
         {
-            if (checkPointA == 1 && checkPointB == 1 && checkPointC == 1)
+            if (GameManager.Instance.checkPointA == 1 && GameManager.Instance.checkPointB == 1 && GameManager.Instance.checkPointC == 1)
             {
                 vueltasDos = 1;
             }
-            if (checkPointA == 2 && checkPointB == 2 && checkPointC == 2)
+            else if (GameManager.Instance.checkPointA == 2 && GameManager.Instance.checkPointB == 2 && GameManager.Instance.checkPointC == 2)
             {
                 vueltasDos = 2;
             }
-            if (checkPointA == 3 && checkPointB == 3 && checkPointC == 3)
+            else if (GameManager.Instance.checkPointA == 3 && GameManager.Instance.checkPointB == 3 && GameManager.Instance.checkPointC == 3)
             {
                 vueltasDos = 3;
-                canMove = false;
+                GameManager.Instance.canMove = false;
                 Debug.Log("El jugador dos es el ganador");
             }
         }
