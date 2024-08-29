@@ -45,7 +45,15 @@ public class caarController : MonoBehaviour
             speedInput = 0f;
             if (Input.GetAxis("WS") > 0)
             {
-                speedInput = Input.GetAxis("WS") * aceleracion * 1000f;
+                if (GameManager.Instance.masVelocidad2 == true)
+                {
+                    speedInput = Input.GetAxis("Vertical") * aceleracion * 1500f;
+                }
+                else
+                {
+                    speedInput = Input.GetAxis("WS") * aceleracion * 1000f;
+                }
+                
             }
             else if (Input.GetAxis("WS") < 0)
             {

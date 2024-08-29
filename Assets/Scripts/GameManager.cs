@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour
     public string autoUno;
     public string autoDos;
     public bool canMove = false;
-
+    public bool masVelocidad1 = false;
+    public bool masVelocidad2 = false;
 
     private void Awake()
     {

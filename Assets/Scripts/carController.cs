@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class carController : MonoBehaviour
 {
-    public Rigidbody theRB;
+    public Rigidbody theRB1;
     public float aceleracion = 17f, reversa = 6f, maxSpeed = 3200f, turnStrenght = 200f, gravityForce = 10f, dragOnGround = 3f;   
    
     private float speedInput, turnInput;
@@ -25,17 +25,17 @@ public class carController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal        
+        theRB1.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal        
         StartCoroutine(UpdateVariableAfterDelay());
-        if (theRB == null)
+        if (theRB1 == null)
         {
-            theRB = GetComponent<Rigidbody>();
+            theRB1 = GetComponent<Rigidbody>();
         }
         transform.position = new Vector3(820, -1082, -334);
-        theRB.isKinematic = true;
-        theRB.transform.position = new Vector3(820, -1082, -334);
-        theRB.isKinematic = false;
-        theRB.useGravity = false;
+        theRB1.isKinematic = true;
+        theRB1.transform.position = new Vector3(820, -1082, -334);
+        theRB1.isKinematic = false;
+        theRB1.useGravity = false;
 
     }
 
@@ -44,11 +44,19 @@ public class carController : MonoBehaviour
     {
         if (GameManager.Instance.canMove == true)
         {
-            theRB.useGravity = true;
+            theRB1.useGravity = true;
             speedInput = 0f;
             if (Input.GetAxis("Vertical") > 0)
             {
-                speedInput = Input.GetAxis("Vertical") * aceleracion * 1000f;
+                if(GameManager.Instance.masVelocidad1 == true)
+                {
+                    speedInput = Input.GetAxis("Vertical") * aceleracion * 1500f;
+                }
+                else
+                {
+                    speedInput = Input.GetAxis("Vertical") * aceleracion * 1000f;
+                }
+                
             }
             else if (Input.GetAxis("Vertical") < 0)
             {
@@ -62,7 +70,7 @@ public class carController : MonoBehaviour
 
             ruedaAdelanteDerecha.localRotation = Quaternion.Euler(ruedaAdelanteDerecha.localRotation.eulerAngles.x, (turnInput * maxGiroRueda) - 180, ruedaAdelanteDerecha.rotation.eulerAngles.z);
             ruedaAdelanteIzquierda.localRotation = Quaternion.Euler(ruedaAdelanteIzquierda.localRotation.eulerAngles.x, turnInput * maxGiroRueda, ruedaAdelanteIzquierda.rotation.eulerAngles.z);
-            transform.position = theRB.transform.position;
+            transform.position = theRB1.transform.position;
         }
             
        
@@ -80,17 +88,17 @@ public class carController : MonoBehaviour
         emissionRate = 0;
         if (alPiso)
         {
-            theRB.drag = dragOnGround;
+            theRB1.drag = dragOnGround;
             if (Mathf.Abs(speedInput) > 0)
             {
-                theRB.AddForce(transform.forward * speedInput);
+                theRB1.AddForce(transform.forward * speedInput);
                 emissionRate = maxEmission;
             }
         }
         else
         {
-            theRB.drag = 0.1f;
-            theRB.AddForce(Vector3.up * -gravityForce * 100f);
+            theRB1.drag = 0.1f;
+            theRB1.AddForce(Vector3.up * -gravityForce * 100f);
         }
         foreach(ParticleSystem part in dustTrial)
         {
