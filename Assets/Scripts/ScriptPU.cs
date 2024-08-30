@@ -57,8 +57,12 @@ public class ScriptPU : MonoBehaviour
     {
         return Random.Range(min, max + 1);
     }
+    int GetRandomNumber2(int min, int max)
+    {
+        return Random.Range(min, max + 1);
+    }
 
-    
+
     void HandleRandomNumber(int number)
     {
         switch (number)

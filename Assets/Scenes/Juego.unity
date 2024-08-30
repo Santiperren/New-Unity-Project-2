@@ -7469,6 +7469,9 @@ MonoBehaviour:
   maxGiroRueda: 25
   dustTrial: []
   maxEmission: 25
+  desapareceTiempo: 5
+  powerUpActivado: 0
+  powerUpSpeedDuracion: 5
 --- !u!4 &876044054
 Transform:
   m_ObjectHideFlags: 0
@@ -7641,6 +7644,8 @@ MonoBehaviour:
   autoUno: autoUno
   autoDos: autoDos
   canMove: 0
+  masVelocidad1: 0
+  masVelocidad2: 0
 --- !u!4 &898568270
 Transform:
   m_ObjectHideFlags: 0
@@ -13351,7 +13356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 113e33d36b8e9f94c869f0d6003e795e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theRB: {fileID: 1596654392}
+  theRB1: {fileID: 0}
   aceleracion: 6
   reversa: 3
   maxSpeed: 50
@@ -13371,6 +13376,7 @@ MonoBehaviour:
   - {fileID: 0}
   maxEmission: 25
   soundSpace: {fileID: 0}
+  desapareceTiempo: 5
 --- !u!65 &1690618487
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24306,7 +24312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 113e33d36b8e9f94c869f0d6003e795e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theRB: {fileID: 1263314239}
+  theRB1: {fileID: 1263314239}
   aceleracion: 17
   reversa: 3
   maxSpeed: 3200
@@ -24326,6 +24332,7 @@ MonoBehaviour:
   - {fileID: 0}
   maxEmission: 25
   soundSpace: {fileID: 0}
+  desapareceTiempo: 5
 --- !u!1 &5316649594726085467
 GameObject:
   m_ObjectHideFlags: 0
@@ -24840,6 +24847,9 @@ MonoBehaviour:
   maxGiroRueda: 25
   dustTrial: []
   maxEmission: 25
+  desapareceTiempo: 5
+  powerUpActivado: 0
+  powerUpSpeedDuracion: 5
 --- !u!1 &6107291471835075496
 GameObject:
   m_ObjectHideFlags: 0

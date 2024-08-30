@@ -19,6 +19,7 @@ public class carController : MonoBehaviour
     public float maxEmission = 25f;
     private float emissionRate;
     public AudioClip soundSpace;
+    public float desapareceTiempo = 5f;
     private float cuentaRegresiva;
     
     
@@ -50,7 +51,15 @@ public class carController : MonoBehaviour
             {
                 if(GameManager.Instance.masVelocidad1 == true)
                 {
-                    speedInput = Input.GetAxis("Vertical") * aceleracion * 1500f;
+                    if (Input.GetKey(KeyCode.Space))
+                    {
+                        speedInput = Input.GetAxis("Vertical") * aceleracion * 1500f;
+                        Invoke("powerUp", desapareceTiempo);
+                    }
+                    else
+                    {
+                        speedInput = Input.GetAxis("Vertical") * aceleracion * 1000f;
+                    }
                 }
                 else
                 {
@@ -112,5 +121,10 @@ public class carController : MonoBehaviour
         cuentaRegresiva = 3f;
         GameManager.Instance.canMove = true;
 
+    }
+
+    void powerUp()
+    {
+        GameManager.Instance.masVelocidad1 = false;
     }
 }

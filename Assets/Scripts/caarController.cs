@@ -17,7 +17,11 @@ public class caarController : MonoBehaviour
     public ParticleSystem[] dustTrial;
     public float maxEmission = 25f;
     private float emissionRate;
+    public float desapareceTiempo = 5f;
     private float cuentaRegresiva;
+    public bool powerUpActivado = false;
+    public float powerUpSpeedDuracion = 5f;
+    private float powerUpActivadoFin;
     
     
     // Start is called before the first frame update
@@ -47,7 +51,25 @@ public class caarController : MonoBehaviour
             {
                 if (GameManager.Instance.masVelocidad2 == true)
                 {
-                    speedInput = Input.GetAxis("Vertical") * aceleracion * 1500f;
+                    if (Input.GetKey(KeyCode.Space))
+                    {
+                        powerUpActivado = true;
+                        powerUpActivadoFin = Time.time + powerUpSpeedDuracion;
+                    }
+                    else
+                    {
+                        speedInput = Input.GetAxis("WS") * aceleracion * 1000f;
+                    }
+                     
+                    if (powerUpActivado == true)
+                    {
+                        speedInput = Input.GetAxis("WS") * aceleracion * 1500f;
+                        Invoke("powerUp", desapareceTiempo);
+                        if (Time.time > powerUpActivadoFin)
+                        {
+                            powerUpActivado = false;
+                        }
+                    }
                 }
                 else
                 {
@@ -110,5 +132,9 @@ public class caarController : MonoBehaviour
         cuentaRegresiva = 3f;
         GameManager.Instance.canMove = true;
 
+    }
+    void powerUp()
+    {
+        GameManager.Instance.masVelocidad2 = false;
     }
 }
