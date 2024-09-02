@@ -21,8 +21,11 @@ public class carController : MonoBehaviour
     public AudioClip soundSpace;
     public float desapareceTiempo = 5f;
     private float cuentaRegresiva;
-    
-    
+    public bool powerUpActivado = false;
+    public float powerUpSpeedDuracion = 5f;
+    private float powerUpActivadoFin;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,12 +56,21 @@ public class carController : MonoBehaviour
                 {
                     if (Input.GetKey(KeyCode.Space))
                     {
-                        speedInput = Input.GetAxis("Vertical") * aceleracion * 1500f;
-                        Invoke("powerUp", desapareceTiempo);
+                        powerUpActivado = true;
+                        powerUpActivadoFin = Time.time + powerUpSpeedDuracion;
                     }
                     else
                     {
                         speedInput = Input.GetAxis("Vertical") * aceleracion * 1000f;
+                    }
+                    if (powerUpActivado == true)
+                    {
+                        speedInput = Input.GetAxis("Vertical") * aceleracion * 1500f;
+                        Invoke("powerUp", desapareceTiempo);
+                        if (Time.time > powerUpActivadoFin)
+                        {
+                            powerUpActivado = false;
+                        }
                     }
                 }
                 else

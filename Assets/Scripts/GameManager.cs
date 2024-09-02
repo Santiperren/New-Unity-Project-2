@@ -58,12 +58,22 @@ public class GameManager : MonoBehaviour
 
     public void OnPlayButtonPressed()
     {
-        ChangeScene("Juego");
+        ChangeScene("SelectPlayer");
     }
 
     public void OnMenuButtonPressed()
     {
         ChangeScene("Menu");
+    }
+
+    public void OnSelectPlayerButtonPressed()
+    {
+        ChangeScene("menu2");
+    }
+
+    public void Onmenu2ButtonPressed()
+    {
+        ChangeScene("Juego");
     }
 }
 

@@ -19,9 +19,9 @@ public class caarController : MonoBehaviour
     private float emissionRate;
     public float desapareceTiempo = 5f;
     private float cuentaRegresiva;
-    public bool powerUpActivado = false;
-    public float powerUpSpeedDuracion = 5f;
-    private float powerUpActivadoFin;
+    public bool powerUpActivado2 = false;
+    public float powerUpSpeedDuracion2 = 5f;
+    private float powerUpActivadoFin2;
     
     
     // Start is called before the first frame update
@@ -51,23 +51,23 @@ public class caarController : MonoBehaviour
             {
                 if (GameManager.Instance.masVelocidad2 == true)
                 {
-                    if (Input.GetKey(KeyCode.Space))
+                    if (Input.GetKey(KeyCode.P))
                     {
-                        powerUpActivado = true;
-                        powerUpActivadoFin = Time.time + powerUpSpeedDuracion;
+                        powerUpActivado2 = true;
+                        powerUpActivadoFin2 = Time.time + powerUpSpeedDuracion2;
                     }
                     else
                     {
                         speedInput = Input.GetAxis("WS") * aceleracion * 1000f;
                     }
                      
-                    if (powerUpActivado == true)
+                    if (powerUpActivado2 == true)
                     {
                         speedInput = Input.GetAxis("WS") * aceleracion * 1500f;
                         Invoke("powerUp", desapareceTiempo);
-                        if (Time.time > powerUpActivadoFin)
+                        if (Time.time > powerUpActivadoFin2)
                         {
-                            powerUpActivado = false;
+                            powerUpActivado2 = false;
                         }
                     }
                 }
