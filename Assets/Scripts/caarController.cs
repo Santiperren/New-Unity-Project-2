@@ -33,9 +33,9 @@ public class caarController : MonoBehaviour
         {
             theRB = GetComponent<Rigidbody>();
         }
-        transform.position = new Vector3(783, -1082, -334);
+        transform.position = new Vector3(783, -1080, -334);
         theRB.isKinematic = true;
-        theRB.transform.position = new Vector3(783, -1082, -334);
+        theRB.transform.position = new Vector3(783, -1080, -334);
         theRB.isKinematic = false;
         theRB.useGravity = false;
     }
