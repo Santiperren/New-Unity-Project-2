@@ -108,6 +108,7 @@ public class caarController : MonoBehaviour
         emissionRate = 0;
         if (alPiso)
         {
+            gravityForce = 10f;
             theRB.drag = dragOnGround;
             if (Mathf.Abs(speedInput) > 0)
             {
@@ -117,7 +118,8 @@ public class caarController : MonoBehaviour
         }
         else
         {
-            theRB.drag = 0.1f;
+            theRB.drag = 0.5f;
+            gravityForce = 15f;
             theRB.AddForce(Vector3.up * -gravityForce * 100f);
         }
         foreach (ParticleSystem part in dustTrial)

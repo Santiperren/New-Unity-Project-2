@@ -24,6 +24,7 @@ public class carController : MonoBehaviour
     public bool powerUpActivado = false;
     public float powerUpSpeedDuracion = 5f;
     private float powerUpActivadoFin;
+    
 
 
     // Start is called before the first frame update
@@ -109,6 +110,7 @@ public class carController : MonoBehaviour
         emissionRate = 0;
         if (alPiso)
         {
+            gravityForce = 10f;
             theRB1.drag = dragOnGround;
             if (Mathf.Abs(speedInput) > 0)
             {
@@ -118,7 +120,8 @@ public class carController : MonoBehaviour
         }
         else
         {
-            theRB1.drag = 0.1f;
+            theRB1.drag = 0.5f;
+            gravityForce = 15f;
             theRB1.AddForce(Vector3.up * -gravityForce * 100f);
         }
         foreach(ParticleSystem part in dustTrial)
@@ -126,6 +129,7 @@ public class carController : MonoBehaviour
             var emissionModule = part.emission;
             emissionModule.rateOverTime = emissionRate;
         }
+        
     }
     private IEnumerator UpdateVariableAfterDelay()
     {
