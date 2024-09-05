@@ -36,9 +36,9 @@ public class carController : MonoBehaviour
         {
             theRB1 = GetComponent<Rigidbody>();
         }
-        transform.position = new Vector3(820, -1080, -334);
+        transform.position = new Vector3(820, -1075, -334);
         theRB1.isKinematic = true;
-        theRB1.transform.position = new Vector3(820, -1080, -334);
+        theRB1.transform.position = new Vector3(820, -1075, -334);
         theRB1.isKinematic = false;
         theRB1.useGravity = false;
 
