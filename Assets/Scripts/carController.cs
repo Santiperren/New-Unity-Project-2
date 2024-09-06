@@ -36,9 +36,9 @@ public class carController : MonoBehaviour
         {
             theRB1 = GetComponent<Rigidbody>();
         }
-        transform.position = new Vector3(820, -1075, -334);
+        transform.position = new Vector3(815, -1078, -330);
         theRB1.isKinematic = true;
-        theRB1.transform.position = new Vector3(820, -1075, -334);
+        theRB1.transform.position = new Vector3(815, -1078, -330);
         theRB1.isKinematic = false;
         theRB1.useGravity = false;
 
@@ -127,6 +127,10 @@ public class carController : MonoBehaviour
         foreach(ParticleSystem part in dustTrial)
         {
             var emissionModule = part.emission;
+            if (GameManager.Instance.masVelocidad1 == true)
+            {
+                emissionRate = 37f;
+            }
             emissionModule.rateOverTime = emissionRate;
         }
         

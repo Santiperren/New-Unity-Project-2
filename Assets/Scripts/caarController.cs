@@ -47,7 +47,7 @@ public class caarController : MonoBehaviour
         {
             theRB.useGravity = true;
             speedInput = 0f;
-            if (Input.GetAxis("WS") > 0)
+            if (Input.GetAxis("WS") < 0)
             {
                 if (GameManager.Instance.masVelocidad2 == true)
                 {
@@ -77,7 +77,7 @@ public class caarController : MonoBehaviour
                 }
                 
             }
-            else if (Input.GetAxis("WS") < 0)
+            else if (Input.GetAxis("WS") > 0)
             {
                 speedInput = Input.GetAxis("WS") * reversa * 1000f;
             }
@@ -125,6 +125,10 @@ public class caarController : MonoBehaviour
         foreach (ParticleSystem part in dustTrial)
         {
             var emissionModule = part.emission;
+            if (GameManager.Instance.masVelocidad2 == true)
+            {
+                emissionRate = 37f;
+            }
             emissionModule.rateOverTime = emissionRate;
         }
     }

@@ -41,8 +41,8 @@ InputManager:
     m_Name: WS
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: s
-    positiveButton: w
+    negativeButton: w
+    positiveButton: s
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -57,15 +57,15 @@ InputManager:
     m_Name: Vertical
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: up
-    positiveButton: down
+    negativeButton: down
+    positiveButton: up
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
     dead: 0.001
     sensitivity: 3
     snap: 1
-    invert: 0
+    invert: 1
     type: 0
     axis: 0
     joyNum: 0
