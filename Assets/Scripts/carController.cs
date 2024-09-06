@@ -51,7 +51,7 @@ public class carController : MonoBehaviour
         {
             theRB1.useGravity = true;
             speedInput = 0f;
-            if (Input.GetAxis("Vertical") > 0)
+            if (Input.GetAxis("Vertical") < 0)
             {
                 if(GameManager.Instance.masVelocidad1 == true)
                 {
@@ -80,7 +80,7 @@ public class carController : MonoBehaviour
                 }
                 
             }
-            else if (Input.GetAxis("Vertical") < 0)
+            else if (Input.GetAxis("Vertical") > 0)
             {
                 speedInput = Input.GetAxis("Vertical") * reversa * 1000f;
             }

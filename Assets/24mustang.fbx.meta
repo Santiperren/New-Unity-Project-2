@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: 38248fa7c515e7e4aa4a9e4ef78012e3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Aleron
+    100004: asientode
+    100006: asientoiz
+    100008: capot
+    100010: espejode
+    100012: espejoiz
+    100014: interior
+    100016: INTERIORADELANTE
+    100018: logo
+    100020: lucesdelanteras
+    100022: lucestraseras
+    100024: parabrisas
+    100026: parabrisasde
+    100028: parabrisasiz
+    100030: patente
+    100032: puertad
+    100034: puertaiz
+    100036: puertaiz.001
+    100038: RuedaDD
+    100040: RuedaDI
+    100042: RuedaTD
+    100044: ruedaTI
+    100046: vidrio
+    100048: Volante
+    400000: //RootNode
+    400002: Aleron
+    400004: asientode
+    400006: asientoiz
+    400008: capot
+    400010: espejode
+    400012: espejoiz
+    400014: interior
+    400016: INTERIORADELANTE
+    400018: logo
+    400020: lucesdelanteras
+    400022: lucestraseras
+    400024: parabrisas
+    400026: parabrisasde
+    400028: parabrisasiz
+    400030: patente
+    400032: puertad
+    400034: puertaiz
+    400036: puertaiz.001
+    400038: RuedaDD
+    400040: RuedaDI
+    400042: RuedaTD
+    400044: ruedaTI
+    400046: vidrio
+    400048: Volante
+    2100000: texturaauto
+    2100002: texturaparabrisas
+    2100004: interior
+    2100006: texxturaaleron
+    2100008: texturalucesdelanteras
+    2100010: texturalucestraseras
+    2100012: logo
+    2100014: texturapatente
+    2300000: //RootNode
+    2300002: Aleron
+    2300004: asientode
+    2300006: asientoiz
+    2300008: capot
+    2300010: espejode
+    2300012: espejoiz
+    2300014: interior
+    2300016: INTERIORADELANTE
+    2300018: logo
+    2300020: lucesdelanteras
+    2300022: lucestraseras
+    2300024: parabrisas
+    2300026: parabrisasde
+    2300028: parabrisasiz
+    2300030: patente
+    2300032: puertad
+    2300034: puertaiz
+    2300036: puertaiz.001
+    2300038: RuedaDD
+    2300040: RuedaDI
+    2300042: RuedaTD
+    2300044: ruedaTI
+    2300046: vidrio
+    2300048: Volante
+    3300000: //RootNode
+    3300002: Aleron
+    3300004: asientode
+    3300006: asientoiz
+    3300008: capot
+    3300010: espejode
+    3300012: espejoiz
+    3300014: interior
+    3300016: INTERIORADELANTE
+    3300018: logo
+    3300020: lucesdelanteras
+    3300022: lucestraseras
+    3300024: parabrisas
+    3300026: parabrisasde
+    3300028: parabrisasiz
+    3300030: patente
+    3300032: puertad
+    3300034: puertaiz
+    3300036: puertaiz.001
+    3300038: RuedaDD
+    3300040: RuedaDI
+    3300042: RuedaTD
+    3300044: ruedaTI
+    3300046: vidrio
+    3300048: Volante
+    4300000: auto
+    4300002: vidrio
+    4300004: interior
+    4300006: RuedaTD
+    4300008: ruedaTI
+    4300010: RuedaDI
+    4300012: RuedaDD
+    4300014: Volante
+    4300016: Aleron
+    4300018: lucesdelanteras
+    4300020: lucestraseras
+    4300022: logo
+    4300024: patente
+    4300026: puertaiz
+    4300028: puertad
+    4300030: puertaiz.001
+    4300032: capot
+    4300034: espejoiz
+    4300036: espejode
+    4300038: parabrisas
+    4300040: parabrisasiz
+    4300042: parabrisasde
+    4300044: INTERIORADELANTE
+    4300046: asientoiz
+    4300048: asientode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: interior
+    second: {fileID: 2100000, guid: 68aa6f21322a7ee479130d7ae8dce0d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: logo
+    second: {fileID: 2100000, guid: 4f82acd3b1566ae4f948f1e5f2ffd1a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texturaauto
+    second: {fileID: 2100000, guid: 21d30ae8e7d0efd43979e619b3f82bd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texturalucesdelanteras
+    second: {fileID: 2100000, guid: 2579c4d25c588e943af5e54ac845999d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texturalucestraseras
+    second: {fileID: 2100000, guid: f8b8d75b95d0af6469d64576246c10c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texturaparabrisas
+    second: {fileID: 2100000, guid: c96c489bf6af147489805e07f9859013, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texturapatente
+    second: {fileID: 2100000, guid: 78792b8159b3e174a89ab99b5ea0070b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: texxturaaleron
+    second: {fileID: 2100000, guid: be6094c20d5cb5e4f987710caf19eb1b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
