@@ -22,8 +22,12 @@ public class caarController : MonoBehaviour
     public bool powerUpActivado2 = false;
     public float powerUpSpeedDuracion2 = 5f;
     private float powerUpActivadoFin2;
-    
-    
+    public Transform check1; 
+    public Transform check2; 
+    public Transform check3; 
+    public Transform autoDos;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -86,6 +90,33 @@ public class caarController : MonoBehaviour
             {
                 transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("WS"), 0f));
             }
+            float distance1 = Vector3.Distance(autoDos.position, check1.position);
+            float distance2 = Vector3.Distance(autoDos.position, check2.position);
+            float distance3 = Vector3.Distance(autoDos.position, check3.position);
+            float minDistance = Mathf.Min(distance1, Mathf.Min(distance2, distance3));
+
+            Transform closestObject = null;
+
+            if (minDistance == distance1)
+            {
+                closestObject = check1;
+            }
+            else if (minDistance == distance2)
+            {
+                closestObject = check2;
+            }
+            else if (minDistance == distance3)
+            {
+                closestObject = check3;
+            }
+            if (Input.GetKey(KeyCode.X))
+            {
+                transform.position = new Vector3(783, -1080, -334);
+                theRB.isKinematic = true;
+                theRB.transform.position = new Vector3(783, -1080, -334);
+                theRB.isKinematic = false;
+                theRB.useGravity = false;
+            }
 
             ruedaAdelanteDerecha.localRotation = Quaternion.Euler(ruedaAdelanteDerecha.localRotation.eulerAngles.x, turnInput * maxGiroRueda, ruedaAdelanteDerecha.localRotation.eulerAngles.z);
             ruedaAdelanteIzquierda.localRotation = Quaternion.Euler(ruedaAdelanteIzquierda.localRotation.eulerAngles.x, turnInput * maxGiroRueda, ruedaAdelanteIzquierda.rotation.eulerAngles.z);
@@ -125,10 +156,6 @@ public class caarController : MonoBehaviour
         foreach (ParticleSystem part in dustTrial)
         {
             var emissionModule = part.emission;
-            if (GameManager.Instance.masVelocidad2 == true)
-            {
-                emissionRate = 37f;
-            }
             emissionModule.rateOverTime = emissionRate;
         }
     }
