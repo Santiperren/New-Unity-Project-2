@@ -111,11 +111,38 @@ public class caarController : MonoBehaviour
             }
             if (Input.GetKey(KeyCode.X))
             {
-                transform.position = new Vector3(783, -1080, -334);
-                theRB.isKinematic = true;
-                theRB.transform.position = new Vector3(783, -1080, -334);
-                theRB.isKinematic = false;
-                theRB.useGravity = false;
+                if (GameManager.Instance.afueraPista == true)
+                {
+                    GameManager.Instance.afueraPista = false;
+                    GameManager.Instance.canMove = false;
+                    StartCoroutine(UpdateVariableAfterDelay());
+                    if (closestObject == check1)
+                    {
+                        transform.position = new Vector3(355, -1084, -484);
+                        theRB.isKinematic = true;
+                        theRB.transform.position = new Vector3(355, -1084, -484);
+                        theRB.isKinematic = false;
+                        theRB.useGravity = false;
+                    }
+                    if (closestObject == check2)
+                    {
+                        transform.position = new Vector3(565, -1084, -236);
+                        theRB.isKinematic = true;
+                        theRB.transform.position = new Vector3(565, -1084, -236);
+                        theRB.isKinematic = false;
+                        theRB.useGravity = false;
+                    }
+                    if (closestObject == check3)
+                    {
+                        transform.position = new Vector3(393, -1084, -45);
+                        theRB.isKinematic = true;
+                        theRB.transform.position = new Vector3(393, -1084, -45);
+                        theRB.isKinematic = false;
+                        theRB.useGravity = false;
+                    }
+                }
+                
+                
             }
 
             ruedaAdelanteDerecha.localRotation = Quaternion.Euler(ruedaAdelanteDerecha.localRotation.eulerAngles.x, turnInput * maxGiroRueda, ruedaAdelanteDerecha.localRotation.eulerAngles.z);
