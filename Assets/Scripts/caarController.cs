@@ -51,6 +51,7 @@ public class caarController : MonoBehaviour
         {
             theRB.useGravity = true;
             speedInput = 0f;
+            
             if (Input.GetAxis("WS") < 0)
             {
                 if (GameManager.Instance.masVelocidad2 == true)
@@ -84,6 +85,13 @@ public class caarController : MonoBehaviour
             else if (Input.GetAxis("WS") > 0)
             {
                 speedInput = Input.GetAxis("WS") * reversa * 1000f;
+            }
+            else
+            {
+                if (alPiso == true)
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
             }
             turnInput = Input.GetAxis("AD");
             if (alPiso)
@@ -145,9 +153,12 @@ public class caarController : MonoBehaviour
                 
             }
 
-            ruedaAdelanteDerecha.localRotation = Quaternion.Euler(ruedaAdelanteDerecha.localRotation.eulerAngles.x, turnInput * maxGiroRueda, ruedaAdelanteDerecha.localRotation.eulerAngles.z);
-            ruedaAdelanteIzquierda.localRotation = Quaternion.Euler(ruedaAdelanteIzquierda.localRotation.eulerAngles.x, turnInput * maxGiroRueda, ruedaAdelanteIzquierda.rotation.eulerAngles.z);
+            ruedaAdelanteDerecha.localRotation = Quaternion.Euler(0, -turnInput * maxGiroRueda, 0);
+            ruedaAdelanteIzquierda.localRotation = Quaternion.Euler(0, -turnInput * maxGiroRueda, 0);
             transform.position = theRB.transform.position;
+
+
+
 
         }
         
