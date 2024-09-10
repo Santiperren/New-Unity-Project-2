@@ -98,57 +98,34 @@ public class caarController : MonoBehaviour
             {
                 transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("WS"), 0f));
             }
-            float distance1 = Vector3.Distance(autoDos.position, check1.position);
-            float distance2 = Vector3.Distance(autoDos.position, check2.position);
-            float distance3 = Vector3.Distance(autoDos.position, check3.position);
-            float minDistance = Mathf.Min(distance1, Mathf.Min(distance2, distance3));
 
-            Transform closestObject = null;
-
-            if (minDistance == distance1)
-            {
-                closestObject = check1;
-            }
-            else if (minDistance == distance2)
-            {
-                closestObject = check2;
-            }
-            else if (minDistance == distance3)
-            {
-                closestObject = check3;
-            }
             if (Input.GetKey(KeyCode.X))
             {
-                if (GameManager.Instance.afueraPista == true)
+                if (GameManager.Instance.checkRespawn2 == 1)
                 {
-                    GameManager.Instance.afueraPista = false;
-                    GameManager.Instance.canMove = false;
-                    StartCoroutine(UpdateVariableAfterDelay());
-                    if (closestObject == check1)
-                    {
-                        transform.position = new Vector3(355, -1084, -484);
-                        theRB.isKinematic = true;
-                        theRB.transform.position = new Vector3(355, -1084, -484);
-                        theRB.isKinematic = false;
-                        theRB.useGravity = false;
-                    }
-                    if (closestObject == check2)
-                    {
-                        transform.position = new Vector3(565, -1084, -236);
-                        theRB.isKinematic = true;
-                        theRB.transform.position = new Vector3(565, -1084, -236);
-                        theRB.isKinematic = false;
-                        theRB.useGravity = false;
-                    }
-                    if (closestObject == check3)
-                    {
-                        transform.position = new Vector3(393, -1084, -45);
-                        theRB.isKinematic = true;
-                        theRB.transform.position = new Vector3(393, -1084, -45);
-                        theRB.isKinematic = false;
-                        theRB.useGravity = false;
-                    }
+                    transform.position = new Vector3(355, -1084, -484);
+                    theRB.isKinematic = true;
+                    theRB.transform.position = new Vector3(355, -1084, -484);
+                    theRB.isKinematic = false;
+                    theRB.useGravity = false;
                 }
+                else if (GameManager.Instance.checkRespawn2 == 2)
+                {
+                    transform.position = new Vector3(565, -1084, -236);
+                    theRB.isKinematic = true;
+                    theRB.transform.position = new Vector3(565, -1084, -236);
+                    theRB.isKinematic = false;
+                    theRB.useGravity = false;
+                }
+                else if (GameManager.Instance.checkRespawn2 == 3)
+                {
+                    transform.position = new Vector3(393, -1084, -45);
+                    theRB.isKinematic = true;
+                    theRB.transform.position = new Vector3(393, -1084, -45);
+                    theRB.isKinematic = false;
+                    theRB.useGravity = false;
+                }
+                
                 
                 
             }

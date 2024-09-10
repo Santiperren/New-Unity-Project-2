@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public float checkPointA = 0;
     public float checkPointB = 0;
     public float checkPointC = 0;
+    public int checkRespawn = 0;
+    public int checkRespawn2 = 0;
     public string autoUno;
     public string autoDos;
     public bool canMove = false;

@@ -21,6 +21,7 @@ public class check2 : MonoBehaviour
     {
         if (other.CompareTag(GameManager.Instance.autoUno))
         {
+            GameManager.Instance.checkRespawn2 = 2;
             if (GameManager.Instance.checkPoint2 == 0)
             {
                 GameManager.Instance.checkPoint2 = 1;

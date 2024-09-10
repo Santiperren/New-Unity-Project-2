@@ -21,6 +21,7 @@ public class check3B : MonoBehaviour
     {
         if (other.CompareTag(GameManager.Instance.autoDos))
         {
+            GameManager.Instance.checkRespawn2 = 3;
             if (GameManager.Instance.checkPointC == 0)
             {
                 GameManager.Instance.checkPointC = 1;
