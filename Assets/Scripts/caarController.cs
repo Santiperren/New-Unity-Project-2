@@ -31,6 +31,7 @@ public class caarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal con razon, aaaaa, soy fan de campa        
         StartCoroutine(UpdateVariableAfterDelay());
         if (theRB == null)
