@@ -58,6 +58,7 @@ public class caarController : MonoBehaviour
                 {
                     if (Input.GetKey(KeyCode.P))
                     {
+                        Debug.Log("P Pressed");
                         powerUpActivado2 = true;
                         powerUpActivadoFin2 = Time.time + powerUpSpeedDuracion2;
                     }
@@ -86,13 +87,7 @@ public class caarController : MonoBehaviour
             {
                 speedInput = Input.GetAxis("WS") * reversa * 1000f;
             }
-            else
-            {
-                if (alPiso == true)
-                {
-                    transform.rotation = Quaternion.Euler(0, 0, 0);
-                }
-            }
+            
             turnInput = Input.GetAxis("AD");
             if (alPiso)
             {
@@ -148,8 +143,8 @@ public class caarController : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(groundRayPoint.position, -transform.up, out hit, groungRayLenght, estaEnElPiso))
         {
-            alPiso = true;
-            transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+           alPiso = true;
+           // transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
         }
         emissionRate = 0;
         if (alPiso)

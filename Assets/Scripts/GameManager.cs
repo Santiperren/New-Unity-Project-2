@@ -14,8 +14,8 @@ public class GameManager : MonoBehaviour
     public float checkPointC = 0;
     public int checkRespawn = 0;
     public int checkRespawn2 = 0;
-    public string autoUno;
-    public string autoDos;
+    public string autoUno = "autoUno";
+    public string autoDos = "autoDos";
     public bool canMove = false;
     public bool masVelocidad1 = false;
     public bool masVelocidad2 = false;
@@ -37,7 +37,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-
+          string autoUno = "autoUno";
+          string autoDos = "autoDos";
     }
 
     void Update()
