@@ -53,7 +53,7 @@ public class caarController : MonoBehaviour
             theRB.useGravity = true;
             speedInput = 0f;
             
-            if (Input.GetAxis("WS") < 0)
+            if (Input.GetAxis("Vertical2") < 0)
             {
                 if (GameManager.Instance.masVelocidad2 == true)
                 {
@@ -65,12 +65,12 @@ public class caarController : MonoBehaviour
                     }
                     else
                     {
-                        speedInput = Input.GetAxis("WS") * aceleracion * 1000f;
+                        speedInput = Input.GetAxis("Vertical2") * aceleracion * 1000f;
                     }
                      
                     if (powerUpActivado2 == true)
                     {
-                        speedInput = Input.GetAxis("WS") * aceleracion * 1500f;
+                        speedInput = Input.GetAxis("Vertical2") * aceleracion * 1500f;
                         Invoke("powerUp", desapareceTiempo);
                         if (Time.time > powerUpActivadoFin2)
                         {
@@ -80,19 +80,19 @@ public class caarController : MonoBehaviour
                 }
                 else
                 {
-                    speedInput = Input.GetAxis("WS") * aceleracion * 1000f;
+                    speedInput = Input.GetAxis("Vertical2") * aceleracion * 1000f;
                 }
                 
             }
-            else if (Input.GetAxis("WS") > 0)
+            else if (Input.GetAxis("Vertical2") > 0)
             {
-                speedInput = Input.GetAxis("WS") * reversa * 1000f;
+                speedInput = Input.GetAxis("Vertical2") * reversa * 1000f;
             }
             
-            turnInput = Input.GetAxis("AD");
+            turnInput = Input.GetAxis("Horizontal2");
             if (alPiso)
             {
-                transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("WS"), 0f));
+                transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("Vertical2"), 0f));
             }
 
             if (Input.GetKey(KeyCode.X))
