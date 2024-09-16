@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class carController : MonoBehaviour
 {
     public Rigidbody theRB1;
-    public float aceleracion = 17f, reversa = 6f, maxSpeed = 3200f, turnStrenght = 200f, gravityForce = 10f, dragOnGround = 3f;   
+    public float aceleracion = 17f, reversa = 6f, maxSpeed = 3200f, turnStrenght = 150f, gravityForce = 10f, dragOnGround = 3f;   
    
     private float speedInput, turnInput;
     private bool alPiso;
@@ -36,7 +36,7 @@ public class carController : MonoBehaviour
         {
             theRB1 = GetComponent<Rigidbody>();
         }
-        transform.position = new Vector3(820, -1075, -334);
+        transform.position = new Vector3(820, -1075, -332);
         theRB1.isKinematic = true;
         theRB1.transform.position = new Vector3(820, -1075, -334);
         theRB1.isKinematic = false;
@@ -83,6 +83,10 @@ public class carController : MonoBehaviour
             else if (Input.GetAxis("Vertical") > 0)
             {
                 speedInput = Input.GetAxis("Vertical") * reversa * 1000f;
+            }
+            else if (Input.GetAxis("Vertical") == 0)
+            {
+                speedInput = Input.GetAxis("Vertical") * aceleracion * 0f;
             }
             turnInput = Input.GetAxis("Horizontal");
             if (alPiso)
