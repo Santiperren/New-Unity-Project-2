@@ -5,7 +5,7 @@ using UnityEngine;
 public class caarController : MonoBehaviour
 {
     public Rigidbody theRB;
-    public float aceleracion = 17f, reversa = 6f, maxSpeed = 3200f, turnStrenght = 200f, gravityForce = 10f, dragOnGround = 3f;
+    public float aceleracion = 17f, reversa = 6f, maxSpeed = 3200f, turnStrenght = 200f, gravityForce = 10f, dragOnGround;
     
     private float speedInput, turnInput;
     private bool alPiso;
@@ -48,6 +48,14 @@ public class caarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.menosDrag2 == true)
+        {            
+            StartCoroutine(desactivarDrag());
+        }
+        else
+        {
+            dragOnGround = 3f;
+        }
         if (GameManager.Instance.canMove == true)
         {
             theRB.useGravity = true;
@@ -175,6 +183,16 @@ public class caarController : MonoBehaviour
         yield return new WaitForSeconds(3f);
         cuentaRegresiva = 3f;
         GameManager.Instance.canMove = true;
+
+    }
+    private IEnumerator desactivarDrag()
+    {
+        Debug.Log("Hola");
+        dragOnGround = 1f;
+        yield return new WaitForSeconds(3f);
+        cuentaRegresiva = 3f;
+        GameManager.Instance.menosDrag2 = false;
+        dragOnGround = 3f;
 
     }
     void powerUp()

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class respawnScript : MonoBehaviour
+public class boostRampa : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,9 +15,15 @@ public class respawnScript : MonoBehaviour
     {
         
     }
-
     public void OnTriggerEnter(Collider other)
     {
-        GameManager.Instance.afueraPista = true;
+        if (other.CompareTag(GameManager.Instance.autoUno))
+        {
+            GameManager.Instance.menosDrag1 = true;
+}
+        if (other.CompareTag(GameManager.Instance.autoDos))
+        {
+            GameManager.Instance.menosDrag2 = true;
+        }
     }
 }

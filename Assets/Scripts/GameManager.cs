@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public float checkPointC = 0;
     public int checkRespawn = 0;
     public int checkRespawn2 = 0;
+    public bool menosDrag1 = false;
+    public bool menosDrag2 = false;
     public string autoUno = "autoUno";
     public string autoDos = "autoDos";
     public bool canMove = false;
