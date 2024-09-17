@@ -56,6 +56,7 @@ public class caarController : MonoBehaviour
         {
             dragOnGround = 3f;
         }
+        
         if (GameManager.Instance.canMove == true)
         {
             theRB.useGravity = true;
@@ -152,8 +153,8 @@ public class caarController : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(groundRayPoint.position, -transform.up, out hit, groungRayLenght, estaEnElPiso))
         {
-           alPiso = true;
-           // transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+           alPiso = true;            
+           //transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
         }
         emissionRate = 0;
         if (alPiso)
@@ -168,8 +169,8 @@ public class caarController : MonoBehaviour
         }
         else
         {
-            theRB.drag = 0.5f;
-            gravityForce = 15f;
+            theRB.drag = 0.1f;
+            gravityForce = 20f;
             theRB.AddForce(Vector3.up * -gravityForce * 100f);
         }
         foreach (ParticleSystem part in dustTrial)

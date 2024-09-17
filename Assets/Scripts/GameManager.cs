@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public int checkRespawn2 = 0;
     public bool menosDrag1 = false;
     public bool menosDrag2 = false;
+    public bool rotate01 = false;
+    public bool rotate02 = false;
     public string autoUno = "autoUno";
     public string autoDos = "autoDos";
     public bool canMove = false;

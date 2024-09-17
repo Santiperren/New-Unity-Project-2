@@ -20,10 +20,13 @@ public class boostRampa : MonoBehaviour
         if (other.CompareTag(GameManager.Instance.autoUno))
         {
             GameManager.Instance.menosDrag1 = true;
+            
 }
         if (other.CompareTag(GameManager.Instance.autoDos))
         {
             GameManager.Instance.menosDrag2 = true;
+            
+
         }
     }
 }
