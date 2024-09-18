@@ -35,6 +35,7 @@ public class check2 : MonoBehaviour
                 GameManager.Instance.checkPoint2 = 3;
             }
         }
+
         
     }
 }

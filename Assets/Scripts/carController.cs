@@ -67,7 +67,7 @@ public class carController : MonoBehaviour
             speedInput = 0f;
             if (Input.GetAxis("Vertical") < 0)
             {
-                if(GameManager.Instance.masVelocidad1 == true)
+                if (GameManager.Instance.masVelocidad1 == true)
                 {
                     if (Input.GetKey(KeyCode.Space))
                     {
@@ -92,7 +92,7 @@ public class carController : MonoBehaviour
                 {
                     speedInput = Input.GetAxis("Vertical") * aceleracion * 1000f;
                 }
-                
+
             }
             else if (Input.GetAxis("Vertical") > 0)
             {
@@ -108,13 +108,43 @@ public class carController : MonoBehaviour
                 transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("Vertical"), 0f));
             }
 
-            ruedaAdelanteDerecha.localRotation = Quaternion.Euler(0, -turnInput * maxGiroRueda, 0);
-            ruedaAdelanteIzquierda.localRotation = Quaternion.Euler(0, -turnInput * maxGiroRueda, 0);
-            transform.position = theRB1.transform.position;
 
-        }
-            
-       
+                ruedaAdelanteDerecha.localRotation = Quaternion.Euler(0, -turnInput * maxGiroRueda, 0);
+                ruedaAdelanteIzquierda.localRotation = Quaternion.Euler(0, -turnInput * maxGiroRueda, 0);
+                transform.position = theRB1.transform.position;
+
+           // if (Input.GetKey(KeyCode.O))
+            //(Input.GetButton("Fire1"))
+            //(Input.GetAxis("checkpoint") > 0)
+           // {
+           //     Debug.Log("fire1");
+             //   if (GameManager.Instance.checkRespawn2 == 1)
+               // {
+                 //   transform.position = new Vector3(355, -1084, -484);
+                   // theRB1.isKinematic = true;
+                    //theRB1.transform.position = new Vector3(355, -1084, -484);
+                   // theRB1.isKinematic = false;
+                  //  theRB1.useGravity = false;
+                
+            //    else if (GameManager.Instance.checkRespawn2 == 2)
+                //{
+                 //   transform.position = new Vector3(565, -1084, -236);
+                  //  theRB1.isKinematic = true;
+                   // theRB1.transform.position = new Vector3(565, -1084, -236);
+                 //   theRB1.isKinematic = false;
+                    //theRB1.useGravity = false;
+             //   }
+            //    else if (GameManager.Instance.checkRespawn2 == 3)
+              //  {
+                  //  transform.position = new Vector3(393, -1084, -45);
+                //    theRB1.isKinematic = true;
+                    //theRB1.transform.position = new Vector3(393, -1084, -45);
+                   // theRB1.isKinematic = false;
+                  //  theRB1.useGravity = false;
+        //        }
+
+
+            }
     }
     private void FixedUpdate()
     {

@@ -169,8 +169,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116123389}
   m_LocalRotation: {x: -0, y: -0.20853741, z: -0, w: 0.9780144}
-  m_LocalPosition: {x: -3.9, y: 1.8, z: -1.2}
-  m_LocalScale: {x: 1.667719, y: 6.2503457, z: 10.189546}
+  m_LocalPosition: {x: -5.84, y: 2.3, z: -1.26}
+  m_LocalScale: {x: 1.667719, y: 9.438647, z: 12.4557}
   m_Children: []
   m_Father: {fileID: 8822192461404933762}
   m_RootOrder: 0
@@ -292,7 +292,7 @@ MonoBehaviour:
   maxSpeed: 3200
   turnStrenght: 150
   gravityForce: 10
-  dragOnGround: 3
+  dragOnGround2: 0
   estaEnElPiso:
     serializedVersion: 2
     m_Bits: 512
@@ -16345,7 +16345,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2100813250}
-  - component: {fileID: 2100813251}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -16367,19 +16366,6 @@ Transform:
   m_Father: {fileID: 1269546713}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -14.059001, z: 0}
---- !u!65 &2100813251
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2100813249}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2130570954
 GameObject:
   m_ObjectHideFlags: 0
@@ -21663,7 +21649,7 @@ MonoBehaviour:
   maxSpeed: 3200
   turnStrenght: 200
   gravityForce: 10
-  dragOnGround: 3
+  dragOnGround1: 0
   estaEnElPiso:
     serializedVersion: 2
     m_Bits: 512
@@ -21769,7 +21755,7 @@ MonoBehaviour:
   maxSpeed: 3200
   turnStrenght: 200
   gravityForce: 10
-  dragOnGround: 3
+  dragOnGround2: 0
   estaEnElPiso:
     serializedVersion: 2
     m_Bits: 512
@@ -24245,7 +24231,7 @@ MonoBehaviour:
   maxSpeed: 3200
   turnStrenght: 100
   gravityForce: 10
-  dragOnGround: 3
+  dragOnGround1: 0
   estaEnElPiso:
     serializedVersion: 2
     m_Bits: 512
