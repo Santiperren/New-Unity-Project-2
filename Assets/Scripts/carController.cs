@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class carController : MonoBehaviour
 {
     public Rigidbody theRB1;
-    public float aceleracion = 17f, reversa = 6f, maxSpeed = 3200f, turnStrenght = 150f, gravityForce = 10f, dragOnGround = 3f;   
+    public float aceleracion = 17f, reversa = 6f, maxSpeed = 3200f, turnStrenght = 150f, gravityForce = 10f, dragOnGround1;   
    
     private float speedInput, turnInput;
     private bool alPiso;
@@ -47,6 +47,20 @@ public class carController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.rotate01 == true)
+        {
+            Vector3 currentRotation = transform.rotation.eulerAngles;
+            transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
+            GameManager.Instance.rotate01 = false;
+        }
+        if (GameManager.Instance.menosDrag1 == true)
+        {
+            StartCoroutine(desactivarDrag());
+        }
+        else
+        {
+            dragOnGround1 = 3f;
+        }
         if (GameManager.Instance.canMove == true)
         {
             theRB1.useGravity = true;
@@ -116,7 +130,7 @@ public class carController : MonoBehaviour
         if (alPiso)
         {
             gravityForce = 10f;
-            theRB1.drag = dragOnGround;
+            theRB1.drag = dragOnGround1;
             if (Mathf.Abs(speedInput) > 0)
             {
                 theRB1.AddForce(transform.forward * speedInput);
@@ -144,7 +158,17 @@ public class carController : MonoBehaviour
 
     }
 
-    void powerUp()
+    private IEnumerator desactivarDrag()
+    {
+
+        dragOnGround1 = 1f;
+        yield return new WaitForSeconds(3f);
+        cuentaRegresiva = 3f;
+        GameManager.Instance.menosDrag1 = false;
+        dragOnGround1 = 3f;
+    }
+
+      void powerUp()
     {
         GameManager.Instance.masVelocidad1 = false;
     }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class caarController : MonoBehaviour
 {
     public Rigidbody theRB;
-    public float aceleracion = 17f, reversa = 6f, maxSpeed = 3200f, turnStrenght = 200f, gravityForce = 10f, dragOnGround;
+    public float aceleracion = 17f, reversa = 6f, maxSpeed = 3200f, turnStrenght = 200f, gravityForce = 10f, dragOnGround2;
     
     private float speedInput, turnInput;
     private bool alPiso;
@@ -48,13 +48,19 @@ public class caarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.rotate02 == true)
+        {
+            Vector3 currentRotation = transform.rotation.eulerAngles;
+            transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
+            GameManager.Instance.rotate02 = false;
+        }
         if (GameManager.Instance.menosDrag2 == true)
         {            
-            StartCoroutine(desactivarDrag());
+            StartCoroutine(desactivarDrag2());
         }
         else
         {
-            dragOnGround = 3f;
+            dragOnGround2 = 3f;
         }
         
         if (GameManager.Instance.canMove == true)
@@ -154,13 +160,13 @@ public class caarController : MonoBehaviour
         if (Physics.Raycast(groundRayPoint.position, -transform.up, out hit, groungRayLenght, estaEnElPiso))
         {
            alPiso = true;            
-           //transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+           transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
         }
         emissionRate = 0;
         if (alPiso)
         {
             gravityForce = 10f;
-            theRB.drag = dragOnGround;
+            theRB.drag = dragOnGround2;
             if (Mathf.Abs(speedInput) > 0)
             {
                 theRB.AddForce(transform.forward * speedInput);
@@ -186,14 +192,14 @@ public class caarController : MonoBehaviour
         GameManager.Instance.canMove = true;
 
     }
-    private IEnumerator desactivarDrag()
+    private IEnumerator desactivarDrag2()
     {
         Debug.Log("Hola");
-        dragOnGround = 1f;
+        dragOnGround2 = 1f;
         yield return new WaitForSeconds(3f);
         cuentaRegresiva = 3f;
         GameManager.Instance.menosDrag2 = false;
-        dragOnGround = 3f;
+        dragOnGround2 = 3f;
 
     }
     void powerUp()
