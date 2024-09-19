@@ -26,6 +26,9 @@ public class caarController : MonoBehaviour
     public Transform check2; 
     public Transform check3; 
     public Transform autoDos;
+    public bool power2Act = false;
+    public float power2Dur = 3f;
+    private float power2ActFin;
 
 
     // Start is called before the first frame update
@@ -48,6 +51,13 @@ public class caarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.noDobla2 == true)
+        {
+            if (Input.GetKey(KeyCode.O))
+            {
+                GameManager.Instance.noDobla1B = true;
+            }
+        }
         if (GameManager.Instance.rotate02 == true)
         {
             Vector3 currentRotation = transform.rotation.eulerAngles;
@@ -107,7 +117,13 @@ public class caarController : MonoBehaviour
             turnInput = Input.GetAxis("Horizontal2");
             if (alPiso)
             {
-                transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("Vertical2"), 0f));
+                if (GameManager.Instance.noDobla2B== false)
+                {
+                    transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("Vertical2"), 0f));
+                }
+                
+
+
             }
 
             if (Input.GetKey(KeyCode.X))

@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour
     public string autoUno = "autoUno";
     public string autoDos = "autoDos";
     public bool canMove = false;
+    public bool noDobla1 = false;
+    public bool noDobla2 = false;
+    public bool noDobla1B = false;
+    public bool noDobla2B = false;
     public bool masVelocidad1 = false;
     public bool masVelocidad2 = false;
     public bool afueraPista = false;

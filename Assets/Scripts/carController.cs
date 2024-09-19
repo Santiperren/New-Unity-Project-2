@@ -47,6 +47,13 @@ public class carController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.noDobla1 == true)
+        {
+            if (Input.GetKey(KeyCode.I))
+            {
+                GameManager.Instance.noDobla2B = true;
+            }
+        }
         if (GameManager.Instance.rotate01 == true)
         {
             Vector3 currentRotation = transform.rotation.eulerAngles;
@@ -105,7 +112,11 @@ public class carController : MonoBehaviour
             turnInput = Input.GetAxis("Horizontal");
             if (alPiso)
             {
-                transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("Vertical"), 0f));
+                if (GameManager.Instance.noDobla1B == false)
+                {
+                    transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("Vertical"), 0f));
+                }
+                
             }
 
 
