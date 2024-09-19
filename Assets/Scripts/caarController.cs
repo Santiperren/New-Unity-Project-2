@@ -112,6 +112,13 @@ public class caarController : MonoBehaviour
 
             if (Input.GetKey(KeyCode.X))
             {
+                if (GameManager.Instance.checkRespawn2 == 0)
+                {
+                    transform.position = new Vector3(783, -1080, -334);
+                    theRB.isKinematic = true;
+                    theRB.transform.position = new Vector3(783, -1080, -334);
+                    theRB.isKinematic = false;
+                }
                 if (GameManager.Instance.checkRespawn2 == 1)
                 {
                     transform.position = new Vector3(355, -1084, -484);

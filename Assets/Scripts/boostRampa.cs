@@ -17,15 +17,16 @@ public class boostRampa : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(GameManager.Instance.autoUno))
+        if (other.CompareTag("autoUno"))
         {
             GameManager.Instance.menosDrag1 = true;
+            Debug.Log("hola uno");
             
 }
-        if (other.CompareTag(GameManager.Instance.autoDos))
+        if (other.CompareTag("autoDos"))
         {
             GameManager.Instance.menosDrag2 = true;
-            
+            Debug.Log("hola ");
 
         }
     }

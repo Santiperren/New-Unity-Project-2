@@ -41,8 +41,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-          string autoUno = "autoUno";
-          string autoDos = "autoDos";
+       
     }
 
     void Update()
