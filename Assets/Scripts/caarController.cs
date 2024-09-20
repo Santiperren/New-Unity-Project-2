@@ -53,9 +53,15 @@ public class caarController : MonoBehaviour
     {
         if (GameManager.Instance.noDobla2 == true)
         {
-            if (Input.GetKey(KeyCode.O))
+            if (Input.GetKey(KeyCode.P))
             {
                 GameManager.Instance.noDobla1B = true;
+                power2Act = true;
+                power2ActFin = Time.time + power2Dur;
+            }
+            if (power2Act == true)
+            {
+                Invoke("powerUp2", power2Dur);
             }
         }
         if (GameManager.Instance.rotate02 == true)
@@ -228,5 +234,9 @@ public class caarController : MonoBehaviour
     void powerUp()
     {
         GameManager.Instance.masVelocidad2 = false;
+    }
+    void powerUp2()
+    {
+        GameManager.Instance.noDobla1B = false;
     }
 }

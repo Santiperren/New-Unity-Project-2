@@ -69,15 +69,15 @@ public class ScriptPU : MonoBehaviour
         {
             case 1:
                 GameManager.Instance.masVelocidad1 = true;
-                
+                Debug.Log("1");
                 break;
             case 2:
                 GameManager.Instance.noDobla1 = true;
-
+                Debug.Log("2");
                 break;
             case 3:
                 GameManager.Instance.noDobla1=true;
-
+                Debug.Log("3");
                 break;
         }
     }
@@ -87,17 +87,17 @@ public class ScriptPU : MonoBehaviour
         {
             case 1:
                 GameManager.Instance.masVelocidad2 = true;
-
+                Debug.Log("1b");
                 break;
             case 2:
 
                 GameManager.Instance.noDobla2 = true;
-
+                Debug.Log("2b");
                 break;
             case 3:
 
                 GameManager.Instance.noDobla2 = true;
-
+                Debug.Log("3b");
                 break;
         }
     }

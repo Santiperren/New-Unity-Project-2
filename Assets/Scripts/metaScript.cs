@@ -24,15 +24,15 @@ public class metaScript : MonoBehaviour
         {
             if (GameManager.Instance.checkPoint1 == 1 && GameManager.Instance.checkPoint2 == 1 && GameManager.Instance.checkPoint3 == 1)
             {
-                vueltasUno = 1;
+                vueltasUno++;
+                GameManager.Instance.checkPoint1 = 0;
+                GameManager.Instance.checkPoint2 = 0;
+                GameManager.Instance.checkPoint3 = 0;
+
             }
-            if (GameManager.Instance.checkPoint1 == 2 && GameManager.Instance.checkPoint2 == 2 && GameManager.Instance.checkPoint3 == 2)
-            {
-                vueltasUno = 2;
-            }
-            if (GameManager.Instance.checkPoint1 == 3 && GameManager.Instance.checkPoint2 == 3 && GameManager.Instance.checkPoint3 == 3)
-            {
-                vueltasUno = 3;
+           if(vueltasUno ==3)
+            { 
+                
                 GameManager.Instance.canMove = false;
                 Debug.Log("El jugador uno es el ganador");
             }

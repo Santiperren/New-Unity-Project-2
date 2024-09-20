@@ -22,18 +22,7 @@ public class check3 : MonoBehaviour
         if (other.CompareTag(GameManager.Instance.autoUno))
         {
             GameManager.Instance.checkRespawn2 = 3;
-            if (GameManager.Instance.checkPoint3 == 0)
-            {
-                GameManager.Instance.checkPoint3 = 1;
-            }
-            else if (GameManager.Instance.checkPoint3 == 1)
-            {
-                GameManager.Instance.checkPoint3 = 2;
-            }
-            else if (GameManager.Instance.checkPoint3 == 2)
-            {
-                GameManager.Instance.checkPoint3 = 3;
-            }
+            GameManager.Instance.checkPoint3 = 1;
         }
     }
 }

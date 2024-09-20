@@ -24,7 +24,10 @@ public class carController : MonoBehaviour
     public bool powerUpActivado = false;
     public float powerUpSpeedDuracion = 5f;
     private float powerUpActivadoFin;
-    
+    public bool power1Act = false;
+    public float power1Dur = 3f;
+    private float power1ActFin;
+
 
 
     // Start is called before the first frame update
@@ -47,6 +50,19 @@ public class carController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.noDobla1 == true)
+        {
+            if (Input.GetKey(KeyCode.Space))
+            {
+                GameManager.Instance.noDobla2B = true;
+                power1Act = true;
+                power1ActFin = Time.time + power1Dur;
+            }
+            if (power1Act == true)
+            {
+                Invoke("powerUp2", power1Dur);
+            }
+        }
         if (GameManager.Instance.noDobla1 == true)
         {
             if (Input.GetKey(KeyCode.I))
@@ -210,7 +226,11 @@ public class carController : MonoBehaviour
     }
 
       void powerUp()
-    {
+      {
         GameManager.Instance.masVelocidad1 = false;
+      }
+    void powerUp2()
+    {
+        GameManager.Instance.noDobla2B = false;
     }
 }

@@ -22,18 +22,7 @@ public class check1B : MonoBehaviour
         if (other.CompareTag(GameManager.Instance.autoDos))
         {
             GameManager.Instance.checkRespawn2 = 1;
-            if (GameManager.Instance.checkPointA == 0)
-            {
-                GameManager.Instance.checkPointA = 1;
-            }
-            else if (GameManager.Instance.checkPointA == 1)
-            {
-                GameManager.Instance.checkPointA = 2;
-            }
-            else if (GameManager.Instance.checkPointA == 2)
-            {
-                GameManager.Instance.checkPointA = 3;
-            }
+            GameManager.Instance.checkPointA = 1;
         }
 
     }
