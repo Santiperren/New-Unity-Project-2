@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class caarController : MonoBehaviour
 {
@@ -29,6 +30,10 @@ public class caarController : MonoBehaviour
     public bool power2Act = false;
     public float power2Dur = 3f;
     private float power2ActFin;
+    public bool power3Act = false;
+    public float power3Dur = 5f;
+    private float power3ActFin;
+    public Image imagen;
 
 
     // Start is called before the first frame update
@@ -51,6 +56,20 @@ public class caarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GameManager.Instance.mancha2B == true)
+        {
+            StartCoroutine(MostrarYDesaparecer());
+        }
+        if (GameManager.Instance.mancha2 == true)
+        {
+            if (Input.GetKey(KeyCode.P))
+            {
+                GameManager.Instance.mancha1B = true;
+                power3Act = true;
+                power3ActFin = Time.time + power3Dur;
+                GameManager.Instance.mancha2 = false;
+            }
+        }
         if (GameManager.Instance.noDobla2 == true)
         {
             if (Input.GetKey(KeyCode.P))
@@ -220,6 +239,13 @@ public class caarController : MonoBehaviour
         cuentaRegresiva = 3f;
         GameManager.Instance.canMove = true;
 
+    }
+    private IEnumerator MostrarYDesaparecer()
+    {
+        imagen.enabled = true;
+        yield return new WaitForSeconds(3f);
+        cuentaRegresiva = 4f;
+        imagen.enabled = false;
     }
     private IEnumerator desactivarDrag2()
     {

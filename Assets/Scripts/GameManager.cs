@@ -27,6 +27,10 @@ public class GameManager : MonoBehaviour
     public bool noDobla2B = false;
     public bool masVelocidad1 = false;
     public bool masVelocidad2 = false;
+    public bool mancha1 = false;
+    public bool mancha2 = false;
+    public bool mancha2B = false;
+    public bool mancha1B = false;
     public bool afueraPista = false;
     
 

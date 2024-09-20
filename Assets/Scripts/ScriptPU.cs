@@ -76,7 +76,7 @@ public class ScriptPU : MonoBehaviour
                 Debug.Log("2");
                 break;
             case 3:
-                GameManager.Instance.noDobla1=true;
+                GameManager.Instance.mancha1=true;
                 Debug.Log("3");
                 break;
         }
@@ -96,7 +96,7 @@ public class ScriptPU : MonoBehaviour
                 break;
             case 3:
 
-                GameManager.Instance.noDobla2 = true;
+                GameManager.Instance.mancha2 = true;
                 Debug.Log("3b");
                 break;
         }
