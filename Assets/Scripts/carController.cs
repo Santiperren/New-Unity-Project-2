@@ -27,6 +27,10 @@ public class carController : MonoBehaviour
     public bool power1Act = false;
     public float power1Dur = 3f;
     private float power1ActFin;
+    public bool power3Act = false;
+    public float power3Dur = 5f;
+    private float power3ActFin;
+    public Image imagen;
 
 
 
@@ -50,6 +54,20 @@ public class carController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.mancha1B == true)
+        {
+            StartCoroutine(MostrarYDesaparecer());            
+        }
+        if (GameManager.Instance.mancha1 == true)
+        {
+            if (Input.GetKey(KeyCode.Space))
+            {
+                GameManager.Instance.mancha2B = true;
+                power3Act = true;
+                power3ActFin = Time.time + power3Dur;
+                GameManager.Instance.mancha1 = false;
+            }
+        }
         if (GameManager.Instance.noDobla1 == true)
         {
             if (Input.GetKey(KeyCode.Space))
@@ -224,8 +242,16 @@ public class carController : MonoBehaviour
         GameManager.Instance.menosDrag1 = false;
         dragOnGround1 = 3f;
     }
+    private IEnumerator MostrarYDesaparecer()
+    {
+        imagen.enabled = true;
+        Debug.Log("power 3");
+        yield return new WaitForSeconds(3f);
+        cuentaRegresiva = 4f;
+        imagen.enabled = false;
+    }
 
-      void powerUp()
+    void powerUp()
       {
         GameManager.Instance.masVelocidad1 = false;
       }

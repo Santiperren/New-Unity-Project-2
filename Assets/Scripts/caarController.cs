@@ -34,7 +34,7 @@ public class caarController : MonoBehaviour
     public float power3Dur = 5f;
     private float power3ActFin;
     public Image imagen;
-
+    public Text vueltas;
 
     // Start is called before the first frame update
     void Start()
@@ -61,10 +61,11 @@ public class caarController : MonoBehaviour
             StartCoroutine(MostrarYDesaparecer());
         }
         if (GameManager.Instance.mancha2 == true)
-        {
+        {            
             if (Input.GetKey(KeyCode.P))
             {
-                GameManager.Instance.mancha1B = true;
+                GameManager.Instance.mancha1B = true;                
+                GameManager.Instance.mancha1B = true;                
                 power3Act = true;
                 power3ActFin = Time.time + power3Dur;
                 GameManager.Instance.mancha2 = false;
@@ -242,7 +243,7 @@ public class caarController : MonoBehaviour
     }
     private IEnumerator MostrarYDesaparecer()
     {
-        imagen.enabled = true;
+        vueltas.enabled = true;
         yield return new WaitForSeconds(3f);
         cuentaRegresiva = 4f;
         imagen.enabled = false;

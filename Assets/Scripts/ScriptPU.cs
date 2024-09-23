@@ -86,12 +86,12 @@ public class ScriptPU : MonoBehaviour
         switch (number)
         {
             case 1:
-                GameManager.Instance.masVelocidad2 = true;
+                GameManager.Instance.mancha2 = true;
                 Debug.Log("1b");
                 break;
             case 2:
 
-                GameManager.Instance.noDobla2 = true;
+                GameManager.Instance.mancha2 = true;
                 Debug.Log("2b");
                 break;
             case 3:
