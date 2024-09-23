@@ -31,6 +31,7 @@ public class carController : MonoBehaviour
     public float power3Dur = 5f;
     private float power3ActFin;
     public Image imagen;
+    public GameObject imagenTinta;
 
 
 
@@ -244,15 +245,17 @@ public class carController : MonoBehaviour
     }
     private IEnumerator MostrarYDesaparecer()
     {
-        imagen.enabled = true;
-        Debug.Log("power 3");
-        yield return new WaitForSeconds(3f);
-        cuentaRegresiva = 4f;
-        imagen.enabled = false;
+        //imagen.enabled = true;
+        imagenTinta.SetActive(true);        
+        yield return new WaitForSeconds(5f);        
+        imagenTinta.SetActive(false);
+        GameManager.Instance.mancha1B = false;
+        //imagen.enabled = false;
     }
 
     void powerUp()
       {
+        Debug.Log("porblema?");
         GameManager.Instance.masVelocidad1 = false;
       }
     void powerUp2()

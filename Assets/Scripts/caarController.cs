@@ -35,6 +35,10 @@ public class caarController : MonoBehaviour
     private float power3ActFin;
     public Image imagen;
     public Text vueltas;
+    public GameObject imagenTinta;
+    public GameObject power1;
+    public GameObject power2;
+    public GameObject power3;
 
     // Start is called before the first frame update
     void Start()
@@ -107,7 +111,7 @@ public class caarController : MonoBehaviour
             if (Input.GetAxis("Vertical2") < 0)
             {
                 if (GameManager.Instance.masVelocidad2 == true)
-                {
+                {                    
                     if (Input.GetKey(KeyCode.P))
                     {
                         Debug.Log("P Pressed");
@@ -243,10 +247,12 @@ public class caarController : MonoBehaviour
     }
     private IEnumerator MostrarYDesaparecer()
     {
-        vueltas.enabled = true;
-        yield return new WaitForSeconds(3f);
-        cuentaRegresiva = 4f;
-        imagen.enabled = false;
+        //imagen.enabled = true;
+        imagenTinta.SetActive(true);
+        yield return new WaitForSeconds(5f);        
+        imagenTinta.SetActive(false);
+        GameManager.Instance.mancha2B = false;
+        //imagen.enabled = false;
     }
     private IEnumerator desactivarDrag2()
     {
@@ -260,6 +266,7 @@ public class caarController : MonoBehaviour
     }
     void powerUp()
     {
+        Debug.Log("porblema?");
         GameManager.Instance.masVelocidad2 = false;
     }
     void powerUp2()
