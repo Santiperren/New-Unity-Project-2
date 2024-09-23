@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
     public bool mancha2B = false;
     public bool mancha1B = false;
     public bool afueraPista = false;
+    public GameObject masVelocidadUno;
+    public GameObject masVelocidaDos;
     
 
     private void Awake()

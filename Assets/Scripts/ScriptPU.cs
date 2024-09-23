@@ -8,6 +8,7 @@ public class ScriptPU : MonoBehaviour
     public float bobbingSpeed = 2f;
     public float bobbingHeight = 1f;
     public float desapareceTiempo = 2f;
+    
 
     private Vector3 startPosition;
 
@@ -68,6 +69,7 @@ public class ScriptPU : MonoBehaviour
         switch (number)
         {
             case 1:
+
                 GameManager.Instance.masVelocidad1 = true;
                 Debug.Log("1");
                 break;
