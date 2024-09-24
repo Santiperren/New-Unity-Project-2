@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -319,7 +319,7 @@ MonoBehaviour:
   imagenTinta: {fileID: 1139688309}
   power1: {fileID: 0}
   power2: {fileID: 0}
-  power3: {fileID: 0}
+  power3: {fileID: 1139688309}
 --- !u!4 &138397151
 Transform:
   m_ObjectHideFlags: 0
@@ -11337,7 +11337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1845125606
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22040,6 +22040,9 @@ MonoBehaviour:
   power3Dur: 5
   imagen: {fileID: 0}
   imagenTinta: {fileID: 0}
+  power1: {fileID: 0}
+  power2: {fileID: 0}
+  power3: {fileID: 0}
 --- !u!1 &6107291471835075488
 GameObject:
   m_ObjectHideFlags: 0
@@ -24637,6 +24640,9 @@ MonoBehaviour:
   power3Dur: 5
   imagen: {fileID: 1758798502}
   imagenTinta: {fileID: 1758798500}
+  power1: {fileID: 0}
+  power2: {fileID: 0}
+  power3: {fileID: 1758798500}
 --- !u!1 &6684550920345014133
 GameObject:
   m_ObjectHideFlags: 0

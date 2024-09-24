@@ -65,7 +65,8 @@ public class caarController : MonoBehaviour
             StartCoroutine(MostrarYDesaparecer());
         }
         if (GameManager.Instance.mancha2 == true)
-        {            
+        {
+            power3.SetActive(true);
             if (Input.GetKey(KeyCode.P))
             {
                 GameManager.Instance.mancha1B = true;                
@@ -73,6 +74,7 @@ public class caarController : MonoBehaviour
                 power3Act = true;
                 power3ActFin = Time.time + power3Dur;
                 GameManager.Instance.mancha2 = false;
+                power3.SetActive(false);
             }
         }
         if (GameManager.Instance.noDobla2 == true)

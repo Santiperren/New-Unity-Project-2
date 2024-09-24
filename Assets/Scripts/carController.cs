@@ -32,6 +32,9 @@ public class carController : MonoBehaviour
     private float power3ActFin;
     public Image imagen;
     public GameObject imagenTinta;
+    public GameObject power1;
+    public GameObject power2;
+    public GameObject power3;
 
 
 
