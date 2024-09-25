@@ -79,12 +79,14 @@ public class caarController : MonoBehaviour
         }
         if (GameManager.Instance.noDobla2 == true)
         {
+            power2.SetActive(true);
             if (Input.GetKey(KeyCode.P))
             {
                 GameManager.Instance.noDobla1B = true;
                 power2Act = true;
                 power2ActFin = Time.time + power2Dur;
                 GameManager.Instance.noDobla2 = false;
+                power2.SetActive(false);
             }
             if (power2Act == true)
             {
@@ -122,6 +124,7 @@ public class caarController : MonoBehaviour
                     if (Input.GetKey(KeyCode.P))
                     {
                         Debug.Log("P Pressed");
+                        
                         powerUpActivado2 = true;
                         powerUpActivadoFin2 = Time.time + powerUpSpeedDuracion2;
                     }
@@ -132,11 +135,11 @@ public class caarController : MonoBehaviour
                      
                     if (powerUpActivado2 == true)
                     {
-                        speedInput = Input.GetAxis("Vertical2") * aceleracion * 1500f;
-                        Invoke("powerUp", desapareceTiempo);
+                        speedInput = Input.GetAxis("Vertical2") * aceleracion * 1500f;                        
                         if (Time.time > powerUpActivadoFin2)
                         {
                             powerUpActivado2 = false;
+                            Invoke("powerUp",0.1f);
                         }
                     }
                 }
@@ -275,7 +278,7 @@ public class caarController : MonoBehaviour
     {
         Debug.Log("porblema?");
         GameManager.Instance.masVelocidad2 = false;
-        power2.SetActive(false);
+        power1.SetActive(false);
     }
     void powerUp2()
     {

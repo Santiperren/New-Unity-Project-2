@@ -30,6 +30,9 @@ public class carController : MonoBehaviour
     public bool power3Act = false;
     public float power3Dur = 5f;
     private float power3ActFin;
+    public bool power2Act = false;
+    public float power2Dur = 3f;
+    private float power2ActFin;
     public Image imagen;
     public GameObject imagenTinta;
     public GameObject power1;
@@ -88,9 +91,18 @@ public class carController : MonoBehaviour
         }
         if (GameManager.Instance.noDobla1 == true)
         {
+            power2.SetActive(true);
             if (Input.GetButtonDown("X"))
-            {
+            {                
                 GameManager.Instance.noDobla2B = true;
+                power2Act = true;
+                power2ActFin = Time.time + power2Dur;
+                GameManager.Instance.noDobla1 = false;
+                power2.SetActive(false);
+            }
+            if (power2Act == true)
+            {
+                Invoke("powerUp2", power2Dur);
             }
         }
         if (GameManager.Instance.rotate01 == true)
@@ -120,7 +132,8 @@ public class carController : MonoBehaviour
                 if (GameManager.Instance.masVelocidad1 == true)
                 { 
                         if (Input.GetButtonDown("X"))
-                    { 
+                        {
+                        
                         powerUpActivado = true;
                         powerUpActivadoFin = Time.time + powerUpSpeedDuracion;
                         }
@@ -130,11 +143,11 @@ public class carController : MonoBehaviour
                     }
                     if (powerUpActivado == true)
                     {
-                        speedInput = Input.GetAxis("Vertical") * aceleracion * 1500f;
-                        Invoke("powerUp", desapareceTiempo);
+                        speedInput = Input.GetAxis("Vertical") * aceleracion * 1500f;                        
                         if (Time.time > powerUpActivadoFin)
                         {
                             powerUpActivado = false;
+                            Invoke("powerUp", 0.1f);
                         }
                     }
                 }
