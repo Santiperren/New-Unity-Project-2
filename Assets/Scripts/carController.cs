@@ -58,13 +58,14 @@ public class carController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (GameManager.Instance.mancha1B == true)
         {
             StartCoroutine(MostrarYDesaparecer());            
         }
         if (GameManager.Instance.mancha1 == true)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetButtonDown("X"))
             {
                 GameManager.Instance.mancha2B = true;
                 power3Act = true;
@@ -74,7 +75,7 @@ public class carController : MonoBehaviour
         }
         if (GameManager.Instance.noDobla1 == true)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetButtonDown("X"))
             {
                 GameManager.Instance.noDobla2B = true;
                 power1Act = true;
@@ -87,7 +88,7 @@ public class carController : MonoBehaviour
         }
         if (GameManager.Instance.noDobla1 == true)
         {
-            if (Input.GetKey(KeyCode.I))
+            if (Input.GetButtonDown("X"))
             {
                 GameManager.Instance.noDobla2B = true;
             }
@@ -110,15 +111,19 @@ public class carController : MonoBehaviour
         {
             theRB1.useGravity = true;
             speedInput = 0f;
-            if (Input.GetAxis("Vertical") < 0)
+            if (GameManager.Instance.masVelocidad1 == true)
+            {
+                power1.SetActive(true);
+            }
+                if (Input.GetAxis("Vertical") < 0)
             {
                 if (GameManager.Instance.masVelocidad1 == true)
-                {
-                    if (Input.GetKey(KeyCode.Space))
-                    {
+                { 
+                        if (Input.GetButtonDown("X"))
+                    { 
                         powerUpActivado = true;
                         powerUpActivadoFin = Time.time + powerUpSpeedDuracion;
-                    }
+                        }
                     else
                     {
                         speedInput = Input.GetAxis("Vertical") * aceleracion * 1000f;
@@ -260,9 +265,11 @@ public class carController : MonoBehaviour
       {
         Debug.Log("porblema?");
         GameManager.Instance.masVelocidad1 = false;
+        power1.SetActive(false);
       }
     void powerUp2()
     {
         GameManager.Instance.noDobla2B = false;
     }
+
 }
