@@ -199,9 +199,16 @@ public class caarController : MonoBehaviour
                     theRB.isKinematic = false;
                     theRB.useGravity = false;
                 }
-                
-                
-                
+                else if (GameManager.Instance.checkRespawn2 == 4)
+                {
+                    transform.position = new Vector3(783, -1080, -334);
+                    theRB.isKinematic = true;
+                    theRB.transform.position = new Vector3(783, -1080, -334);
+                    theRB.isKinematic = false;
+                }
+
+
+
             }
 
             ruedaAdelanteDerecha.localRotation = Quaternion.Euler(0, -turnInput * maxGiroRueda, 0);

@@ -61,10 +61,10 @@ public class carController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         if (GameManager.Instance.mancha1B == true)
         {
-            StartCoroutine(MostrarYDesaparecer());            
+            StartCoroutine(MostrarYDesaparecer());
         }
         if (GameManager.Instance.mancha1 == true)
         {
@@ -93,7 +93,7 @@ public class carController : MonoBehaviour
         {
             power2.SetActive(true);
             if (Input.GetButtonDown("X"))
-            {                
+            {
                 GameManager.Instance.noDobla2B = true;
                 power2Act = true;
                 power2ActFin = Time.time + power2Dur;
@@ -127,23 +127,23 @@ public class carController : MonoBehaviour
             {
                 power1.SetActive(true);
             }
-                if (Input.GetAxis("Vertical") < 0)
+            if (Input.GetAxis("Vertical") < 0)
             {
                 if (GameManager.Instance.masVelocidad1 == true)
-                { 
-                        if (Input.GetButtonDown("X"))
-                        {
-                        
+                {
+                    if (Input.GetButtonDown("X"))
+                    {
+
                         powerUpActivado = true;
                         powerUpActivadoFin = Time.time + powerUpSpeedDuracion;
-                        }
+                    }
                     else
                     {
                         speedInput = Input.GetAxis("Vertical") * aceleracion * 1000f;
                     }
                     if (powerUpActivado == true)
                     {
-                        speedInput = Input.GetAxis("Vertical") * aceleracion * 1500f;                        
+                        speedInput = Input.GetAxis("Vertical") * aceleracion * 1500f;
                         if (Time.time > powerUpActivadoFin)
                         {
                             powerUpActivado = false;
@@ -172,46 +172,59 @@ public class carController : MonoBehaviour
                 {
                     transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("Vertical"), 0f));
                 }
-                
+
             }
 
 
-                ruedaAdelanteDerecha.localRotation = Quaternion.Euler(0, -turnInput * maxGiroRueda, 0);
-                ruedaAdelanteIzquierda.localRotation = Quaternion.Euler(0, -turnInput * maxGiroRueda, 0);
-                transform.position = theRB1.transform.position;
+            ruedaAdelanteDerecha.localRotation = Quaternion.Euler(0, -turnInput * maxGiroRueda, 0);
+            ruedaAdelanteIzquierda.localRotation = Quaternion.Euler(0, -turnInput * maxGiroRueda, 0);
+            transform.position = theRB1.transform.position;
 
-           // if (Input.GetKey(KeyCode.O))
+            // if (Input.GetKey(KeyCode.O))
             //(Input.GetButton("Fire1"))
-            //(Input.GetAxis("checkpoint") > 0)
-           // {
-           //     Debug.Log("fire1");
-             //   if (GameManager.Instance.checkRespawn2 == 1)
-               // {
-                 //   transform.position = new Vector3(355, -1084, -484);
-                   // theRB1.isKinematic = true;
-                    //theRB1.transform.position = new Vector3(355, -1084, -484);
-                   // theRB1.isKinematic = false;
-                  //  theRB1.useGravity = false;
-                
-            //    else if (GameManager.Instance.checkRespawn2 == 2)
-                //{
-                 //   transform.position = new Vector3(565, -1084, -236);
-                  //  theRB1.isKinematic = true;
-                   // theRB1.transform.position = new Vector3(565, -1084, -236);
-                 //   theRB1.isKinematic = false;
-                    //theRB1.useGravity = false;
-             //   }
-            //    else if (GameManager.Instance.checkRespawn2 == 3)
-              //  {
-                  //  transform.position = new Vector3(393, -1084, -45);
-                //    theRB1.isKinematic = true;
-                    //theRB1.transform.position = new Vector3(393, -1084, -45);
-                   // theRB1.isKinematic = false;
-                  //  theRB1.useGravity = false;
-        //        }
-
-
+            if (Input.GetButtonDown("A"))
+            {
+                if (GameManager.Instance.checkRespawn == 0)
+                {
+                    transform.position = new Vector3(783, -1080, -334);
+                    theRB1.isKinematic = true;
+                    theRB1.transform.position = new Vector3(783, -1080, -334);
+                    theRB1.isKinematic = false;
+                }
+                if (GameManager.Instance.checkRespawn == 1)
+                {
+                    transform.position = new Vector3(355, -1084, -484);
+                    theRB1.isKinematic = true;
+                    theRB1.transform.position = new Vector3(355, -1084, -484);
+                    theRB1.isKinematic = false;
+                    theRB1.useGravity = false;
+                }
+                else if (GameManager.Instance.checkRespawn == 2)
+                {
+                    transform.position = new Vector3(565, -1084, -236);
+                    theRB1.isKinematic = true;
+                    theRB1.transform.position = new Vector3(565, -1084, -236);
+                    theRB1.isKinematic = false;
+                    theRB1.useGravity = false;
+                }
+                else if (GameManager.Instance.checkRespawn == 3)
+                {
+                    transform.position = new Vector3(393, -1084, -45);
+                    theRB1.isKinematic = true;
+                    theRB1.transform.position = new Vector3(393, -1084, -45);
+                    theRB1.isKinematic = false;
+                    theRB1.useGravity = false;
+                }
+                else if (GameManager.Instance.checkRespawn == 4)
+                {
+                    transform.position = new Vector3(783, -1080, -334);
+                    theRB1.isKinematic = true;
+                    theRB1.transform.position = new Vector3(783, -1080, -334);
+                    theRB1.isKinematic = false;
+                }
             }
+        }
+
     }
     private void FixedUpdate()
     {

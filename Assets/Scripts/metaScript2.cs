@@ -23,6 +23,7 @@ public class metaScript2 : MonoBehaviour
     {
         if (other.CompareTag(GameManager.Instance.autoDos))
         {
+            GameManager.Instance.checkRespawn2 = 4;
             if (GameManager.Instance.checkPointA == 1 && GameManager.Instance.checkPointB == 1 && GameManager.Instance.checkPointC == 1)
             {
                 vueltasDos++;

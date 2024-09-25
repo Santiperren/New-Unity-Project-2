@@ -9,9 +9,11 @@ public class GameManager : MonoBehaviour
     public float checkPoint1 = 0;
     public float checkPoint2 = 0;
     public float checkPoint3 = 0;
+    public float checkPoint4 = 0;
     public float checkPointA = 0;
     public float checkPointB = 0;
     public float checkPointC = 0;
+    public float checkPointD = 0;
     public int checkRespawn = 0;
     public int checkRespawn2 = 0;
     public bool menosDrag1 = false;
