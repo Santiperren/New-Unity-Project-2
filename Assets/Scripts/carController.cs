@@ -38,7 +38,10 @@ public class carController : MonoBehaviour
     public GameObject power1;
     public GameObject power2;
     public GameObject power3;
-
+    int i = 0;
+    public Camera camaraNB;
+    public Camera camara2B;
+    public Camera camaraTibuB;
 
 
     // Start is called before the first frame update
@@ -55,12 +58,22 @@ public class carController : MonoBehaviour
         theRB1.transform.position = new Vector3(820, -1075, -334);
         theRB1.isKinematic = false;
         theRB1.useGravity = false;
+        camaraNB.enabled = true;
+        camara2B.enabled = false;
+        camaraTibuB.enabled = false;
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetButtonDown("LB"))
+        {
+            i++;
+            Debug.Log("c");
+            cambiarCamaras();
+        }
 
         if (GameManager.Instance.mancha1B == true)
         {
@@ -286,6 +299,32 @@ public class carController : MonoBehaviour
     void powerUp2()
     {
         GameManager.Instance.noDobla2B = false;
+    }
+    void cambiarCamaras()
+    {
+        if (i == 1)
+        {
+            Debug.Log("1");
+            camaraNB.enabled = false;
+            camaraTibuB.enabled = false;
+            camara2B.enabled = true;
+
+        }
+        else if (i == 2)
+        {
+            Debug.Log("2");
+            camaraNB.enabled = false;
+            camaraTibuB.enabled = true;
+            camara2B.enabled = false;
+        }
+        else if (i == 3)
+        {
+            Debug.Log("3");
+            camaraNB.enabled = true;
+            camaraTibuB.enabled = false;
+            camara2B.enabled = false;
+            i = 0;
+        }
     }
 
 }

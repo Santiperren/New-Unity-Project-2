@@ -43,6 +43,7 @@ public class caarController : MonoBehaviour
     public Camera camara2;
     public Camera camaraTibu;
     int i = 0;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -68,11 +69,14 @@ public class caarController : MonoBehaviour
     void Update()
 
     {
-        if (Input.GetKey(KeyCode.C))
-        {
-            i++;
-            cambiarCamaras();
-        }
+      
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                i++;
+                Debug.Log("c");
+                cambiarCamaras();
+            }
+  
         if(GameManager.Instance.mancha2B == true)
         {
             StartCoroutine(MostrarYDesaparecer());
@@ -82,8 +86,8 @@ public class caarController : MonoBehaviour
             power3.SetActive(true);
             if (Input.GetKey(KeyCode.P))
             {
-                GameManager.Instance.mancha1B = true;        
-                               
+                GameManager.Instance.mancha1B = true;
+                Debug.Log("este");
                 power3Act = true;
                 power3ActFin = Time.time + power3Dur;
                 GameManager.Instance.mancha2 = false;
@@ -308,6 +312,7 @@ public class caarController : MonoBehaviour
     {
         if(i == 1)
         {
+            Debug.Log("1");
             camaraN.enabled = false;
             camaraTibu.enabled = false;
             camara2.enabled = true;
@@ -315,16 +320,19 @@ public class caarController : MonoBehaviour
         }
         else if (i == 2)
         {
+            Debug.Log("2");
             camaraN.enabled = false;
             camaraTibu.enabled = true;
             camara2.enabled = false;
         }
         else if(i == 3)
         {
+            Debug.Log("3");
             camaraN.enabled = true;
             camaraTibu.enabled = false;
             camara2.enabled = false;
             i = 0;
         }
     }
+  
 }
