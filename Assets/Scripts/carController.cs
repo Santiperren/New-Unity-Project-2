@@ -68,27 +68,17 @@ public class carController : MonoBehaviour
         }
         if (GameManager.Instance.mancha1 == true)
         {
+            power3.SetActive(true);
             if (Input.GetButtonDown("X"))
             {
                 GameManager.Instance.mancha2B = true;
                 power3Act = true;
                 power3ActFin = Time.time + power3Dur;
                 GameManager.Instance.mancha1 = false;
+                power3.SetActive(false);
             }
         }
-        if (GameManager.Instance.noDobla1 == true)
-        {
-            if (Input.GetButtonDown("X"))
-            {
-                GameManager.Instance.noDobla2B = true;
-                power1Act = true;
-                power1ActFin = Time.time + power1Dur;
-            }
-            if (power1Act == true)
-            {
-                Invoke("powerUp2", power1Dur);
-            }
-        }
+        
         if (GameManager.Instance.noDobla1 == true)
         {
             power2.SetActive(true);

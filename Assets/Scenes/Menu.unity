@@ -1101,9 +1101,11 @@ MonoBehaviour:
   checkPoint1: 0
   checkPoint2: 0
   checkPoint3: 0
+  checkPoint4: 0
   checkPointA: 0
   checkPointB: 0
   checkPointC: 0
+  checkPointD: 0
   checkRespawn: 0
   checkRespawn2: 0
   menosDrag1: 0
@@ -1124,6 +1126,8 @@ MonoBehaviour:
   mancha2B: 0
   mancha1B: 0
   afueraPista: 0
+  masVelocidadUno: {fileID: 0}
+  masVelocidaDos: {fileID: 0}
 --- !u!4 &1588176179
 Transform:
   m_ObjectHideFlags: 0
@@ -1138,72 +1142,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &4463521514457967106
+--- !u!1001 &5433434737901201586
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4463521513872163174, guid: 864b3ddc3543d44448e26f6156e48620,
-        type: 3}
-      propertyPath: m_Name
-      value: Directional Light (Missing Prefab)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4463521513872163175, guid: 864b3ddc3543d44448e26f6156e48620,
+    - target: {fileID: 5433434737811355680, guid: 864b3ddc3543d44448e26f6156e48620,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4463521513872163175, guid: 864b3ddc3543d44448e26f6156e48620,
+    - target: {fileID: 5433434737811355680, guid: 864b3ddc3543d44448e26f6156e48620,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4463521513872163175, guid: 864b3ddc3543d44448e26f6156e48620,
+    - target: {fileID: 5433434737811355680, guid: 864b3ddc3543d44448e26f6156e48620,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4463521513872163175, guid: 864b3ddc3543d44448e26f6156e48620,
+    - target: {fileID: 5433434737811355680, guid: 864b3ddc3543d44448e26f6156e48620,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4463521513872163175, guid: 864b3ddc3543d44448e26f6156e48620,
+    - target: {fileID: 5433434737811355680, guid: 864b3ddc3543d44448e26f6156e48620,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4463521513872163175, guid: 864b3ddc3543d44448e26f6156e48620,
+    - target: {fileID: 5433434737811355680, guid: 864b3ddc3543d44448e26f6156e48620,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4463521513872163175, guid: 864b3ddc3543d44448e26f6156e48620,
+    - target: {fileID: 5433434737811355680, guid: 864b3ddc3543d44448e26f6156e48620,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4463521513872163175, guid: 864b3ddc3543d44448e26f6156e48620,
+    - target: {fileID: 5433434737811355680, guid: 864b3ddc3543d44448e26f6156e48620,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4463521513872163175, guid: 864b3ddc3543d44448e26f6156e48620,
+    - target: {fileID: 5433434737811355680, guid: 864b3ddc3543d44448e26f6156e48620,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4463521513872163175, guid: 864b3ddc3543d44448e26f6156e48620,
+    - target: {fileID: 5433434737811355680, guid: 864b3ddc3543d44448e26f6156e48620,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4463521513872163175, guid: 864b3ddc3543d44448e26f6156e48620,
+    - target: {fileID: 5433434737811355680, guid: 864b3ddc3543d44448e26f6156e48620,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433434737811355683, guid: 864b3ddc3543d44448e26f6156e48620,
+        type: 3}
+      propertyPath: m_Name
+      value: Directional Light (Missing Prefab)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 864b3ddc3543d44448e26f6156e48620, type: 3}

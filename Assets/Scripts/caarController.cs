@@ -39,7 +39,10 @@ public class caarController : MonoBehaviour
     public GameObject power1;
     public GameObject power2;
     public GameObject power3;
-
+    public Camera camaraN;
+    public Camera camara2;
+    public Camera camaraTibu;
+    int i = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,11 +58,21 @@ public class caarController : MonoBehaviour
         theRB.transform.position = new Vector3(783, -1080, -334);
         theRB.isKinematic = false;
         theRB.useGravity = false;
+        camaraN.enabled = true;
+        camara2.enabled = false;
+        camaraTibu.enabled = false;
+
     }
 
     // Update is called once per frame
     void Update()
+
     {
+        if (Input.GetKey(KeyCode.C))
+        {
+            i++;
+            cambiarCamaras();
+        }
         if(GameManager.Instance.mancha2B == true)
         {
             StartCoroutine(MostrarYDesaparecer());
@@ -290,5 +303,28 @@ public class caarController : MonoBehaviour
     void powerUp2()
     {
         GameManager.Instance.noDobla1B = false;
+    }
+    void cambiarCamaras()
+    {
+        if(i == 1)
+        {
+            camaraN.enabled = false;
+            camaraTibu.enabled = false;
+            camara2.enabled = true;
+
+        }
+        else if (i == 2)
+        {
+            camaraN.enabled = false;
+            camaraTibu.enabled = true;
+            camara2.enabled = false;
+        }
+        else if(i == 3)
+        {
+            camaraN.enabled = true;
+            camaraTibu.enabled = false;
+            camara2.enabled = false;
+            i = 0;
+        }
     }
 }
