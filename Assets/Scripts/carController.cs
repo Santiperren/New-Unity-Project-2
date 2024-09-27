@@ -82,7 +82,7 @@ public class carController : MonoBehaviour
         if (GameManager.Instance.mancha1 == true)
         {
             power3.SetActive(true);
-            if (Input.GetButtonDown("X"))
+            if (Input.GetButtonDown("A"))
             {
                 GameManager.Instance.mancha2B = true;
                 power3Act = true;
@@ -95,7 +95,7 @@ public class carController : MonoBehaviour
         if (GameManager.Instance.noDobla1 == true)
         {
             power2.SetActive(true);
-            if (Input.GetButtonDown("X"))
+            if (Input.GetButtonDown("A"))
             {
                 GameManager.Instance.noDobla2B = true;
                 power2Act = true;
@@ -134,7 +134,7 @@ public class carController : MonoBehaviour
             {
                 if (GameManager.Instance.masVelocidad1 == true)
                 {
-                    if (Input.GetButtonDown("X"))
+                    if (Input.GetButtonDown("A"))
                     {
 
                         powerUpActivado = true;
@@ -185,7 +185,7 @@ public class carController : MonoBehaviour
 
             // if (Input.GetKey(KeyCode.O))
             //(Input.GetButton("Fire1"))
-            if (Input.GetButtonDown("A"))
+            if (Input.GetButtonDown("B"))
             {
                 if (GameManager.Instance.checkRespawn == 0)
                 {
