@@ -4,13 +4,27 @@ using UnityEngine;
 
 public class metaScript2 : MonoBehaviour
 {    
-    public float vueltasDos = 0;   
-    
-   
+    public float vueltasDos = 0;
+    public GameObject vueltaUnoB;
+    public GameObject vueltaDosB;
+    public GameObject vueltaTresB;
+    public float vueltasUno = 0;
+    public GameObject vueltaUno;
+    public GameObject vueltaDos;
+    public GameObject vueltaTres;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        vueltaUnoB.SetActive(true);
+        vueltaDosB.SetActive(false);
+        vueltaTresB.SetActive(false);
+
+        vueltaUno.SetActive(true);
+        vueltaDos.SetActive(false);
+        vueltaTres.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -30,12 +44,54 @@ public class metaScript2 : MonoBehaviour
                 GameManager.Instance.checkPointA = 0;
                 GameManager.Instance.checkPointB = 0;
                 GameManager.Instance.checkPointC = 0;
+                Debug.Log("autotecla");
+            }
+            if (vueltasDos == 1)
+            {
+                vueltaUnoB.SetActive(false);
+                vueltaDosB.SetActive(true);
+                vueltaTresB.SetActive(false);
+            }
+            if (vueltasDos == 2)
+            {
+                vueltaUnoB.SetActive(false);
+                vueltaDosB.SetActive(false);
+                vueltaTresB.SetActive(true);
             }
             if (vueltasDos ==3)
             { 
                 
                 GameManager.Instance.canMove = false;
                 Debug.Log("El jugador dos es el ganador");
+            }
+        }
+        if (other.CompareTag(GameManager.Instance.autoUno))
+        {
+            GameManager.Instance.checkRespawn = 4;
+            if (GameManager.Instance.checkPoint1 == 1 && GameManager.Instance.checkPoint2 == 1 && GameManager.Instance.checkPoint3 == 1)
+            {
+                vueltasUno++;
+                GameManager.Instance.checkPoint1 = 0;
+                GameManager.Instance.checkPoint2 = 0;
+                GameManager.Instance.checkPoint3 = 0;
+                Debug.Log("autojoysrtick");
+            }
+            if (vueltasUno == 1)
+            {
+                vueltaUno.SetActive(false);
+                vueltaDos.SetActive(true);
+                vueltaTres.SetActive(false);
+            }
+            if (vueltasUno == 2)
+            {
+                vueltaUno.SetActive(false);
+                vueltaDos.SetActive(false);
+                vueltaTres.SetActive(true);
+            }
+            if (vueltasUno == 3)
+            {
+                GameManager.Instance.canMove = false;
+                Debug.Log("El jugador uno es el ganador");
             }
         }
 
