@@ -36,6 +36,7 @@ public class metaScript : MonoBehaviour
                 GameManager.Instance.checkPoint2 = 0;
                 GameManager.Instance.checkPoint3 = 0;
 
+
             }
             if (vueltasUno == 1)
             {

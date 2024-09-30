@@ -67,6 +67,7 @@ public class metaScript2 : MonoBehaviour
         }
         if (other.CompareTag(GameManager.Instance.autoUno))
         {
+            Debug.Log("aprimer if");
             GameManager.Instance.checkRespawn = 4;
             if (GameManager.Instance.checkPoint1 == 1 && GameManager.Instance.checkPoint2 == 1 && GameManager.Instance.checkPoint3 == 1)
             {
@@ -93,6 +94,7 @@ public class metaScript2 : MonoBehaviour
                 GameManager.Instance.canMove = false;
                 Debug.Log("El jugador uno es el ganador");
             }
+            
         }
 
     }

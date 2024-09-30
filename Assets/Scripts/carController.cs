@@ -71,7 +71,7 @@ public class carController : MonoBehaviour
         if (Input.GetButtonDown("LB"))
         {
             i++;
-            Debug.Log("c");
+
             cambiarCamaras();
         }
 
@@ -292,7 +292,7 @@ public class carController : MonoBehaviour
 
     void powerUp()
       {
-        Debug.Log("porblema?");
+
         GameManager.Instance.masVelocidad1 = false;
         power1.SetActive(false);
       }
@@ -304,7 +304,6 @@ public class carController : MonoBehaviour
     {
         if (i == 1)
         {
-            Debug.Log("1");
             camaraNB.enabled = false;
             camaraTibuB.enabled = false;
             camara2B.enabled = true;
@@ -312,14 +311,12 @@ public class carController : MonoBehaviour
         }
         else if (i == 2)
         {
-            Debug.Log("2");
             camaraNB.enabled = false;
             camaraTibuB.enabled = true;
             camara2B.enabled = false;
         }
         else if (i == 3)
         {
-            Debug.Log("3");
             camaraNB.enabled = true;
             camaraTibuB.enabled = false;
             camara2B.enabled = false;

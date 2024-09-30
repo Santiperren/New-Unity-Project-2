@@ -73,12 +73,13 @@ public class caarController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.C))
             {
                 i++;
-                Debug.Log("c");
+
                 cambiarCamaras();
             }
   
         if(GameManager.Instance.mancha2B == true)
         {
+            StartCoroutine(MostrarYDesaparecer());
             StartCoroutine(MostrarYDesaparecer());
         }
         if (GameManager.Instance.mancha2 == true)
@@ -87,7 +88,7 @@ public class caarController : MonoBehaviour
             if (Input.GetKey(KeyCode.P))
             {
                 GameManager.Instance.mancha1B = true;
-                Debug.Log("este");
+
                 power3Act = true;
                 power3ActFin = Time.time + power3Dur;
                 GameManager.Instance.mancha2 = false;
@@ -140,7 +141,7 @@ public class caarController : MonoBehaviour
                 {                    
                     if (Input.GetKey(KeyCode.P))
                     {
-                        Debug.Log("P Pressed");
+
                         
                         powerUpActivado2 = true;
                         powerUpActivadoFin2 = Time.time + powerUpSpeedDuracion2;
@@ -290,7 +291,7 @@ public class caarController : MonoBehaviour
     }
     private IEnumerator desactivarDrag2()
     {
-        Debug.Log("Hola");
+
         dragOnGround2 = 1f;
         yield return new WaitForSeconds(3f);
         cuentaRegresiva = 3f;
@@ -300,7 +301,7 @@ public class caarController : MonoBehaviour
     }
     void powerUp()
     {
-        Debug.Log("porblema?");
+
         GameManager.Instance.masVelocidad2 = false;
         power1.SetActive(false);
     }
@@ -312,7 +313,6 @@ public class caarController : MonoBehaviour
     {
         if(i == 1)
         {
-            Debug.Log("1");
             camaraN.enabled = false;
             camaraTibu.enabled = false;
             camara2.enabled = true;
@@ -320,14 +320,12 @@ public class caarController : MonoBehaviour
         }
         else if (i == 2)
         {
-            Debug.Log("2");
             camaraN.enabled = false;
             camaraTibu.enabled = true;
             camara2.enabled = false;
         }
         else if(i == 3)
         {
-            Debug.Log("3");
             camaraN.enabled = true;
             camaraTibu.enabled = false;
             camara2.enabled = false;

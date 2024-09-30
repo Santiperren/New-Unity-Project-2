@@ -23,6 +23,7 @@ public class check1 : MonoBehaviour
         {
             GameManager.Instance.checkRespawn = 1;
             GameManager.Instance.checkPoint1 = 1;
+
             
         }
         
