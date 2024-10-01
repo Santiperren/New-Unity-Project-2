@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: c89a08eb600f6c44da9d847e6c338adf
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: circuito
+    100002: Estrucutra meta
+    100004: //RootNode
+    100006: paramesh
+    100008: paramesh2
+    100010: Plane.001
+    100012: rampa1
+    100014: rampa2
+    100016: rampameta
+    100018: valla
+    100020: valla.001
+    100022: valla.002
+    100024: valla.003
+    100026: valla.005
+    400000: circuito
+    400002: Estrucutra meta
+    400004: //RootNode
+    400006: paramesh
+    400008: paramesh2
+    400010: Plane.001
+    400012: rampa1
+    400014: rampa2
+    400016: rampameta
+    400018: valla
+    400020: valla.001
+    400022: valla.002
+    400024: valla.003
+    400026: valla.005
+    2100000: texturameta
+    2100002: Texturameta
+    2100004: pista
+    2100006: Material
+    2100008: balla.001
+    2100010: balla
+    2100012: Material.003
+    2100014: Material.004
+    2100016: fondo
+    2300000: circuito
+    2300002: Estrucutra meta
+    2300004: paramesh
+    2300006: paramesh2
+    2300008: Plane.001
+    2300010: rampa1
+    2300012: rampa2
+    2300014: rampameta
+    2300016: valla
+    2300018: valla.001
+    2300020: valla.002
+    2300022: valla.003
+    2300024: valla.005
+    3300000: circuito
+    3300002: Estrucutra meta
+    3300004: paramesh
+    3300006: paramesh2
+    3300008: Plane.001
+    3300010: rampa1
+    3300012: rampa2
+    3300014: rampameta
+    3300016: valla
+    3300018: valla.001
+    3300020: valla.002
+    3300022: valla.003
+    3300024: valla.005
+    4300000: Estrucutra meta
+    4300002: circuito
+    4300004: valla
+    4300006: valla.001
+    4300008: valla.002
+    4300010: valla.003
+    4300012: valla.005
+    4300014: paramesh
+    4300016: paramesh2
+    4300018: rampa1
+    4300020: rampa2
+    4300022: rampameta
+    4300024: Plane.001
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
