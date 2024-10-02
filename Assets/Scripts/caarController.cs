@@ -43,6 +43,7 @@ public class caarController : MonoBehaviour
     public Camera camara2;
     public Camera camaraTibu;
     int i = 0;
+    public GameObject planecollider;
    
     // Start is called before the first frame update
     void Start()
@@ -192,6 +193,8 @@ public class caarController : MonoBehaviour
                     theRB.isKinematic = true;
                     theRB.transform.position = new Vector3(783, -1080, -334);
                     theRB.isKinematic = false;
+                    Vector3 currentRotation = transform.rotation.eulerAngles;
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
                 }
                 if (GameManager.Instance.checkRespawn2 == 1)
                 {
@@ -200,6 +203,8 @@ public class caarController : MonoBehaviour
                     theRB.transform.position = new Vector3(355, -1084, -484);
                     theRB.isKinematic = false;
                     theRB.useGravity = false;
+                    Vector3 currentRotation = transform.rotation.eulerAngles;
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
                 }
                 else if (GameManager.Instance.checkRespawn2 == 2)
                 {
@@ -208,6 +213,8 @@ public class caarController : MonoBehaviour
                     theRB.transform.position = new Vector3(565, -1084, -236);
                     theRB.isKinematic = false;
                     theRB.useGravity = false;
+                    Vector3 currentRotation = transform.rotation.eulerAngles;
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
                 }
                 else if (GameManager.Instance.checkRespawn2 == 3)
                 {
@@ -216,6 +223,8 @@ public class caarController : MonoBehaviour
                     theRB.transform.position = new Vector3(393, -1084, -45);
                     theRB.isKinematic = false;
                     theRB.useGravity = false;
+                    Vector3 currentRotation = transform.rotation.eulerAngles;
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
                 }
                 else if (GameManager.Instance.checkRespawn2 == 4)
                 {
@@ -223,8 +232,10 @@ public class caarController : MonoBehaviour
                     theRB.isKinematic = true;
                     theRB.transform.position = new Vector3(783, -1080, -334);
                     theRB.isKinematic = false;
+                    Vector3 currentRotation = transform.rotation.eulerAngles;
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
                 }
-
+               
 
 
             }
@@ -332,5 +343,59 @@ public class caarController : MonoBehaviour
             i = 0;
         }
     }
-  
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Plano"))
+        {
+            if (GameManager.Instance.checkRespawn2 == 0)
+            {
+                transform.position = new Vector3(783, -1080, -334);
+                theRB.isKinematic = true;
+                theRB.transform.position = new Vector3(783, -1080, -334);
+                theRB.isKinematic = false;
+                Vector3 currentRotation = transform.rotation.eulerAngles;
+                transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
+            }
+            if (GameManager.Instance.checkRespawn2 == 1)
+            {
+                transform.position = new Vector3(355, -1084, -484);
+                theRB.isKinematic = true;
+                theRB.transform.position = new Vector3(355, -1084, -484);
+                theRB.isKinematic = false;
+                theRB.useGravity = false;
+                Vector3 currentRotation = transform.rotation.eulerAngles;
+                transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
+            }
+            else if (GameManager.Instance.checkRespawn2 == 2)
+            {
+                transform.position = new Vector3(565, -1084, -236);
+                theRB.isKinematic = true;
+                theRB.transform.position = new Vector3(565, -1084, -236);
+                theRB.isKinematic = false;
+                theRB.useGravity = false;
+                Vector3 currentRotation = transform.rotation.eulerAngles;
+                transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
+            }
+            else if (GameManager.Instance.checkRespawn2 == 3)
+            {
+                transform.position = new Vector3(393, -1084, -45);
+                theRB.isKinematic = true;
+                theRB.transform.position = new Vector3(393, -1084, -45);
+                theRB.isKinematic = false;
+                theRB.useGravity = false;
+                Vector3 currentRotation = transform.rotation.eulerAngles;
+                transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
+            }
+            else if (GameManager.Instance.checkRespawn2 == 4)
+            {
+                transform.position = new Vector3(783, -1080, -334);
+                theRB.isKinematic = true;
+                theRB.transform.position = new Vector3(783, -1080, -334);
+                theRB.isKinematic = false;
+                Vector3 currentRotation = transform.rotation.eulerAngles;
+                transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
+            }
+        }
+    }
+
 }

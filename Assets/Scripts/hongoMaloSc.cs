@@ -6,23 +6,33 @@ using UnityEngine.Rendering.PostProcessing;
 public class hongoMaloSc : MonoBehaviour
 {
     public PostProcessVolume volume;
+    public PostProcessVolume volume2;
     public BoxCollider colliderA;
-
-    public LensDistortion lens;
-    public ChromaticAberration chromaticAberration;
-    public ColorGrading colorgrading;
+    public float desapareceTiempo = 3f;
+    public LensDistortion lens1;
+    public ChromaticAberration chromaticAberration1;
+    public ColorGrading colorgrading1;
+    public LensDistortion lens2;
+    public ChromaticAberration chromaticAberration2;
+    public ColorGrading colorgrading2;
+    public GameObject hongoMalo;
+    public PostProcessLayer ppLayer1;
+    public PostProcessLayer ppLayer2;
 
     void Start()
     {
-        volume.profile.TryGetSettings(out lens);
-        volume.profile.TryGetSettings(out chromaticAberration);
-        volume.profile.TryGetSettings(out colorgrading);
+        volume.profile.TryGetSettings(out lens1);
+        volume.profile.TryGetSettings(out chromaticAberration1);
+        volume.profile.TryGetSettings(out colorgrading1);
+        volume2.profile.TryGetSettings(out lens2);
+        volume2.profile.TryGetSettings(out chromaticAberration2);
+        volume2.profile.TryGetSettings(out colorgrading2);
         ResetEffects();
     }
 
     void Update() { }
 
-    private IEnumerator AnimateChangingLensDistortion(float totalDuration)
+    private IEnumerator AnimateChangingLensDistortion(LensDistortion lens, float totalDuration)
     {
         float changeDuration = 8f;
         float fadeOutDuration = 2f;
@@ -32,14 +42,14 @@ public class hongoMaloSc : MonoBehaviour
         {
             float newIntensityX = Random.Range(0f, 1.5f);
             float newIntensityY = Random.Range(0f, 1.5f);
-            yield return StartCoroutine(AnimateLensDistortion(1f, newIntensityX, newIntensityY));
+            yield return StartCoroutine(AnimateLensDistortion(lens, 1f, newIntensityX, newIntensityY));
             yield return new WaitForSeconds(1f);
             totalElapsed += 1f;
         }
-        yield return StartCoroutine(AnimateLensDistortion(fadeOutDuration, 0f, 0f));
+        yield return StartCoroutine(AnimateLensDistortion(lens, fadeOutDuration, 0f, 0f));
     }
 
-    private IEnumerator AnimateLensDistortion(float duration, float targetXMultiplier, float targetYMultiplier)
+    private IEnumerator AnimateLensDistortion(LensDistortion lens, float duration, float targetXMultiplier, float targetYMultiplier)
     {
         float startXMultiplier = lens.intensityX.value;
         float startYMultiplier = lens.intensityY.value;
@@ -57,7 +67,7 @@ public class hongoMaloSc : MonoBehaviour
         lens.intensityY.value = targetYMultiplier;
     }
 
-    private IEnumerator AnimateChromaticAberration(float fadeInDuration, float maxIntensity, float holdDuration)
+    private IEnumerator AnimateChromaticAberration(ChromaticAberration chromaticAberration, float fadeInDuration, float maxIntensity, float holdDuration)
     {
         float elapsed = 0f;
         float startIntensity = chromaticAberration.intensity.value;
@@ -83,7 +93,7 @@ public class hongoMaloSc : MonoBehaviour
         chromaticAberration.intensity.value = 0f;
     }
 
-    private IEnumerator AnimateColorGrading(float fadeInDuration, float maxHueShift, float maxSaturation, float holdDuration)
+    private IEnumerator AnimateColorGrading(ColorGrading colorgrading, float fadeInDuration, float maxHueShift, float maxSaturation, float holdDuration)
     {
         float elapsed = 0f;
 
@@ -142,19 +152,49 @@ public class hongoMaloSc : MonoBehaviour
 
     private void ResetEffects()
     {
-        lens.intensityX.value = 0f;
-        lens.intensityY.value = 0f;
-        chromaticAberration.intensity.value = 0f;
-        colorgrading.hueShift.value = 0f;
-        colorgrading.saturation.value = 0f;
+        lens1.intensityX.value = 0f;
+        lens1.intensityY.value = 0f;
+        chromaticAberration1.intensity.value = 0f;
+        colorgrading1.hueShift.value = 0f;
+        colorgrading1.saturation.value = 0f;
+        lens2.intensityX.value = 0f;
+        lens2.intensityY.value = 0f;
+        chromaticAberration2.intensity.value = 0f;
+        colorgrading2.hueShift.value = 0f;
+        colorgrading2.saturation.value = 0f;
     }
 
     public void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Objeto entró en contacto: " + other.gameObject.name);
-        StartCoroutine(AnimateChangingLensDistortion(10f));
-        StartCoroutine(AnimateChromaticAberration(3f, 1f, 15f));
-        StartCoroutine(AnimateColorGrading(2f, 180f, 100f, 15f)); // Animate hue and saturation
+        LensDistortion lens;
+        ChromaticAberration aberration;
+        ColorGrading grading;
+        if (other.gameObject.CompareTag("autoUno"))
+        {
+            lens = lens1;
+            aberration = chromaticAberration1;
+            grading = colorgrading1;
+        }
+        else
+        {
+            lens = lens2;
+            aberration = chromaticAberration2;
+            grading = colorgrading2;
+        }
 
+        Debug.Log("Objeto entró en contacto: " + other.gameObject.name);
+        StartCoroutine(AnimateChangingLensDistortion(lens, 10f));
+        Debug.Log("debug1");
+        StartCoroutine(AnimateChromaticAberration(aberration, 3f, 1f, 15f));
+        Debug.Log("debusexsexnyugiug");
+        StartCoroutine(AnimateColorGrading(grading, 2f, 180f, 100f, 15f)); // Animate hue and saturation
+        Debug.Log("debug");
+        hongoMalo.SetActive(false);
+        
+        Invoke("Reappear", desapareceTiempo);
+    }
+    void Reappear()
+    {
+        hongoMalo.SetActive(true);
     }
 }

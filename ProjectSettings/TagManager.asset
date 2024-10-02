@@ -6,6 +6,7 @@ TagManager:
   tags:
   - autoUno
   - autoDos
+  - Plano
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Ground
   - Car
   - Rampa
-  - 
+  - PostProcessing2
   - 
   - 
   - 

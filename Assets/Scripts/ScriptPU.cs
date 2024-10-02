@@ -31,13 +31,13 @@ public class ScriptPU : MonoBehaviour
     {
         if (other.CompareTag(GameManager.Instance.autoUno))
         {
-            int randomNumber = GetRandomNumber(1, 3);
+            int randomNumber = GetRandomNumber(1, 4);
 
             HandleRandomNumber(randomNumber);
         }
         else if (other.CompareTag(GameManager.Instance.autoDos))
         {
-            int randomNumber2 = GetRandomNumber(1, 3);
+            int randomNumber2 = GetRandomNumber(1, 4);
 
             HandleRandomNumber2(randomNumber2);
         }
@@ -81,6 +81,14 @@ public class ScriptPU : MonoBehaviour
                 GameManager.Instance.mancha1=true;
                 Debug.Log("3");
                 break;
+
+            case 4:
+                GameManager.Instance.mancha1 = true;
+                Debug.Log("3");
+                break;
+                
+
+
         }
     }
     void HandleRandomNumber2(int number)
@@ -100,6 +108,11 @@ public class ScriptPU : MonoBehaviour
 
                 GameManager.Instance.mancha2 = true;
                 Debug.Log("3b");
+                break;
+
+            case 4:
+                GameManager.Instance.mancha2 = true;
+                Debug.Log("3");
                 break;
         }
     }

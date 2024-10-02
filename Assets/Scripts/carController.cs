@@ -193,6 +193,8 @@ public class carController : MonoBehaviour
                     theRB1.isKinematic = true;
                     theRB1.transform.position = new Vector3(783, -1080, -334);
                     theRB1.isKinematic = false;
+                    Vector3 currentRotation = transform.rotation.eulerAngles;
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
                 }
                 if (GameManager.Instance.checkRespawn == 1)
                 {
@@ -201,6 +203,8 @@ public class carController : MonoBehaviour
                     theRB1.transform.position = new Vector3(355, -1084, -484);
                     theRB1.isKinematic = false;
                     theRB1.useGravity = false;
+                    Vector3 currentRotation = transform.rotation.eulerAngles;
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
                 }
                 else if (GameManager.Instance.checkRespawn == 2)
                 {
@@ -209,6 +213,8 @@ public class carController : MonoBehaviour
                     theRB1.transform.position = new Vector3(565, -1084, -236);
                     theRB1.isKinematic = false;
                     theRB1.useGravity = false;
+                    Vector3 currentRotation = transform.rotation.eulerAngles;
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
                 }
                 else if (GameManager.Instance.checkRespawn == 3)
                 {
@@ -217,6 +223,8 @@ public class carController : MonoBehaviour
                     theRB1.transform.position = new Vector3(393, -1084, -45);
                     theRB1.isKinematic = false;
                     theRB1.useGravity = false;
+                    Vector3 currentRotation = transform.rotation.eulerAngles;
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
                 }
                 else if (GameManager.Instance.checkRespawn == 4)
                 {
@@ -224,6 +232,8 @@ public class carController : MonoBehaviour
                     theRB1.isKinematic = true;
                     theRB1.transform.position = new Vector3(783, -1080, -334);
                     theRB1.isKinematic = false;
+                    Vector3 currentRotation = transform.rotation.eulerAngles;
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
                 }
             }
         }
