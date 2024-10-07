@@ -34,7 +34,7 @@ public class hongoMaloSc : MonoBehaviour
 
     private IEnumerator AnimateChangingLensDistortion(LensDistortion lens, float totalDuration)
     {
-        float changeDuration = 8f;
+        float changeDuration = 4f;
         float fadeOutDuration = 2f;
         float totalElapsed = 0f;
 
