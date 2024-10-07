@@ -1,0 +1,1074 @@
+fileFormatVersion: 2
+guid: 951788bc345d4ef4995cf36b9b5c2445
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BezierCircle
+    100002: cabeza hongo.001
+    100004: cabeza hongo.002
+    100006: cabeza hongo.003
+    100008: cabeza hongo.004
+    100010: cabeza hongo.005
+    100012: cabeza hongo.006
+    100014: cabeza hongo.007
+    100016: circuito
+    100018: Colectivo
+    100020: cubo.001
+    100022: cubo.002
+    100024: cubo.003
+    100026: cubo.004
+    100028: cubo.005
+    100030: cubo.006
+    100032: cuerpo hongo.001
+    100034: cuerpo hongo.002
+    100036: cuerpo hongo.003
+    100038: cuerpo hongo.004
+    100040: cuerpo hongo.005
+    100042: cuerpo hongo.006
+    100044: cuerpo hongo.007
+    100046: Estrucutra meta
+    100048: Estrucutra meta.004
+    100050: hongo
+    100052: //RootNode
+    100054: ojo.004
+    100056: ojo.005
+    100058: ojo.006
+    100060: ojo.007
+    100062: ojo.008
+    100064: ojo.009
+    100066: ojo.010
+    100068: paramesh
+    100070: paramesh2
+    100072: paramesh3
+    100074: Plane.001
+    100076: rampa1
+    100078: rampameta
+    100080: rueda
+    100082: rueda.001
+    100084: rueda.002
+    100086: rueda.003
+    100088: Sphere
+    100090: valla.001
+    100092: valla.002
+    100094: valla.003
+    100096: valla.004
+    100098: valla.005
+    400000: BezierCircle
+    400002: cabeza hongo.001
+    400004: cabeza hongo.002
+    400006: cabeza hongo.003
+    400008: cabeza hongo.004
+    400010: cabeza hongo.005
+    400012: cabeza hongo.006
+    400014: cabeza hongo.007
+    400016: circuito
+    400018: Colectivo
+    400020: cubo.001
+    400022: cubo.002
+    400024: cubo.003
+    400026: cubo.004
+    400028: cubo.005
+    400030: cubo.006
+    400032: cuerpo hongo.001
+    400034: cuerpo hongo.002
+    400036: cuerpo hongo.003
+    400038: cuerpo hongo.004
+    400040: cuerpo hongo.005
+    400042: cuerpo hongo.006
+    400044: cuerpo hongo.007
+    400046: Estrucutra meta
+    400048: Estrucutra meta.004
+    400050: hongo
+    400052: //RootNode
+    400054: ojo.004
+    400056: ojo.005
+    400058: ojo.006
+    400060: ojo.007
+    400062: ojo.008
+    400064: ojo.009
+    400066: ojo.010
+    400068: paramesh
+    400070: paramesh2
+    400072: paramesh3
+    400074: Plane.001
+    400076: rampa1
+    400078: rampameta
+    400080: rueda
+    400082: rueda.001
+    400084: rueda.002
+    400086: rueda.003
+    400088: Sphere
+    400090: valla.001
+    400092: valla.002
+    400094: valla.003
+    400096: valla.004
+    400098: valla.005
+    2100000: textura107
+    2100002: Tornillos
+    2100004: Rueda
+    2100006: texturameta
+    2100008: Texturameta
+    2100010: pista
+    2100012: Material
+    2100014: balla
+    2100016: Material.003
+    2100018: Material.004
+    2100020: fondo
+    2100022: Material.001
+    2100024: Material.025
+    2100026: Material.024
+    2100028: Material.026
+    2100030: Material.002
+    2100032: pelotafutboloficial
+    2300000: BezierCircle
+    2300002: cabeza hongo.001
+    2300004: cabeza hongo.002
+    2300006: cabeza hongo.003
+    2300008: cabeza hongo.004
+    2300010: cabeza hongo.005
+    2300012: cabeza hongo.006
+    2300014: cabeza hongo.007
+    2300016: circuito
+    2300018: Colectivo
+    2300020: cubo.001
+    2300022: cubo.002
+    2300024: cubo.003
+    2300026: cubo.004
+    2300028: cubo.005
+    2300030: cubo.006
+    2300032: cuerpo hongo.001
+    2300034: cuerpo hongo.002
+    2300036: cuerpo hongo.003
+    2300038: cuerpo hongo.004
+    2300040: cuerpo hongo.005
+    2300042: cuerpo hongo.006
+    2300044: cuerpo hongo.007
+    2300046: Estrucutra meta
+    2300048: Estrucutra meta.004
+    2300050: ojo.004
+    2300052: ojo.005
+    2300054: ojo.006
+    2300056: ojo.007
+    2300058: ojo.008
+    2300060: ojo.009
+    2300062: ojo.010
+    2300064: paramesh
+    2300066: paramesh2
+    2300068: paramesh3
+    2300070: Plane.001
+    2300072: rampa1
+    2300074: rampameta
+    2300076: rueda
+    2300078: rueda.001
+    2300080: rueda.002
+    2300082: rueda.003
+    2300084: Sphere
+    2300086: valla.001
+    2300088: valla.002
+    2300090: valla.003
+    2300092: valla.004
+    2300094: valla.005
+    3300000: BezierCircle
+    3300002: cabeza hongo.001
+    3300004: cabeza hongo.002
+    3300006: cabeza hongo.003
+    3300008: cabeza hongo.004
+    3300010: cabeza hongo.005
+    3300012: cabeza hongo.006
+    3300014: cabeza hongo.007
+    3300016: circuito
+    3300018: Colectivo
+    3300020: cubo.001
+    3300022: cubo.002
+    3300024: cubo.003
+    3300026: cubo.004
+    3300028: cubo.005
+    3300030: cubo.006
+    3300032: cuerpo hongo.001
+    3300034: cuerpo hongo.002
+    3300036: cuerpo hongo.003
+    3300038: cuerpo hongo.004
+    3300040: cuerpo hongo.005
+    3300042: cuerpo hongo.006
+    3300044: cuerpo hongo.007
+    3300046: Estrucutra meta
+    3300048: Estrucutra meta.004
+    3300050: ojo.004
+    3300052: ojo.005
+    3300054: ojo.006
+    3300056: ojo.007
+    3300058: ojo.008
+    3300060: ojo.009
+    3300062: ojo.010
+    3300064: paramesh
+    3300066: paramesh2
+    3300068: paramesh3
+    3300070: Plane.001
+    3300072: rampa1
+    3300074: rampameta
+    3300076: rueda
+    3300078: rueda.001
+    3300080: rueda.002
+    3300082: rueda.003
+    3300084: Sphere
+    3300086: valla.001
+    3300088: valla.002
+    3300090: valla.003
+    3300092: valla.004
+    3300094: valla.005
+    4300000: BezierCircle
+    4300002: Colectivo
+    4300004: rueda
+    4300006: rueda.001
+    4300008: rueda.002
+    4300010: rueda.003
+    4300012: Estrucutra meta
+    4300014: circuito
+    4300016: valla.001
+    4300018: valla.002
+    4300020: valla.003
+    4300022: valla.005
+    4300024: paramesh
+    4300026: paramesh2
+    4300028: rampa1
+    4300030: rampameta
+    4300032: Plane.001
+    4300034: cubo.006
+    4300036: cubo.005
+    4300038: cubo.004
+    4300040: cubo.003
+    4300042: cubo.002
+    4300044: cubo.001
+    4300046: cuerpo hongo.001
+    4300048: ojo.004
+    4300050: cabeza hongo.001
+    4300052: cuerpo hongo.002
+    4300054: ojo.005
+    4300056: cabeza hongo.002
+    4300058: cuerpo hongo.003
+    4300060: ojo.006
+    4300062: cabeza hongo.003
+    4300064: cuerpo hongo.004
+    4300066: ojo.007
+    4300068: cabeza hongo.004
+    4300070: cuerpo hongo.006
+    4300072: ojo.009
+    4300074: cabeza hongo.006
+    4300076: cuerpo hongo.007
+    4300078: ojo.010
+    4300080: cabeza hongo.007
+    4300082: Estrucutra meta.004
+    4300084: Sphere
+    4300086: paramesh3
+    4300088: cuerpo hongo.005
+    4300090: ojo.008
+    4300092: cabeza hongo.005
+    4300094: valla.004
+    7400000: Colectivo|Action
+    7400002: Colectivo|Action.001
+    7400004: Colectivo|Action.002
+    7400006: Colectivo|Action.003
+    7400008: Colectivo|Action.004
+    7400010: Colectivo|Action.005
+    7400012: Colectivo|Action.006
+    7400014: Colectivo|Action.007
+    7400016: Colectivo|cabeza hongoAction.002
+    7400018: Colectivo|cabeza hongoAction.003
+    7400020: Colectivo|cabeza hongoAction.004
+    7400022: Colectivo|cabeza hongoAction.005
+    7400024: Colectivo|cabeza hongoAction.007
+    7400026: Colectivo|cabeza hongoAction.008
+    7400028: Colectivo|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400030: Colectivo|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400032: Colectivo|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400034: Colectivo|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400036: Colectivo|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400038: Colectivo|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400040: Colectivo|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400042: Colectivo|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400044: Colectivo|cuerpo hongoAction.002
+    7400046: Colectivo|cuerpo hongoAction.003
+    7400048: Colectivo|cuerpo hongoAction.004
+    7400050: Colectivo|cuerpo hongoAction.005
+    7400052: Colectivo|cuerpo hongoAction.007
+    7400054: Colectivo|cuerpo hongoAction.008
+    7400056: Colectivo|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400058: Colectivo|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400060: Colectivo|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400062: Colectivo|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7400064: Colectivo|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7400066: Colectivo|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7400068: Colectivo|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7400070: Colectivo|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7400072: rueda|Action
+    7400074: rueda|Action.001
+    7400076: rueda|Action.002
+    7400078: rueda|Action.003
+    7400080: rueda|Action.004
+    7400082: rueda|Action.005
+    7400084: rueda|Action.006
+    7400086: rueda|Action.007
+    7400088: rueda|cabeza hongoAction.002
+    7400090: rueda|cabeza hongoAction.003
+    7400092: rueda|cabeza hongoAction.004
+    7400094: rueda|cabeza hongoAction.005
+    7400096: rueda|cabeza hongoAction.007
+    7400098: rueda|cabeza hongoAction.008
+    7400100: rueda|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400102: rueda|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400104: rueda|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400106: rueda|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400108: rueda|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400110: rueda|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400112: rueda|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400114: rueda|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400116: rueda|cuerpo hongoAction.002
+    7400118: rueda|cuerpo hongoAction.003
+    7400120: rueda|cuerpo hongoAction.004
+    7400122: rueda|cuerpo hongoAction.005
+    7400124: rueda|cuerpo hongoAction.007
+    7400126: rueda|cuerpo hongoAction.008
+    7400128: rueda|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400130: rueda|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400132: rueda|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400134: rueda|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7400136: rueda|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7400138: rueda|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7400140: rueda|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7400142: rueda|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7400144: rueda.001|Action
+    7400146: rueda.001|Action.001
+    7400148: rueda.001|Action.002
+    7400150: rueda.001|Action.003
+    7400152: rueda.001|Action.004
+    7400154: rueda.001|Action.005
+    7400156: rueda.001|Action.006
+    7400158: rueda.001|Action.007
+    7400160: rueda.001|cabeza hongoAction.002
+    7400162: rueda.001|cabeza hongoAction.003
+    7400164: rueda.001|cabeza hongoAction.004
+    7400166: rueda.001|cabeza hongoAction.005
+    7400168: rueda.001|cabeza hongoAction.007
+    7400170: rueda.001|cabeza hongoAction.008
+    7400172: rueda.001|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400174: rueda.001|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400176: rueda.001|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400178: rueda.001|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400180: rueda.001|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400182: rueda.001|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400184: rueda.001|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400186: rueda.001|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400188: rueda.001|cuerpo hongoAction.002
+    7400190: rueda.001|cuerpo hongoAction.003
+    7400192: rueda.001|cuerpo hongoAction.004
+    7400194: rueda.001|cuerpo hongoAction.005
+    7400196: rueda.001|cuerpo hongoAction.007
+    7400198: rueda.001|cuerpo hongoAction.008
+    7400200: rueda.001|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400202: rueda.001|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400204: rueda.001|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400206: rueda.001|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7400208: rueda.001|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7400210: rueda.001|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7400212: rueda.001|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7400214: rueda.001|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7400216: rueda.002|Action
+    7400218: rueda.002|Action.001
+    7400220: rueda.002|Action.002
+    7400222: rueda.002|Action.003
+    7400224: rueda.002|Action.004
+    7400226: rueda.002|Action.005
+    7400228: rueda.002|Action.006
+    7400230: rueda.002|Action.007
+    7400232: rueda.002|cabeza hongoAction.002
+    7400234: rueda.002|cabeza hongoAction.003
+    7400236: rueda.002|cabeza hongoAction.004
+    7400238: rueda.002|cabeza hongoAction.005
+    7400240: rueda.002|cabeza hongoAction.007
+    7400242: rueda.002|cabeza hongoAction.008
+    7400244: rueda.002|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400246: rueda.002|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400248: rueda.002|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400250: rueda.002|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400252: rueda.002|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400254: rueda.002|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400256: rueda.002|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400258: rueda.002|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400260: rueda.002|cuerpo hongoAction.002
+    7400262: rueda.002|cuerpo hongoAction.003
+    7400264: rueda.002|cuerpo hongoAction.004
+    7400266: rueda.002|cuerpo hongoAction.005
+    7400268: rueda.002|cuerpo hongoAction.007
+    7400270: rueda.002|cuerpo hongoAction.008
+    7400272: rueda.002|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400274: rueda.002|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400276: rueda.002|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400278: rueda.002|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7400280: rueda.002|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7400282: rueda.002|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7400284: rueda.002|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7400286: rueda.002|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7400288: rueda.003|Action
+    7400290: rueda.003|Action.001
+    7400292: rueda.003|Action.002
+    7400294: rueda.003|Action.003
+    7400296: rueda.003|Action.004
+    7400298: rueda.003|Action.005
+    7400300: rueda.003|Action.006
+    7400302: rueda.003|Action.007
+    7400304: rueda.003|cabeza hongoAction.002
+    7400306: rueda.003|cabeza hongoAction.003
+    7400308: rueda.003|cabeza hongoAction.004
+    7400310: rueda.003|cabeza hongoAction.005
+    7400312: rueda.003|cabeza hongoAction.007
+    7400314: rueda.003|cabeza hongoAction.008
+    7400316: rueda.003|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400318: rueda.003|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400320: rueda.003|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400322: rueda.003|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400324: rueda.003|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400326: rueda.003|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400328: rueda.003|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400330: rueda.003|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400332: rueda.003|cuerpo hongoAction.002
+    7400334: rueda.003|cuerpo hongoAction.003
+    7400336: rueda.003|cuerpo hongoAction.004
+    7400338: rueda.003|cuerpo hongoAction.005
+    7400340: rueda.003|cuerpo hongoAction.007
+    7400342: rueda.003|cuerpo hongoAction.008
+    7400344: rueda.003|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400346: rueda.003|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400348: rueda.003|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400350: rueda.003|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7400352: rueda.003|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7400354: rueda.003|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7400356: rueda.003|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7400358: rueda.003|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7400360: cuerpo hongo.001|Action
+    7400362: cuerpo hongo.001|Action.001
+    7400364: cuerpo hongo.001|Action.002
+    7400366: cuerpo hongo.001|Action.003
+    7400368: cuerpo hongo.001|Action.004
+    7400370: cuerpo hongo.001|Action.005
+    7400372: cuerpo hongo.001|Action.006
+    7400374: cuerpo hongo.001|Action.007
+    7400376: cuerpo hongo.001|cabeza hongoAction.002
+    7400378: cuerpo hongo.001|cabeza hongoAction.003
+    7400380: cuerpo hongo.001|cabeza hongoAction.004
+    7400382: cuerpo hongo.001|cabeza hongoAction.005
+    7400384: cuerpo hongo.001|cabeza hongoAction.007
+    7400386: cuerpo hongo.001|cabeza hongoAction.008
+    7400388: cuerpo hongo.001|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400390: cuerpo hongo.001|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400392: cuerpo hongo.001|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400394: cuerpo hongo.001|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400396: cuerpo hongo.001|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400398: cuerpo hongo.001|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400400: cuerpo hongo.001|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400402: cuerpo hongo.001|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400404: cuerpo hongo.001|cuerpo hongoAction.002
+    7400406: cuerpo hongo.001|cuerpo hongoAction.003
+    7400408: cuerpo hongo.001|cuerpo hongoAction.004
+    7400410: cuerpo hongo.001|cuerpo hongoAction.005
+    7400412: cuerpo hongo.001|cuerpo hongoAction.007
+    7400414: cuerpo hongo.001|cuerpo hongoAction.008
+    7400416: cuerpo hongo.001|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400418: cuerpo hongo.001|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400420: cuerpo hongo.001|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400422: cuerpo hongo.001|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7400424: cuerpo hongo.001|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7400426: cuerpo hongo.001|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7400428: cuerpo hongo.001|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7400430: cuerpo hongo.001|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7400432: cabeza hongo.001|Action
+    7400434: cabeza hongo.001|Action.001
+    7400436: cabeza hongo.001|Action.002
+    7400438: cabeza hongo.001|Action.003
+    7400440: cabeza hongo.001|Action.004
+    7400442: cabeza hongo.001|Action.005
+    7400444: cabeza hongo.001|Action.006
+    7400446: cabeza hongo.001|Action.007
+    7400448: cabeza hongo.001|cabeza hongoAction.002
+    7400450: cabeza hongo.001|cabeza hongoAction.003
+    7400452: cabeza hongo.001|cabeza hongoAction.004
+    7400454: cabeza hongo.001|cabeza hongoAction.005
+    7400456: cabeza hongo.001|cabeza hongoAction.007
+    7400458: cabeza hongo.001|cabeza hongoAction.008
+    7400460: cabeza hongo.001|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400462: cabeza hongo.001|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400464: cabeza hongo.001|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400466: cabeza hongo.001|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400468: cabeza hongo.001|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400470: cabeza hongo.001|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400472: cabeza hongo.001|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400474: cabeza hongo.001|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400476: cabeza hongo.001|cuerpo hongoAction.002
+    7400478: cabeza hongo.001|cuerpo hongoAction.003
+    7400480: cabeza hongo.001|cuerpo hongoAction.004
+    7400482: cabeza hongo.001|cuerpo hongoAction.005
+    7400484: cabeza hongo.001|cuerpo hongoAction.007
+    7400486: cabeza hongo.001|cuerpo hongoAction.008
+    7400488: cabeza hongo.001|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400490: cabeza hongo.001|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400492: cabeza hongo.001|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400494: cabeza hongo.001|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7400496: cabeza hongo.001|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7400498: cabeza hongo.001|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7400500: cabeza hongo.001|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7400502: cabeza hongo.001|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7400504: cuerpo hongo.002|Action
+    7400506: cuerpo hongo.002|Action.001
+    7400508: cuerpo hongo.002|Action.002
+    7400510: cuerpo hongo.002|Action.003
+    7400512: cuerpo hongo.002|Action.004
+    7400514: cuerpo hongo.002|Action.005
+    7400516: cuerpo hongo.002|Action.006
+    7400518: cuerpo hongo.002|Action.007
+    7400520: cuerpo hongo.002|cabeza hongoAction.002
+    7400522: cuerpo hongo.002|cabeza hongoAction.003
+    7400524: cuerpo hongo.002|cabeza hongoAction.004
+    7400526: cuerpo hongo.002|cabeza hongoAction.005
+    7400528: cuerpo hongo.002|cabeza hongoAction.007
+    7400530: cuerpo hongo.002|cabeza hongoAction.008
+    7400532: cuerpo hongo.002|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400534: cuerpo hongo.002|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400536: cuerpo hongo.002|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400538: cuerpo hongo.002|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400540: cuerpo hongo.002|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400542: cuerpo hongo.002|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400544: cuerpo hongo.002|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400546: cuerpo hongo.002|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400548: cuerpo hongo.002|cuerpo hongoAction.002
+    7400550: cuerpo hongo.002|cuerpo hongoAction.003
+    7400552: cuerpo hongo.002|cuerpo hongoAction.004
+    7400554: cuerpo hongo.002|cuerpo hongoAction.005
+    7400556: cuerpo hongo.002|cuerpo hongoAction.007
+    7400558: cuerpo hongo.002|cuerpo hongoAction.008
+    7400560: cuerpo hongo.002|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400562: cuerpo hongo.002|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400564: cuerpo hongo.002|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400566: cuerpo hongo.002|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7400568: cuerpo hongo.002|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7400570: cuerpo hongo.002|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7400572: cuerpo hongo.002|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7400574: cuerpo hongo.002|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7400576: cabeza hongo.002|Action
+    7400578: cabeza hongo.002|Action.001
+    7400580: cabeza hongo.002|Action.002
+    7400582: cabeza hongo.002|Action.003
+    7400584: cabeza hongo.002|Action.004
+    7400586: cabeza hongo.002|Action.005
+    7400588: cabeza hongo.002|Action.006
+    7400590: cabeza hongo.002|Action.007
+    7400592: cabeza hongo.002|cabeza hongoAction.002
+    7400594: cabeza hongo.002|cabeza hongoAction.003
+    7400596: cabeza hongo.002|cabeza hongoAction.004
+    7400598: cabeza hongo.002|cabeza hongoAction.005
+    7400600: cabeza hongo.002|cabeza hongoAction.007
+    7400602: cabeza hongo.002|cabeza hongoAction.008
+    7400604: cabeza hongo.002|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400606: cabeza hongo.002|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400608: cabeza hongo.002|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400610: cabeza hongo.002|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400612: cabeza hongo.002|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400614: cabeza hongo.002|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400616: cabeza hongo.002|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400618: cabeza hongo.002|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400620: cabeza hongo.002|cuerpo hongoAction.002
+    7400622: cabeza hongo.002|cuerpo hongoAction.003
+    7400624: cabeza hongo.002|cuerpo hongoAction.004
+    7400626: cabeza hongo.002|cuerpo hongoAction.005
+    7400628: cabeza hongo.002|cuerpo hongoAction.007
+    7400630: cabeza hongo.002|cuerpo hongoAction.008
+    7400632: cabeza hongo.002|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400634: cabeza hongo.002|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400636: cabeza hongo.002|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400638: cabeza hongo.002|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7400640: cabeza hongo.002|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7400642: cabeza hongo.002|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7400644: cabeza hongo.002|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7400646: cabeza hongo.002|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7400648: cuerpo hongo.003|Action
+    7400650: cuerpo hongo.003|Action.001
+    7400652: cuerpo hongo.003|Action.002
+    7400654: cuerpo hongo.003|Action.003
+    7400656: cuerpo hongo.003|Action.004
+    7400658: cuerpo hongo.003|Action.005
+    7400660: cuerpo hongo.003|Action.006
+    7400662: cuerpo hongo.003|Action.007
+    7400664: cuerpo hongo.003|cabeza hongoAction.002
+    7400666: cuerpo hongo.003|cabeza hongoAction.003
+    7400668: cuerpo hongo.003|cabeza hongoAction.004
+    7400670: cuerpo hongo.003|cabeza hongoAction.005
+    7400672: cuerpo hongo.003|cabeza hongoAction.007
+    7400674: cuerpo hongo.003|cabeza hongoAction.008
+    7400676: cuerpo hongo.003|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400678: cuerpo hongo.003|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400680: cuerpo hongo.003|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400682: cuerpo hongo.003|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400684: cuerpo hongo.003|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400686: cuerpo hongo.003|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400688: cuerpo hongo.003|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400690: cuerpo hongo.003|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400692: cuerpo hongo.003|cuerpo hongoAction.002
+    7400694: cuerpo hongo.003|cuerpo hongoAction.003
+    7400696: cuerpo hongo.003|cuerpo hongoAction.004
+    7400698: cuerpo hongo.003|cuerpo hongoAction.005
+    7400700: cuerpo hongo.003|cuerpo hongoAction.007
+    7400702: cuerpo hongo.003|cuerpo hongoAction.008
+    7400704: cuerpo hongo.003|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400706: cuerpo hongo.003|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400708: cuerpo hongo.003|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400710: cuerpo hongo.003|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7400712: cuerpo hongo.003|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7400714: cuerpo hongo.003|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7400716: cuerpo hongo.003|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7400718: cuerpo hongo.003|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7400720: cabeza hongo.003|Action
+    7400722: cabeza hongo.003|Action.001
+    7400724: cabeza hongo.003|Action.002
+    7400726: cabeza hongo.003|Action.003
+    7400728: cabeza hongo.003|Action.004
+    7400730: cabeza hongo.003|Action.005
+    7400732: cabeza hongo.003|Action.006
+    7400734: cabeza hongo.003|Action.007
+    7400736: cabeza hongo.003|cabeza hongoAction.002
+    7400738: cabeza hongo.003|cabeza hongoAction.003
+    7400740: cabeza hongo.003|cabeza hongoAction.004
+    7400742: cabeza hongo.003|cabeza hongoAction.005
+    7400744: cabeza hongo.003|cabeza hongoAction.007
+    7400746: cabeza hongo.003|cabeza hongoAction.008
+    7400748: cabeza hongo.003|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400750: cabeza hongo.003|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400752: cabeza hongo.003|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400754: cabeza hongo.003|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400756: cabeza hongo.003|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400758: cabeza hongo.003|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400760: cabeza hongo.003|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400762: cabeza hongo.003|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400764: cabeza hongo.003|cuerpo hongoAction.002
+    7400766: cabeza hongo.003|cuerpo hongoAction.003
+    7400768: cabeza hongo.003|cuerpo hongoAction.004
+    7400770: cabeza hongo.003|cuerpo hongoAction.005
+    7400772: cabeza hongo.003|cuerpo hongoAction.007
+    7400774: cabeza hongo.003|cuerpo hongoAction.008
+    7400776: cabeza hongo.003|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400778: cabeza hongo.003|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400780: cabeza hongo.003|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400782: cabeza hongo.003|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7400784: cabeza hongo.003|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7400786: cabeza hongo.003|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7400788: cabeza hongo.003|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7400790: cabeza hongo.003|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7400792: cuerpo hongo.004|Action
+    7400794: cuerpo hongo.004|Action.001
+    7400796: cuerpo hongo.004|Action.002
+    7400798: cuerpo hongo.004|Action.003
+    7400800: cuerpo hongo.004|Action.004
+    7400802: cuerpo hongo.004|Action.005
+    7400804: cuerpo hongo.004|Action.006
+    7400806: cuerpo hongo.004|Action.007
+    7400808: cuerpo hongo.004|cabeza hongoAction.002
+    7400810: cuerpo hongo.004|cabeza hongoAction.003
+    7400812: cuerpo hongo.004|cabeza hongoAction.004
+    7400814: cuerpo hongo.004|cabeza hongoAction.005
+    7400816: cuerpo hongo.004|cabeza hongoAction.007
+    7400818: cuerpo hongo.004|cabeza hongoAction.008
+    7400820: cuerpo hongo.004|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400822: cuerpo hongo.004|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400824: cuerpo hongo.004|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400826: cuerpo hongo.004|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400828: cuerpo hongo.004|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400830: cuerpo hongo.004|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400832: cuerpo hongo.004|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400834: cuerpo hongo.004|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400836: cuerpo hongo.004|cuerpo hongoAction.002
+    7400838: cuerpo hongo.004|cuerpo hongoAction.003
+    7400840: cuerpo hongo.004|cuerpo hongoAction.004
+    7400842: cuerpo hongo.004|cuerpo hongoAction.005
+    7400844: cuerpo hongo.004|cuerpo hongoAction.007
+    7400846: cuerpo hongo.004|cuerpo hongoAction.008
+    7400848: cuerpo hongo.004|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400850: cuerpo hongo.004|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400852: cuerpo hongo.004|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400854: cuerpo hongo.004|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7400856: cuerpo hongo.004|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7400858: cuerpo hongo.004|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7400860: cuerpo hongo.004|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7400862: cuerpo hongo.004|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7400864: cabeza hongo.004|Action
+    7400866: cabeza hongo.004|Action.001
+    7400868: cabeza hongo.004|Action.002
+    7400870: cabeza hongo.004|Action.003
+    7400872: cabeza hongo.004|Action.004
+    7400874: cabeza hongo.004|Action.005
+    7400876: cabeza hongo.004|Action.006
+    7400878: cabeza hongo.004|Action.007
+    7400880: cabeza hongo.004|cabeza hongoAction.002
+    7400882: cabeza hongo.004|cabeza hongoAction.003
+    7400884: cabeza hongo.004|cabeza hongoAction.004
+    7400886: cabeza hongo.004|cabeza hongoAction.005
+    7400888: cabeza hongo.004|cabeza hongoAction.007
+    7400890: cabeza hongo.004|cabeza hongoAction.008
+    7400892: cabeza hongo.004|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400894: cabeza hongo.004|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400896: cabeza hongo.004|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400898: cabeza hongo.004|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400900: cabeza hongo.004|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400902: cabeza hongo.004|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400904: cabeza hongo.004|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400906: cabeza hongo.004|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400908: cabeza hongo.004|cuerpo hongoAction.002
+    7400910: cabeza hongo.004|cuerpo hongoAction.003
+    7400912: cabeza hongo.004|cuerpo hongoAction.004
+    7400914: cabeza hongo.004|cuerpo hongoAction.005
+    7400916: cabeza hongo.004|cuerpo hongoAction.007
+    7400918: cabeza hongo.004|cuerpo hongoAction.008
+    7400920: cabeza hongo.004|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400922: cabeza hongo.004|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400924: cabeza hongo.004|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400926: cabeza hongo.004|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7400928: cabeza hongo.004|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7400930: cabeza hongo.004|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7400932: cabeza hongo.004|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7400934: cabeza hongo.004|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7400936: ojo.008|Action
+    7400938: ojo.008|Action.001
+    7400940: ojo.008|Action.002
+    7400942: ojo.008|Action.003
+    7400944: ojo.008|Action.004
+    7400946: ojo.008|Action.005
+    7400948: ojo.008|Action.006
+    7400950: ojo.008|Action.007
+    7400952: ojo.008|cabeza hongoAction.002
+    7400954: ojo.008|cabeza hongoAction.003
+    7400956: ojo.008|cabeza hongoAction.004
+    7400958: ojo.008|cabeza hongoAction.005
+    7400960: ojo.008|cabeza hongoAction.007
+    7400962: ojo.008|cabeza hongoAction.008
+    7400964: ojo.008|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7400966: ojo.008|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7400968: ojo.008|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7400970: ojo.008|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7400972: ojo.008|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7400974: ojo.008|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7400976: ojo.008|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7400978: ojo.008|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7400980: ojo.008|cuerpo hongoAction.002
+    7400982: ojo.008|cuerpo hongoAction.003
+    7400984: ojo.008|cuerpo hongoAction.004
+    7400986: ojo.008|cuerpo hongoAction.005
+    7400988: ojo.008|cuerpo hongoAction.007
+    7400990: ojo.008|cuerpo hongoAction.008
+    7400992: ojo.008|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7400994: ojo.008|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7400996: ojo.008|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7400998: ojo.008|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7401000: ojo.008|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7401002: ojo.008|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7401004: ojo.008|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7401006: ojo.008|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7401008: cuerpo hongo.005|Action
+    7401010: cuerpo hongo.005|Action.001
+    7401012: cuerpo hongo.005|Action.002
+    7401014: cuerpo hongo.005|Action.003
+    7401016: cuerpo hongo.005|Action.004
+    7401018: cuerpo hongo.005|Action.005
+    7401020: cuerpo hongo.005|Action.006
+    7401022: cuerpo hongo.005|Action.007
+    7401024: cuerpo hongo.005|cabeza hongoAction.002
+    7401026: cuerpo hongo.005|cabeza hongoAction.003
+    7401028: cuerpo hongo.005|cabeza hongoAction.004
+    7401030: cuerpo hongo.005|cabeza hongoAction.005
+    7401032: cuerpo hongo.005|cabeza hongoAction.007
+    7401034: cuerpo hongo.005|cabeza hongoAction.008
+    7401036: cuerpo hongo.005|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7401038: cuerpo hongo.005|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7401040: cuerpo hongo.005|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7401042: cuerpo hongo.005|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7401044: cuerpo hongo.005|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7401046: cuerpo hongo.005|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7401048: cuerpo hongo.005|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7401050: cuerpo hongo.005|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7401052: cuerpo hongo.005|cuerpo hongoAction.002
+    7401054: cuerpo hongo.005|cuerpo hongoAction.003
+    7401056: cuerpo hongo.005|cuerpo hongoAction.004
+    7401058: cuerpo hongo.005|cuerpo hongoAction.005
+    7401060: cuerpo hongo.005|cuerpo hongoAction.007
+    7401062: cuerpo hongo.005|cuerpo hongoAction.008
+    7401064: cuerpo hongo.005|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7401066: cuerpo hongo.005|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7401068: cuerpo hongo.005|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7401070: cuerpo hongo.005|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7401072: cuerpo hongo.005|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7401074: cuerpo hongo.005|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7401076: cuerpo hongo.005|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7401078: cuerpo hongo.005|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7401080: cabeza hongo.005|Action
+    7401082: cabeza hongo.005|Action.001
+    7401084: cabeza hongo.005|Action.002
+    7401086: cabeza hongo.005|Action.003
+    7401088: cabeza hongo.005|Action.004
+    7401090: cabeza hongo.005|Action.005
+    7401092: cabeza hongo.005|Action.006
+    7401094: cabeza hongo.005|Action.007
+    7401096: cabeza hongo.005|cabeza hongoAction.002
+    7401098: cabeza hongo.005|cabeza hongoAction.003
+    7401100: cabeza hongo.005|cabeza hongoAction.004
+    7401102: cabeza hongo.005|cabeza hongoAction.005
+    7401104: cabeza hongo.005|cabeza hongoAction.007
+    7401106: cabeza hongo.005|cabeza hongoAction.008
+    7401108: cabeza hongo.005|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7401110: cabeza hongo.005|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7401112: cabeza hongo.005|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7401114: cabeza hongo.005|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7401116: cabeza hongo.005|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7401118: cabeza hongo.005|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7401120: cabeza hongo.005|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7401122: cabeza hongo.005|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7401124: cabeza hongo.005|cuerpo hongoAction.002
+    7401126: cabeza hongo.005|cuerpo hongoAction.003
+    7401128: cabeza hongo.005|cuerpo hongoAction.004
+    7401130: cabeza hongo.005|cuerpo hongoAction.005
+    7401132: cabeza hongo.005|cuerpo hongoAction.007
+    7401134: cabeza hongo.005|cuerpo hongoAction.008
+    7401136: cabeza hongo.005|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7401138: cabeza hongo.005|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7401140: cabeza hongo.005|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7401142: cabeza hongo.005|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7401144: cabeza hongo.005|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7401146: cabeza hongo.005|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7401148: cabeza hongo.005|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7401150: cabeza hongo.005|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7401152: cuerpo hongo.006|Action
+    7401154: cuerpo hongo.006|Action.001
+    7401156: cuerpo hongo.006|Action.002
+    7401158: cuerpo hongo.006|Action.003
+    7401160: cuerpo hongo.006|Action.004
+    7401162: cuerpo hongo.006|Action.005
+    7401164: cuerpo hongo.006|Action.006
+    7401166: cuerpo hongo.006|Action.007
+    7401168: cuerpo hongo.006|cabeza hongoAction.002
+    7401170: cuerpo hongo.006|cabeza hongoAction.003
+    7401172: cuerpo hongo.006|cabeza hongoAction.004
+    7401174: cuerpo hongo.006|cabeza hongoAction.005
+    7401176: cuerpo hongo.006|cabeza hongoAction.007
+    7401178: cuerpo hongo.006|cabeza hongoAction.008
+    7401180: cuerpo hongo.006|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7401182: cuerpo hongo.006|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7401184: cuerpo hongo.006|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7401186: cuerpo hongo.006|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7401188: cuerpo hongo.006|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7401190: cuerpo hongo.006|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7401192: cuerpo hongo.006|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7401194: cuerpo hongo.006|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7401196: cuerpo hongo.006|cuerpo hongoAction.002
+    7401198: cuerpo hongo.006|cuerpo hongoAction.003
+    7401200: cuerpo hongo.006|cuerpo hongoAction.004
+    7401202: cuerpo hongo.006|cuerpo hongoAction.005
+    7401204: cuerpo hongo.006|cuerpo hongoAction.007
+    7401206: cuerpo hongo.006|cuerpo hongoAction.008
+    7401208: cuerpo hongo.006|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7401210: cuerpo hongo.006|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7401212: cuerpo hongo.006|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7401214: cuerpo hongo.006|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7401216: cuerpo hongo.006|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7401218: cuerpo hongo.006|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7401220: cuerpo hongo.006|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7401222: cuerpo hongo.006|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7401224: cabeza hongo.006|Action
+    7401226: cabeza hongo.006|Action.001
+    7401228: cabeza hongo.006|Action.002
+    7401230: cabeza hongo.006|Action.003
+    7401232: cabeza hongo.006|Action.004
+    7401234: cabeza hongo.006|Action.005
+    7401236: cabeza hongo.006|Action.006
+    7401238: cabeza hongo.006|Action.007
+    7401240: cabeza hongo.006|cabeza hongoAction.002
+    7401242: cabeza hongo.006|cabeza hongoAction.003
+    7401244: cabeza hongo.006|cabeza hongoAction.004
+    7401246: cabeza hongo.006|cabeza hongoAction.005
+    7401248: cabeza hongo.006|cabeza hongoAction.007
+    7401250: cabeza hongo.006|cabeza hongoAction.008
+    7401252: cabeza hongo.006|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7401254: cabeza hongo.006|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7401256: cabeza hongo.006|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7401258: cabeza hongo.006|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7401260: cabeza hongo.006|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7401262: cabeza hongo.006|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7401264: cabeza hongo.006|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7401266: cabeza hongo.006|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7401268: cabeza hongo.006|cuerpo hongoAction.002
+    7401270: cabeza hongo.006|cuerpo hongoAction.003
+    7401272: cabeza hongo.006|cuerpo hongoAction.004
+    7401274: cabeza hongo.006|cuerpo hongoAction.005
+    7401276: cabeza hongo.006|cuerpo hongoAction.007
+    7401278: cabeza hongo.006|cuerpo hongoAction.008
+    7401280: cabeza hongo.006|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7401282: cabeza hongo.006|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7401284: cabeza hongo.006|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7401286: cabeza hongo.006|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7401288: cabeza hongo.006|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7401290: cabeza hongo.006|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7401292: cabeza hongo.006|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7401294: cabeza hongo.006|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7401296: cuerpo hongo.007|Action
+    7401298: cuerpo hongo.007|Action.001
+    7401300: cuerpo hongo.007|Action.002
+    7401302: cuerpo hongo.007|Action.003
+    7401304: cuerpo hongo.007|Action.004
+    7401306: cuerpo hongo.007|Action.005
+    7401308: cuerpo hongo.007|Action.006
+    7401310: cuerpo hongo.007|Action.007
+    7401312: cuerpo hongo.007|cabeza hongoAction.002
+    7401314: cuerpo hongo.007|cabeza hongoAction.003
+    7401316: cuerpo hongo.007|cabeza hongoAction.004
+    7401318: cuerpo hongo.007|cabeza hongoAction.005
+    7401320: cuerpo hongo.007|cabeza hongoAction.007
+    7401322: cuerpo hongo.007|cabeza hongoAction.008
+    7401324: cuerpo hongo.007|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7401326: cuerpo hongo.007|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7401328: cuerpo hongo.007|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7401330: cuerpo hongo.007|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7401332: cuerpo hongo.007|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7401334: cuerpo hongo.007|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7401336: cuerpo hongo.007|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7401338: cuerpo hongo.007|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7401340: cuerpo hongo.007|cuerpo hongoAction.002
+    7401342: cuerpo hongo.007|cuerpo hongoAction.003
+    7401344: cuerpo hongo.007|cuerpo hongoAction.004
+    7401346: cuerpo hongo.007|cuerpo hongoAction.005
+    7401348: cuerpo hongo.007|cuerpo hongoAction.007
+    7401350: cuerpo hongo.007|cuerpo hongoAction.008
+    7401352: cuerpo hongo.007|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7401354: cuerpo hongo.007|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7401356: cuerpo hongo.007|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7401358: cuerpo hongo.007|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7401360: cuerpo hongo.007|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7401362: cuerpo hongo.007|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7401364: cuerpo hongo.007|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7401366: cuerpo hongo.007|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    7401368: cabeza hongo.007|Action
+    7401370: cabeza hongo.007|Action.001
+    7401372: cabeza hongo.007|Action.002
+    7401374: cabeza hongo.007|Action.003
+    7401376: cabeza hongo.007|Action.004
+    7401378: cabeza hongo.007|Action.005
+    7401380: cabeza hongo.007|Action.006
+    7401382: cabeza hongo.007|Action.007
+    7401384: cabeza hongo.007|cabeza hongoAction.002
+    7401386: cabeza hongo.007|cabeza hongoAction.003
+    7401388: cabeza hongo.007|cabeza hongoAction.004
+    7401390: cabeza hongo.007|cabeza hongoAction.005
+    7401392: cabeza hongo.007|cabeza hongoAction.007
+    7401394: cabeza hongo.007|cabeza hongoAction.008
+    7401396: cabeza hongo.007|cabeza hongo|cabeza hongo|cabeza hongoAction
+    7401398: cabeza hongo.007|cabeza hongo|cabeza hongo|cabeza hongoAction.001
+    7401400: cabeza hongo.007|cabeza hongo|cabeza hongo|cabeza hongoAction.002
+    7401402: cabeza hongo.007|cabeza hongo|cabeza hongo|cabeza hongoAction.003
+    7401404: cabeza hongo.007|cabeza hongo|cabeza hongo|cuerpo hongoAction
+    7401406: cabeza hongo.007|cabeza hongo|cabeza hongo|cuerpo hongoAction.001
+    7401408: cabeza hongo.007|cabeza hongo|cabeza hongo|cuerpo hongoAction.002
+    7401410: cabeza hongo.007|cabeza hongo|cabeza hongo|cuerpo hongoAction.003
+    7401412: cabeza hongo.007|cuerpo hongoAction.002
+    7401414: cabeza hongo.007|cuerpo hongoAction.003
+    7401416: cabeza hongo.007|cuerpo hongoAction.004
+    7401418: cabeza hongo.007|cuerpo hongoAction.005
+    7401420: cabeza hongo.007|cuerpo hongoAction.007
+    7401422: cabeza hongo.007|cuerpo hongoAction.008
+    7401424: cabeza hongo.007|cuerpo hongo|cuerpo hongo|cabeza hongoAction
+    7401426: cabeza hongo.007|cuerpo hongo|cuerpo hongo|cabeza hongoAction.001
+    7401428: cabeza hongo.007|cuerpo hongo|cuerpo hongo|cabeza hongoAction.002
+    7401430: cabeza hongo.007|cuerpo hongo|cuerpo hongo|cabeza hongoAction.003
+    7401432: cabeza hongo.007|cuerpo hongo|cuerpo hongo|cuerpo hongoAction
+    7401434: cabeza hongo.007|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.001
+    7401436: cabeza hongo.007|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.002
+    7401438: cabeza hongo.007|cuerpo hongo|cuerpo hongo|cuerpo hongoAction.003
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
