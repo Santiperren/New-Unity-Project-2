@@ -81,27 +81,27 @@ public class carController : MonoBehaviour
         }
         if (GameManager.Instance.mancha1 == true)
         {
-            power3.SetActive(true);
+            GameManager.Instance.power3.SetActive(true);
             if (Input.GetButtonDown("A"))
             {
                 GameManager.Instance.mancha2B = true;
                 power3Act = true;
                 power3ActFin = Time.time + power3Dur;
                 GameManager.Instance.mancha1 = false;
-                power3.SetActive(false);
+                GameManager.Instance.power3.SetActive(false);
             }
         }
         
         if (GameManager.Instance.noDobla1 == true)
         {
-            power2.SetActive(true);
+            GameManager.Instance.power2.SetActive(true);
             if (Input.GetButtonDown("A"))
             {
                 GameManager.Instance.noDobla2B = true;
                 power2Act = true;
                 power2ActFin = Time.time + power2Dur;
                 GameManager.Instance.noDobla1 = false;
-                power2.SetActive(false);
+                GameManager.Instance.power2.SetActive(false);
             }
             if (power2Act == true)
             {
@@ -128,7 +128,7 @@ public class carController : MonoBehaviour
             speedInput = 0f;
             if (GameManager.Instance.masVelocidad1 == true)
             {
-                power1.SetActive(true);
+                GameManager.Instance.power1.SetActive(true);
             }
             if (Input.GetAxis("Vertical") < 0)
             {
@@ -304,7 +304,7 @@ public class carController : MonoBehaviour
       {
 
         GameManager.Instance.masVelocidad1 = false;
-        power1.SetActive(false);
+        GameManager.Instance.power1.SetActive(false);
       }
     void powerUp2()
     {

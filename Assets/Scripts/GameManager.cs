@@ -36,7 +36,13 @@ public class GameManager : MonoBehaviour
     public bool afueraPista = false;
     public GameObject masVelocidadUno;
     public GameObject masVelocidaDos;
-    
+    public GameObject power1;
+    public GameObject power2;
+    public GameObject power3;
+    public GameObject power1B;
+    public GameObject power2B;
+    public GameObject power3B;
+
 
     private void Awake()
     {
