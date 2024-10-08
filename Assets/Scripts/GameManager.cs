@@ -59,7 +59,12 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-       
+        power1 = GameObject.Find("hongo1");
+        power2 = GameObject.Find("noDobla1");
+        power3 = GameObject.Find("blbla");
+        power1B = GameObject.Find("hongo2p");
+        power2B = GameObject.Find("noDobla2");
+        power3B = GameObject.Find("mancha2p");
     }
 
     void Update()

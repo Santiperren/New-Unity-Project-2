@@ -34,10 +34,7 @@ public class carController : MonoBehaviour
     public float power2Dur = 3f;
     private float power2ActFin;
     public Image imagen;
-    public GameObject imagenTinta;
-    public GameObject power1;
-    public GameObject power2;
-    public GameObject power3;
+    public GameObject imagenTinta;    
     int i = 0;
     public Camera camaraNB;
     public Camera camara2B;

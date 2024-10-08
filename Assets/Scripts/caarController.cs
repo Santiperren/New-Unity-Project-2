@@ -35,10 +35,7 @@ public class caarController : MonoBehaviour
     private float power3ActFin;
     public Image imagen;
     public Text vueltas;
-    public GameObject imagenTinta;
-    public GameObject power1;
-    public GameObject power2;
-    public GameObject power3;
+    public GameObject imagenTinta;    
     public Camera camaraN;
     public Camera camara2;
     public Camera camaraTibu;

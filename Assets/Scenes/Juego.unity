@@ -580,9 +580,6 @@ MonoBehaviour:
   imagen: {fileID: 1139688311}
   vueltas: {fileID: 1821657577}
   imagenTinta: {fileID: 1139688309}
-  power1: {fileID: 327662593}
-  power2: {fileID: 628866609}
-  power3: {fileID: 1689456443}
   camaraN: {fileID: 534669904}
   camara2: {fileID: 954999412}
   camaraTibu: {fileID: 1927194405}
@@ -1835,7 +1832,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 843219767}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5828,8 +5825,8 @@ RectTransform:
   m_Children:
   - {fileID: 1821657576}
   - {fileID: 1139688310}
-  - {fileID: 1689456444}
   - {fileID: 327662594}
+  - {fileID: 1689456444}
   - {fileID: 628866610}
   m_Father: {fileID: 138397151}
   m_RootOrder: 4
@@ -6169,12 +6166,12 @@ MonoBehaviour:
   afueraPista: 0
   masVelocidadUno: {fileID: 0}
   masVelocidaDos: {fileID: 0}
-  power1: {fileID: 0}
-  power2: {fileID: 0}
-  power3: {fileID: 0}
+  power1: {fileID: 1845125605}
+  power2: {fileID: 1337286105}
+  power3: {fileID: 1758386945}
   power1B: {fileID: 327662593}
-  power2B: {fileID: 0}
-  power3B: {fileID: 0}
+  power2B: {fileID: 628866609}
+  power3B: {fileID: 1689456443}
 --- !u!4 &898568270
 Transform:
   m_ObjectHideFlags: 0
@@ -15661,7 +15658,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 843219767}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15862,7 +15859,7 @@ GameObject:
   - component: {fileID: 1758386948}
   - component: {fileID: 1758386947}
   m_Layer: 10
-  m_Name: mancha2p (1)
+  m_Name: blbla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31163,9 +31160,6 @@ MonoBehaviour:
   imagen: {fileID: 0}
   vueltas: {fileID: 0}
   imagenTinta: {fileID: 0}
-  power1: {fileID: 0}
-  power2: {fileID: 0}
-  power3: {fileID: 0}
   camaraN: {fileID: 0}
   camara2: {fileID: 0}
   camaraTibu: {fileID: 0}
@@ -33655,9 +33649,6 @@ MonoBehaviour:
   power2Dur: 3
   imagen: {fileID: 1758798502}
   imagenTinta: {fileID: 1758798500}
-  power1: {fileID: 1845125605}
-  power2: {fileID: 1337286105}
-  power3: {fileID: 1758386945}
   camaraNB: {fileID: 665165221}
   camara2B: {fileID: 781649537}
   camaraTibuB: {fileID: 1366681321}
