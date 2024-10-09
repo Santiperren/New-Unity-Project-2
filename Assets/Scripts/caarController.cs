@@ -88,6 +88,7 @@ public class caarController : MonoBehaviour
             power3.SetActive(true);
             if (Input.GetKey(KeyCode.P))
             {
+                soundmanagerscript.Instance.PlaySound(soundmanagerscript.Instance.mancha);
                 GameManager.Instance.mancha1B = true;
 
                 power3Act = true;

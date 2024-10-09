@@ -68,6 +68,7 @@ public class carController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetButtonDown("LB"))
         {
             i++;
@@ -84,6 +85,7 @@ public class carController : MonoBehaviour
             power3.SetActive(true);
             if (Input.GetButtonDown("A"))
             {
+                soundmanagerscript.Instance.PlaySound(soundmanagerscript.Instance.mancha);
                 GameManager.Instance.mancha2B = true;
                 power3Act = true;
                 power3ActFin = Time.time + power3Dur;
@@ -292,8 +294,10 @@ public class carController : MonoBehaviour
     }
     private IEnumerator MostrarYDesaparecer()
     {
+
         //imagen.enabled = true;
-        imagenTinta.SetActive(true);        
+        imagenTinta.SetActive(true);
+       
         yield return new WaitForSeconds(5f);        
         imagenTinta.SetActive(false);
         GameManager.Instance.mancha1B = false;

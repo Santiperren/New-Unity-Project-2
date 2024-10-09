@@ -334,6 +334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 0}
+  cajita: {fileID: 8300000, guid: 1323abb920403a547aa34f1966f1046c, type: 3}
 --- !u!82 &741142385
 AudioSource:
   m_ObjectHideFlags: 0

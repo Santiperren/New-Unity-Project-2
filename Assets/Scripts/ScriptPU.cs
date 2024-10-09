@@ -29,15 +29,17 @@ public class ScriptPU : MonoBehaviour
     
     public void OnTriggerEnter(Collider other)
     {
+       
+        soundmanagerscript.Instance.PlaySound(soundmanagerscript.Instance.cajita);
         if (other.CompareTag(GameManager.Instance.autoUno))
         {
-            int randomNumber = GetRandomNumber(1, 4);
+            int randomNumber = GetRandomNumber(1, 3);
 
             HandleRandomNumber(randomNumber);
         }
         else if (other.CompareTag(GameManager.Instance.autoDos))
         {
-            int randomNumber2 = GetRandomNumber(1, 4);
+            int randomNumber2 = GetRandomNumber(1, 3);
 
             HandleRandomNumber2(randomNumber2);
         }
@@ -81,14 +83,6 @@ public class ScriptPU : MonoBehaviour
                 GameManager.Instance.mancha1=true;
                 Debug.Log("3");
                 break;
-
-            case 4:
-                GameManager.Instance.noDobla1 = true;
-                Debug.Log("2");
-                break;
-                
-
-
         }
     }
     void HandleRandomNumber2(int number)
@@ -106,15 +100,8 @@ public class ScriptPU : MonoBehaviour
                 Debug.Log("2b");
                 break;
             case 3:
-                
                 GameManager.Instance.mancha2 = true;
                 Debug.Log("3b");
-                break;
-
-            case 4:
-                
-                GameManager.Instance.noDobla2 = true;
-                Debug.Log("2");
                 break;
         }
     }
