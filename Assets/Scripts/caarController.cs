@@ -71,12 +71,12 @@ public class caarController : MonoBehaviour
 
     {
       
-            if (Input.GetKeyDown(KeyCode.C))
-            {
-                i++;
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            i++;
 
-                cambiarCamaras();
-            }
+            cambiarCamaras();
+        }
   
         if(GameManager.Instance.mancha2B == true)
         {
