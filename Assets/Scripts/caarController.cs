@@ -39,6 +39,9 @@ public class caarController : MonoBehaviour
     public Camera camaraN;
     public Camera camara2;
     public Camera camaraTibu;
+    public GameObject power1;
+    public GameObject power2;
+    public GameObject power3;
     int i = 0;
     public GameObject planecollider;
    
@@ -82,7 +85,7 @@ public class caarController : MonoBehaviour
         }
         if (GameManager.Instance.mancha2 == true)
         {
-            GameManager.Instance.power3B.SetActive(true);
+            power3.SetActive(true);
             if (Input.GetKey(KeyCode.P))
             {
                 GameManager.Instance.mancha1B = true;
@@ -90,19 +93,19 @@ public class caarController : MonoBehaviour
                 power3Act = true;
                 power3ActFin = Time.time + power3Dur;
                 GameManager.Instance.mancha2 = false;
-                GameManager.Instance.power3B.SetActive(false);
+                power3.SetActive(false);
             }
         }
         if (GameManager.Instance.noDobla2 == true)
         {
-            GameManager.Instance.power2B.SetActive(true);
+            power2.SetActive(true);
             if (Input.GetKey(KeyCode.P))
             {
                 GameManager.Instance.noDobla1B = true;
                 power2Act = true;
                 power2ActFin = Time.time + power2Dur;
                 GameManager.Instance.noDobla2 = false;
-                GameManager.Instance.power2B.SetActive(false);
+                power2.SetActive(false);
             }
             if (power2Act == true)
             {
@@ -130,7 +133,7 @@ public class caarController : MonoBehaviour
             speedInput = 0f;
             if (GameManager.Instance.masVelocidad2 == true)
             {
-                GameManager.Instance.power1B.SetActive(true);
+                power1.SetActive(true);
             }
 
             if (Input.GetAxis("Vertical2") < 0)
@@ -311,7 +314,7 @@ public class caarController : MonoBehaviour
     {
 
         GameManager.Instance.masVelocidad2 = false;
-        GameManager.Instance.power1B.SetActive(false);
+        power1.SetActive(false);
     }
     void powerUp2()
     {

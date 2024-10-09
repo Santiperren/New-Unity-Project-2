@@ -34,7 +34,10 @@ public class carController : MonoBehaviour
     public float power2Dur = 3f;
     private float power2ActFin;
     public Image imagen;
-    public GameObject imagenTinta;    
+    public GameObject imagenTinta;
+    public GameObject power1;
+    public GameObject power2;
+    public GameObject power3;
     int i = 0;
     public Camera camaraNB;
     public Camera camara2B;
@@ -78,27 +81,27 @@ public class carController : MonoBehaviour
         }
         if (GameManager.Instance.mancha1 == true)
         {
-            GameManager.Instance.power3.SetActive(true);
+            power3.SetActive(true);
             if (Input.GetButtonDown("A"))
             {
                 GameManager.Instance.mancha2B = true;
                 power3Act = true;
                 power3ActFin = Time.time + power3Dur;
                 GameManager.Instance.mancha1 = false;
-                GameManager.Instance.power3.SetActive(false);
+                power3.SetActive(false);
             }
         }
         
         if (GameManager.Instance.noDobla1 == true)
         {
-            GameManager.Instance.power2.SetActive(true);
+            power2.SetActive(true);
             if (Input.GetButtonDown("A"))
             {
                 GameManager.Instance.noDobla2B = true;
                 power2Act = true;
                 power2ActFin = Time.time + power2Dur;
                 GameManager.Instance.noDobla1 = false;
-                GameManager.Instance.power2.SetActive(false);
+                power2.SetActive(false);
             }
             if (power2Act == true)
             {
@@ -125,7 +128,7 @@ public class carController : MonoBehaviour
             speedInput = 0f;
             if (GameManager.Instance.masVelocidad1 == true)
             {
-                GameManager.Instance.power1.SetActive(true);
+                power1.SetActive(true);
             }
             if (Input.GetAxis("Vertical") < 0)
             {
@@ -301,7 +304,7 @@ public class carController : MonoBehaviour
       {
 
         GameManager.Instance.masVelocidad1 = false;
-        GameManager.Instance.power1.SetActive(false);
+        power1.SetActive(false);
       }
     void powerUp2()
     {

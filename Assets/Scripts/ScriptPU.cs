@@ -96,28 +96,23 @@ public class ScriptPU : MonoBehaviour
         switch (number)
         {
             case 1:
-                GameManager.Instance.mancha2 = false;
-                GameManager.Instance.noDobla2 = false;
-                GameManager.Instance.power1.SetActive(false);
+                
                 GameManager.Instance.masVelocidad2 = true;
                 Debug.Log("1b");
                 break;
             case 2:
-                GameManager.Instance.masVelocidad2 = false;
-                GameManager.Instance.mancha2 = false;                
+                           
                 GameManager.Instance.noDobla2 = true;
                 Debug.Log("2b");
                 break;
             case 3:
-                GameManager.Instance.masVelocidad2 = false;
-                GameManager.Instance.noDobla2 = false;
+                
                 GameManager.Instance.mancha2 = true;
                 Debug.Log("3b");
                 break;
 
             case 4:
-                GameManager.Instance.masVelocidad2 = false;
-                GameManager.Instance.mancha2 = false;
+                
                 GameManager.Instance.noDobla2 = true;
                 Debug.Log("2");
                 break;
