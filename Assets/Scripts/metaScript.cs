@@ -8,6 +8,7 @@ public class metaScript : MonoBehaviour
     public GameObject vueltaUno;
     public GameObject vueltaDos;
     public GameObject vueltaTres;
+    public GameObject finish;
     
     
     // Start is called before the first frame update
@@ -16,6 +17,7 @@ public class metaScript : MonoBehaviour
         vueltaUno.SetActive(true);
         vueltaDos.SetActive(false);
         vueltaTres.SetActive(false);
+        finish.SetActive(false);
     }
 
     // Update is called once per frame
@@ -46,6 +48,7 @@ public class metaScript : MonoBehaviour
             }
             if (vueltasUno == 2)
             {
+                finish.SetActive(true);
                 vueltaUno.SetActive(false);
                 vueltaDos.SetActive(false);
                 vueltaTres.SetActive(true);
@@ -54,6 +57,7 @@ public class metaScript : MonoBehaviour
             {
                  GameManager.Instance.canMove = false;
                 Debug.Log("El jugador uno es el ganador");
+                finish.SetActive(true);
             }
         }
         

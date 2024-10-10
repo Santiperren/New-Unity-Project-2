@@ -12,6 +12,9 @@ public class metaScript2 : MonoBehaviour
     public GameObject vueltaUno;
     public GameObject vueltaDos;
     public GameObject vueltaTres;
+    public GameObject finish;
+    public GameObject finish2;
+
 
 
     // Start is called before the first frame update
@@ -24,6 +27,8 @@ public class metaScript2 : MonoBehaviour
         vueltaUno.SetActive(true);
         vueltaDos.SetActive(false);
         vueltaTres.SetActive(false);
+        finish.SetActive(false);
+        finish2.SetActive(false);
 
     }
 
@@ -48,6 +53,7 @@ public class metaScript2 : MonoBehaviour
             }
             if (vueltasDos == 1)
             {
+                finish2.SetActive(true);
                 vueltaUnoB.SetActive(false);
                 vueltaDosB.SetActive(true);
                 vueltaTresB.SetActive(false);
@@ -63,6 +69,7 @@ public class metaScript2 : MonoBehaviour
                 
                 GameManager.Instance.canMove = false;
                 Debug.Log("El jugador dos es el ganador");
+                finish2.SetActive(true);
             }
         }
         if (other.CompareTag(GameManager.Instance.autoUno))
@@ -79,6 +86,7 @@ public class metaScript2 : MonoBehaviour
             }
             if (vueltasUno == 1)
             {
+                finish.SetActive(true);
                 vueltaUno.SetActive(false);
                 vueltaDos.SetActive(true);
                 vueltaTres.SetActive(false);
@@ -93,6 +101,7 @@ public class metaScript2 : MonoBehaviour
             {
                 GameManager.Instance.canMove = false;
                 Debug.Log("El jugador uno es el ganador");
+                finish.SetActive(true);
             }
             
         }

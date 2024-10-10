@@ -19,9 +19,10 @@ public class UIAnimation : MonoBehaviour
             RectTransform rectTransform = element.GetComponent<RectTransform>();
 
             // Aparecer en el medio de la pantalla
-            rectTransform.anchoredPosition = new Vector2(0, -Screen.height / 2); // Arriba
-            canvasGroup.alpha = 0; // Comienza con opacidad 0
+            //   rectTransform.anchoredPosition = new Vector2(500, 0);
 
+            rectTransform.anchoredPosition = new Vector2(0 , 0); // Arriba
+            canvasGroup.alpha = 0; // Comienza con opacidad 0
             // Animación para aparecer
             yield return AnimateElement(canvasGroup, rectTransform, true);
 

@@ -66,6 +66,7 @@ public class caarController : MonoBehaviour
         camaraN.enabled = true;
         camara2.enabled = false;
         camaraTibu.enabled = false;
+        GameManager.Instance.noDobla1B = false;
 
     }
 
@@ -115,7 +116,8 @@ public class caarController : MonoBehaviour
                 GameManager.Instance.noDobla2 = false;
                 power2.SetActive(false);
                 if (Time.time > power2ActFin)
-                {                    
+                {
+                    Debug.Log("no dobla lpm");
                     Invoke("powerUp2", 0.1f);
                 }
                 

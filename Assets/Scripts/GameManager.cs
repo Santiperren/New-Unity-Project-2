@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             ChangeScene("Juego");
+            
         }
 
 

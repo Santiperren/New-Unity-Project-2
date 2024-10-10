@@ -61,7 +61,7 @@ public class carController : MonoBehaviour
         camaraNB.enabled = true;
         camara2B.enabled = false;
         camaraTibuB.enabled = false;
-
+        GameManager.Instance.noDobla2B = false;
 
     }
 
