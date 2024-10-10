@@ -231,7 +231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &12404350
 RectTransform:
   m_ObjectHideFlags: 0
@@ -387,7 +387,7 @@ Transform:
   m_LocalScale: {x: 13.725161, y: 94.101425, z: 179.32779}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 15.079, z: 0}
 --- !u!1001 &32210042
 PrefabInstance:
@@ -978,6 +978,8 @@ MonoBehaviour:
   autoDos: {fileID: 138397151}
   power2Act: 0
   power2Dur: 3
+  honguitoMaloAct: 0
+  honguitoMaloDur: 6
   power3Act: 0
   power3Dur: 5
   imagen: {fileID: 1139688311}
@@ -1286,7 +1288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &171648364
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2137,7 +2139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4dcb420940039fe46a22e0d23bd4d184, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4dcb420940039fe46a22e0d23bd4d184, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2461,7 +2463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 89a59afc72dd1c041b555d419e85bef8, type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 89a59afc72dd1c041b555d419e85bef8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4227,8 +4229,8 @@ RectTransform:
   - {fileID: 1484777484}
   - {fileID: 12404350}
   - {fileID: 2005950319}
-  m_Father: {fileID: 1807275343}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7047,7 +7049,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &830559416
 GameObject:
@@ -7649,6 +7651,7 @@ MonoBehaviour:
   mancha2B: 0
   mancha1B: 0
   afueraPista: 0
+  honguitoMalo: 0
   masVelocidadUno: {fileID: 0}
   masVelocidaDos: {fileID: 0}
 --- !u!4 &898568270
@@ -9283,7 +9286,7 @@ Transform:
   - {fileID: 250542742}
   - {fileID: 1992424116}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1154713795
 GameObject:
@@ -9819,7 +9822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4dcb420940039fe46a22e0d23bd4d184, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 4dcb420940039fe46a22e0d23bd4d184, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11676,7 +11679,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1484777484
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16967,6 +16970,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1569497945}
+  - component: {fileID: 1569497946}
   m_Layer: 8
   m_Name: 321 go
   m_TagString: Untagged
@@ -16988,6 +16992,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1569497946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569497944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340a0b0464d09ac4ca0bc2bf826ebbcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiElements:
+  - {fileID: 1484777483}
+  - {fileID: 171648363}
+  - {fileID: 12404349}
+  - {fileID: 2005950318}
 --- !u!1 &1591730942
 GameObject:
   m_ObjectHideFlags: 0
@@ -18255,10 +18276,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 424.6953, y: -1146, z: -224}
   m_LocalScale: {x: 1612.0161, y: 112.5482, z: 2244.6423}
-  m_Children:
-  - {fileID: 467065592}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1817793347
 Transform:
@@ -24371,7 +24391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2005950319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24979,7 +24999,7 @@ PrefabInstance:
     - target: {fileID: 1392055363421472778, guid: 9f8f3b50d8caa814d8fae96ea475365b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 1392055363421472778, guid: 9f8f3b50d8caa814d8fae96ea475365b,
         type: 3}
@@ -29951,7 +29971,7 @@ Transform:
   m_LocalScale: {x: 0.99565, y: 0.71922, z: 0.75479996}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3410714851352400273
 MeshFilter:
@@ -30075,7 +30095,7 @@ PrefabInstance:
     - target: {fileID: 4570841464982655996, guid: 916f011c4dd9c20478927f2ed48c65bd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 4570841464982655996, guid: 916f011c4dd9c20478927f2ed48c65bd,
         type: 3}
@@ -33382,6 +33402,8 @@ MonoBehaviour:
   autoDos: {fileID: 0}
   power2Act: 0
   power2Dur: 3
+  honguitoMaloAct: 0
+  honguitoMaloDur: 6
   power3Act: 0
   power3Dur: 5
   imagen: {fileID: 0}
@@ -36483,7 +36505,7 @@ PrefabInstance:
     - target: {fileID: 3579779371555193101, guid: 9c95a431f25179a4d9461467e0fff580,
         type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 3579779371555193101, guid: 9c95a431f25179a4d9461467e0fff580,
         type: 3}

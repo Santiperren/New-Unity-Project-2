@@ -30,6 +30,9 @@ public class caarController : MonoBehaviour
     public bool power2Act = false;
     public float power2Dur = 3f;
     private float power2ActFin;
+    public bool honguitoMaloAct = false;
+    public float honguitoMaloDur = 6f;
+    private float honguitoMaloActFin;
     public bool power3Act = false;
     public float power3Dur = 5f;
     private float power3ActFin;
@@ -105,12 +108,17 @@ public class caarController : MonoBehaviour
                 GameManager.Instance.noDobla1B = true;
                 power2Act = true;
                 power2ActFin = Time.time + power2Dur;
-                GameManager.Instance.noDobla2 = false;
-                power2.SetActive(false);
+                
             }
             if (power2Act == true)
             {
-                Invoke("powerUp2", power2Dur);
+                GameManager.Instance.noDobla2 = false;
+                power2.SetActive(false);
+                if (Time.time > power2ActFin)
+                {                    
+                    Invoke("powerUp2", 0.1f);
+                }
+                
             }
         }
         if (GameManager.Instance.rotate02 == true)
@@ -173,8 +181,24 @@ public class caarController : MonoBehaviour
             {
                 speedInput = Input.GetAxis("Vertical2") * reversa * 1000f;
             }
-            
-            turnInput = Input.GetAxis("Horizontal2");
+            if (GameManager.Instance.honguitoMalo == true)
+            {
+                honguitoMaloAct = true;
+                honguitoMaloActFin = Time.time + honguitoMaloDur;
+            }
+            else
+            {
+                turnInput = Input.GetAxis("Horizontal2");
+            }
+            if (honguitoMaloAct == true)
+            {
+                turnInput = -Input.GetAxis("Horizontal2");
+                if (Time.time > honguitoMaloActFin)
+                {
+                    honguitoMaloAct = false;
+                    Invoke("honguitoMalo", 0.1f);
+                }
+            }
             if (alPiso)
             {
                 if (GameManager.Instance.noDobla2B== false)
@@ -316,6 +340,10 @@ public class caarController : MonoBehaviour
 
         GameManager.Instance.masVelocidad2 = false;
         power1.SetActive(false);
+    }
+    void honguitoMalo()
+    {
+        GameManager.Instance.honguitoMalo = false;
     }
     void powerUp2()
     {

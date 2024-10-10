@@ -166,6 +166,7 @@ public class hongoMaloSc : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        GameManager.Instance.honguitoMalo = true;
         LensDistortion lens;
         ChromaticAberration aberration;
         ColorGrading grading;
