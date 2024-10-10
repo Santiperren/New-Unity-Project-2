@@ -351,7 +351,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1129,6 +1129,7 @@ MonoBehaviour:
   mancha2B: 0
   mancha1B: 0
   afueraPista: 0
+  honguitoMalo: 0
   masVelocidadUno: {fileID: 0}
   masVelocidaDos: {fileID: 0}
 --- !u!4 &1588176179

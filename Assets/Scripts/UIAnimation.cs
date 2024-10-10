@@ -26,7 +26,7 @@ public class UIAnimation : MonoBehaviour
             yield return AnimateElement(canvasGroup, rectTransform, true);
 
             // Mantener visible por 1.3 segundos
-            yield return new WaitForSeconds(1.3f);
+            yield return new WaitForSeconds(0.3f);
 
             // Animación para desaparecer
             yield return AnimateElement(canvasGroup, rectTransform, false);
@@ -35,7 +35,7 @@ public class UIAnimation : MonoBehaviour
 
     private IEnumerator AnimateElement(CanvasGroup canvasGroup, RectTransform rectTransform, bool show)
     {
-        float duration = 1.0f; // Duración total de la animación
+        float duration = 0.3f; // Duración total de la animación
         float elapsedTime = 0;
 
         Vector2 startPosition = show ? new Vector2(0, -Screen.height / 2) : Vector2.zero; // Comienza arriba o en el centro
