@@ -114,12 +114,10 @@ public class caarController : MonoBehaviour
             if (power2Act == true)
             {
                 GameManager.Instance.noDobla2 = false;
-                power2.SetActive(false);
-                if (Time.time > power2ActFin)
-                {
-                    Debug.Log("no dobla lpm");
-                    Invoke("powerUp2", 0.1f);
-                }
+                power2.SetActive(false);                
+                Debug.Log("no dobla lpm");
+                Invoke("powerUp2", 0.1f);
+                
                 
             }
         }

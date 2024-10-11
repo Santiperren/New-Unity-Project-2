@@ -175,6 +175,7 @@ public class carController : MonoBehaviour
             {
                 if (GameManager.Instance.noDobla1B == false)
                 {
+                    Debug.Log("ahora doblo");
                     transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("Vertical"), 0f));
                 }
 
