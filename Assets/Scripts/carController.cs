@@ -38,7 +38,9 @@ public class carController : MonoBehaviour
     public GameObject power1;
     public GameObject power2;
     public GameObject power3;
+    public GameObject noDoblaM;
     int i = 0;
+    public int db = 1;
     public Camera camaraNB;
     public Camera camara2B;
     public Camera camaraTibuB;
@@ -68,7 +70,12 @@ public class carController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (GameManager.Instance.noDobla1B == true)
+        {
+            noDoblaM.SetActive(true);
+            Invoke("noDobla", 0.6f);
+        }
+
         if (Input.GetButtonDown("LB"))
         {
             i++;
@@ -130,7 +137,14 @@ public class carController : MonoBehaviour
             speedInput = 0f;
             if (GameManager.Instance.masVelocidad1 == true)
             {
-                power1.SetActive(true);
+                if (db == 1)
+                {
+                    power1.SetActive(true);
+                }
+                else
+                {
+                    power1.SetActive(false);
+                }
             }
             if (Input.GetAxis("Vertical") < 0)
             {
@@ -141,6 +155,7 @@ public class carController : MonoBehaviour
 
                         powerUpActivado = true;
                         powerUpActivadoFin = Time.time + powerUpSpeedDuracion;
+                        db = 2;
                     }
                     else
                     {
@@ -310,10 +325,15 @@ public class carController : MonoBehaviour
 
         GameManager.Instance.masVelocidad1 = false;
         power1.SetActive(false);
+        db = 1;
       }
     void powerUp2()
     {
         GameManager.Instance.noDobla2B = false;
+    }
+    void noDobla()
+    {
+        noDoblaM.SetActive(false);
     }
     void cambiarCamaras()
     {

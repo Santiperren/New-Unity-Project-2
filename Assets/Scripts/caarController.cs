@@ -45,7 +45,9 @@ public class caarController : MonoBehaviour
     public GameObject power1;
     public GameObject power2;
     public GameObject power3;
+    public GameObject noDoblaM;
     int i = 0;
+    public int db = 1;
     public GameObject planecollider;
    
     // Start is called before the first frame update
@@ -74,6 +76,11 @@ public class caarController : MonoBehaviour
     void Update()
 
     {
+        if (GameManager.Instance.noDobla2B == true)
+        {
+            noDoblaM.SetActive(true);
+            Invoke("noDobla", 0.6f);
+        }
       
         if (Input.GetKeyDown(KeyCode.C))
         {
@@ -84,8 +91,8 @@ public class caarController : MonoBehaviour
   
         if(GameManager.Instance.mancha2B == true)
         {
-            StartCoroutine(MostrarYDesaparecer());
-            StartCoroutine(MostrarYDesaparecer());
+            StartCoroutine(MostrarYDesaparecer());            
+
         }
         if (GameManager.Instance.mancha2 == true)
         {
@@ -93,8 +100,7 @@ public class caarController : MonoBehaviour
             if (Input.GetKey(KeyCode.P))
             {
                 soundmanagerscript.Instance.PlaySound(soundmanagerscript.Instance.mancha);
-                GameManager.Instance.mancha1B = true;
-
+                GameManager.Instance.mancha1B = true;                
                 power3Act = true;
                 power3ActFin = Time.time + power3Dur;
                 GameManager.Instance.mancha2 = false;
@@ -142,7 +148,16 @@ public class caarController : MonoBehaviour
             speedInput = 0f;
             if (GameManager.Instance.masVelocidad2 == true)
             {
-                power1.SetActive(true);
+                if (db == 1)
+                {
+                    power1.SetActive(true);
+                }
+                else
+                {
+                    power1.SetActive(false);
+                }
+                
+
             }
 
             if (Input.GetAxis("Vertical2") < 0)
@@ -155,6 +170,7 @@ public class caarController : MonoBehaviour
                         
                         powerUpActivado2 = true;
                         powerUpActivadoFin2 = Time.time + powerUpSpeedDuracion2;
+                        db = 2;
                     }
                     else
                     {
@@ -340,6 +356,7 @@ public class caarController : MonoBehaviour
 
         GameManager.Instance.masVelocidad2 = false;
         power1.SetActive(false);
+        db = 1;
     }
     void honguitoMalo()
     {
@@ -348,6 +365,10 @@ public class caarController : MonoBehaviour
     void powerUp2()
     {
         GameManager.Instance.noDobla1B = false;
+    }
+    void noDobla()
+    {
+        noDoblaM.SetActive(false);
     }
     void cambiarCamaras()
     {

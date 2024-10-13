@@ -52,8 +52,7 @@ public class metaScript2 : MonoBehaviour
                 Debug.Log("autotecla");
             }
             if (vueltasDos == 1)
-            {
-                finish2.SetActive(true);
+            {                
                 vueltaUnoB.SetActive(false);
                 vueltaDosB.SetActive(true);
                 vueltaTresB.SetActive(false);
@@ -85,8 +84,7 @@ public class metaScript2 : MonoBehaviour
                 Debug.Log("autojoysrtick");
             }
             if (vueltasUno == 1)
-            {
-                finish.SetActive(true);
+            {                
                 vueltaUno.SetActive(false);
                 vueltaDos.SetActive(true);
                 vueltaTres.SetActive(false);
