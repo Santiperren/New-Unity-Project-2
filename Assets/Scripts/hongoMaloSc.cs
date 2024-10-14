@@ -18,6 +18,7 @@ public class hongoMaloSc : MonoBehaviour
     public GameObject hongoMalo;
     public PostProcessLayer ppLayer1;
     public PostProcessLayer ppLayer2;
+    public float saturacionbase1;
 
     void Start()
     {
@@ -125,7 +126,7 @@ public class hongoMaloSc : MonoBehaviour
 
         // Animate Saturation
         elapsed = 0f;
-        float startSaturation = colorgrading.saturation.value;
+        float startSaturation = saturacionbase1;
         while (elapsed < fadeInDuration)
         {
             elapsed += Time.deltaTime;
@@ -144,10 +145,10 @@ public class hongoMaloSc : MonoBehaviour
         {
             elapsed += Time.deltaTime;
             float t = elapsed / fadeOutDuration;
-            colorgrading.saturation.value = Mathf.Lerp(maxSaturation, 0f, t);
+            colorgrading.saturation.value = Mathf.Lerp(maxSaturation, saturacionbase1, t);
             yield return null;
         }
-        colorgrading.saturation.value = 0f;
+        colorgrading.saturation.value = saturacionbase1;
     }
 
     private void ResetEffects()
@@ -156,12 +157,12 @@ public class hongoMaloSc : MonoBehaviour
         lens1.intensityY.value = 0f;
         chromaticAberration1.intensity.value = 0f;
         colorgrading1.hueShift.value = 0f;
-        colorgrading1.saturation.value = 0f;
+        colorgrading1.saturation.value = saturacionbase1;
         lens2.intensityX.value = 0f;
         lens2.intensityY.value = 0f;
         chromaticAberration2.intensity.value = 0f;
         colorgrading2.hueShift.value = 0f;
-        colorgrading2.saturation.value = 0f;
+        colorgrading2.saturation.value = saturacionbase1;
     }
 
     public void OnTriggerEnter(Collider other)
@@ -184,11 +185,11 @@ public class hongoMaloSc : MonoBehaviour
         }
 
         Debug.Log("Objeto entró en contacto: " + other.gameObject.name);
-        StartCoroutine(AnimateChangingLensDistortion(lens, 10f));
+        StartCoroutine(AnimateChangingLensDistortion(lens, 8f));
         Debug.Log("debug1");
         StartCoroutine(AnimateChromaticAberration(aberration, 3f, 1f, 15f));
         Debug.Log("debusexsexnyugiug");
-        StartCoroutine(AnimateColorGrading(grading, 2f, 180f, 100f, 15f)); // Animate hue and saturation
+        StartCoroutine(AnimateColorGrading(grading, 2f, 180f, 100f, 10f)); // Animate hue and saturation
         Debug.Log("debug");
         hongoMalo.SetActive(false);
         

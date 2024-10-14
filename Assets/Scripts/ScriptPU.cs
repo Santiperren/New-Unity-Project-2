@@ -56,7 +56,6 @@ public class ScriptPU : MonoBehaviour
             else
             {
                 int randomNumber2 = GetRandomNumber(1, 3);
-
                 HandleRandomNumber2(randomNumber2);
             }
             

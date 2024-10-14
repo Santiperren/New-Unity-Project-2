@@ -222,7 +222,7 @@ public class caarController : MonoBehaviour
             }
             if (alPiso)
             {
-                if (GameManager.Instance.noDobla2B== false)
+                if (GameManager.Instance.noDobla2B == false)
                 {
                     transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("Vertical2"), 0f));
                 }
