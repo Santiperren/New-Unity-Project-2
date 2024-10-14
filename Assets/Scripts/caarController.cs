@@ -48,6 +48,7 @@ public class caarController : MonoBehaviour
     public GameObject noDoblaM;
     int i = 0;
     public int db = 1;
+    public bool noRepite = false;
     public GameObject planecollider;
    
     // Start is called before the first frame update
@@ -76,12 +77,17 @@ public class caarController : MonoBehaviour
     void Update()
 
     {
-        if (GameManager.Instance.noDobla2B == true)
+        if (noRepite == false)
         {
-            noDoblaM.SetActive(true);
-            Invoke("noDobla", 0.6f);
+            if (GameManager.Instance.noDobla2B == true)
+            {
+                noDoblaM.SetActive(true);
+                Invoke("noDobla", 0.6f);
+                noRepite = true;
+                Invoke("repite", 5f);
+            }
         }
-      
+
         if (Input.GetKeyDown(KeyCode.C))
         {
             i++;
@@ -115,14 +121,13 @@ public class caarController : MonoBehaviour
                 GameManager.Instance.noDobla1B = true;
                 power2Act = true;
                 power2ActFin = Time.time + power2Dur;
-                
+                GameManager.Instance.noDobla2 = false;
+                power2.SetActive(false);
+
             }
             if (power2Act == true)
-            {
-                GameManager.Instance.noDobla2 = false;
-                power2.SetActive(false);                
-                Debug.Log("no dobla lpm");
-                Invoke("powerUp2", 0.1f);
+            {               
+                Invoke("powerUp2", power2Dur);
                 
                 
             }
@@ -365,6 +370,10 @@ public class caarController : MonoBehaviour
     void powerUp2()
     {
         GameManager.Instance.noDobla1B = false;
+    }
+    void repite()
+    {
+        noRepite = false;
     }
     void noDobla()
     {

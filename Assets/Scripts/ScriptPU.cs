@@ -31,25 +31,37 @@ public class ScriptPU : MonoBehaviour
     {
        
         soundmanagerscript.Instance.PlaySound(soundmanagerscript.Instance.cajita);
-        if (GameManager.Instance.masVelocidad1 == true || GameManager.Instance.masVelocidad2 == true || GameManager.Instance.noDobla1 == true || GameManager.Instance.noDobla2 == true || GameManager.Instance.mancha1 == true || GameManager.Instance.mancha2 == true)
-        {
-
-        }
-        else
-        {
+        
+        
             if (other.CompareTag(GameManager.Instance.autoUno))
+            {
+            if (GameManager.Instance.masVelocidad1 == true ||  GameManager.Instance.noDobla1 == true ||  GameManager.Instance.mancha1 == true )
+            {
+
+            }
+            else
             {
                 int randomNumber = GetRandomNumber(1, 3);
 
                 HandleRandomNumber(randomNumber);
             }
+            
+            }
             else if (other.CompareTag(GameManager.Instance.autoDos))
+            {
+            if ( GameManager.Instance.masVelocidad2 == true || GameManager.Instance.noDobla2 == true ||  GameManager.Instance.mancha2 == true)
+            {
+
+            }
+            else
             {
                 int randomNumber2 = GetRandomNumber(1, 3);
 
                 HandleRandomNumber2(randomNumber2);
             }
-        }
+            
+            }
+        
         
         gameObject.SetActive(false);  
         

@@ -41,6 +41,7 @@ public class carController : MonoBehaviour
     public GameObject noDoblaM;
     int i = 0;
     public int db = 1;
+    public bool noRepite = false;
     public Camera camaraNB;
     public Camera camara2B;
     public Camera camaraTibuB;
@@ -70,10 +71,15 @@ public class carController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.Instance.noDobla1B == true)
+        if (noRepite == false)
         {
-            noDoblaM.SetActive(true);
-            Invoke("noDobla", 0.6f);
+            if (GameManager.Instance.noDobla1B == true)
+            {
+                noDoblaM.SetActive(true);
+                Invoke("noDobla", 0.6f);
+                noRepite = true;
+                Invoke("repite", 5f);
+            }
         }
 
         if (Input.GetButtonDown("LB"))
@@ -188,9 +194,9 @@ public class carController : MonoBehaviour
             turnInput = Input.GetAxis("Horizontal");
             if (alPiso)
             {
+                
                 if (GameManager.Instance.noDobla1B == false)
-                {
-                    Debug.Log("ahora doblo");
+                {                    
                     transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrenght * Time.deltaTime * Input.GetAxis("Vertical"), 0f));
                 }
 
@@ -334,6 +340,10 @@ public class carController : MonoBehaviour
     void noDobla()
     {
         noDoblaM.SetActive(false);
+    }
+    void repite()
+    {
+        noRepite = false;
     }
     void cambiarCamaras()
     {
