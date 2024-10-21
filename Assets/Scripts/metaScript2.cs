@@ -56,12 +56,14 @@ public class metaScript2 : MonoBehaviour
                 vueltaUnoB.SetActive(false);
                 vueltaDosB.SetActive(true);
                 vueltaTresB.SetActive(false);
+                GameManager.Instance.palmeraMala = true;
             }
             if (vueltasDos == 2)
             {
-                vueltaUnoB.SetActive(false);
-                vueltaDosB.SetActive(false);
-                vueltaTresB.SetActive(true);
+                GameManager.Instance.canMove = false;
+                Debug.Log("El jugador dos es el ganador");
+
+                finish2.SetActive(true);
             }
             if (vueltasDos ==3)
             { 
@@ -88,12 +90,13 @@ public class metaScript2 : MonoBehaviour
                 vueltaUno.SetActive(false);
                 vueltaDos.SetActive(true);
                 vueltaTres.SetActive(false);
+                GameManager.Instance.palmeraMala = true;
             }
             if (vueltasUno == 2)
             {
-                vueltaUno.SetActive(false);
-                vueltaDos.SetActive(false);
-                vueltaTres.SetActive(true);
+                GameManager.Instance.canMove = false;
+                Debug.Log("El jugador uno es el ganador");                
+                finish.SetActive(true);
             }
             if (vueltasUno == 3)
             {

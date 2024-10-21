@@ -118,19 +118,21 @@ public class caarController : MonoBehaviour
             power2.SetActive(true);
             if (Input.GetKey(KeyCode.P))
             {
+                power2ActFin = Time.time + power2Dur;
                 GameManager.Instance.noDobla1B = true;
                 power2Act = true;
-                power2ActFin = Time.time + power2Dur;
                 GameManager.Instance.noDobla2 = false;
+                power2ActFin = Time.time + power2Dur;
                 power2.SetActive(false);
 
             }
-            if (power2Act == true)
+          
+           if (power2Act == true)
             {               
-                Invoke("powerUp2", power2Dur);
+              Invoke("powerUp2", power2Dur);
                 
                 
-            }
+           }
         }
         if (GameManager.Instance.rotate02 == true)
         {
@@ -240,7 +242,7 @@ public class caarController : MonoBehaviour
                     theRB.transform.position = new Vector3(783, -1080, -334);
                     theRB.isKinematic = false;
                     Vector3 currentRotation = transform.rotation.eulerAngles;
-                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, 0);
                 }
                 if (GameManager.Instance.checkRespawn2 == 1)
                 {
@@ -250,7 +252,7 @@ public class caarController : MonoBehaviour
                     theRB.isKinematic = false;
                     theRB.useGravity = false;
                     Vector3 currentRotation = transform.rotation.eulerAngles;
-                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, 0);
                 }
                 else if (GameManager.Instance.checkRespawn2 == 2)
                 {
@@ -260,7 +262,7 @@ public class caarController : MonoBehaviour
                     theRB.isKinematic = false;
                     theRB.useGravity = false;
                     Vector3 currentRotation = transform.rotation.eulerAngles;
-                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, 0);
                 }
                 else if (GameManager.Instance.checkRespawn2 == 3)
                 {
@@ -270,7 +272,7 @@ public class caarController : MonoBehaviour
                     theRB.isKinematic = false;
                     theRB.useGravity = false;
                     Vector3 currentRotation = transform.rotation.eulerAngles;
-                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, 0);
                 }
                 else if (GameManager.Instance.checkRespawn2 == 4)
                 {
@@ -279,7 +281,7 @@ public class caarController : MonoBehaviour
                     theRB.transform.position = new Vector3(783, -1080, -334);
                     theRB.isKinematic = false;
                     Vector3 currentRotation = transform.rotation.eulerAngles;
-                    transform.rotation = Quaternion.Euler(0, currentRotation.y, currentRotation.z);
+                    transform.rotation = Quaternion.Euler(0, currentRotation.y, 0);
                 }
                
 
@@ -369,6 +371,7 @@ public class caarController : MonoBehaviour
     }
     void powerUp2()
     {
+        power2Act = false;
         GameManager.Instance.noDobla1B = false;
     }
     void repite()

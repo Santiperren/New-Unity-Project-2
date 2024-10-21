@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     public bool mancha1B = false;
     public bool afueraPista = false;
     public bool honguitoMalo = false;
+    public bool palmeraMala = false;
     public GameObject masVelocidadUno;
     public GameObject masVelocidaDos;
    
