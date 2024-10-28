@@ -999,6 +999,8 @@ MonoBehaviour:
   power2: {fileID: 628866609}
   power3: {fileID: 1689456443}
   noDoblaM: {fileID: 1586618571}
+  texturaUno: {fileID: 2800000, guid: e5102aa0ceed1ef4da4cda68f4d4f863, type: 3}
+  texturaDos: {fileID: 2800000, guid: 1212a9b4c1dfeac41848280484653c4a, type: 3}
   db: 1
   noRepite: 0
   planecollider: {fileID: 1807275339}
@@ -7807,6 +7809,8 @@ MonoBehaviour:
   afueraPista: 0
   honguitoMalo: 0
   palmeraMala: 0
+  j1Texture: 0
+  j2Texture: 0
   masVelocidadUno: {fileID: 0}
   masVelocidaDos: {fileID: 0}
 --- !u!4 &898568270
@@ -33890,6 +33894,8 @@ MonoBehaviour:
   power2: {fileID: 0}
   power3: {fileID: 0}
   noDoblaM: {fileID: 0}
+  texturaUno: {fileID: 0}
+  texturaDos: {fileID: 0}
   db: 1
   noRepite: 0
   planecollider: {fileID: 0}

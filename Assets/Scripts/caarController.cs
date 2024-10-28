@@ -46,6 +46,9 @@ public class caarController : MonoBehaviour
     public GameObject power2;
     public GameObject power3;
     public GameObject noDoblaM;
+    public Texture texturaUno;
+    public Texture texturaDos;
+    private Renderer rend;
     int i = 0;
     public int db = 1;
     public bool noRepite = false;
@@ -54,6 +57,8 @@ public class caarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rend = GetComponent<Renderer>();
+        rend.material.mainTexture = texturaUno;
 
         theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal con razon, aaaaa, soy fan de campa        
         StartCoroutine(UpdateVariableAfterDelay());
@@ -405,6 +410,7 @@ public class caarController : MonoBehaviour
             i = 0;
         }
     }
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Plano"))
