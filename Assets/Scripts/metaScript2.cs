@@ -14,12 +14,15 @@ public class metaScript2 : MonoBehaviour
     public GameObject vueltaTres;
     public GameObject finish;
     public GameObject finish2;
+    public bool palmeraMala = false;
+    private Animator animator;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
         vueltaUnoB.SetActive(true);
         vueltaDosB.SetActive(false);
         vueltaTresB.SetActive(false);
@@ -40,6 +43,7 @@ public class metaScript2 : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        
         if (other.CompareTag(GameManager.Instance.autoDos))
         {
             GameManager.Instance.checkRespawn2 = 4;
@@ -57,6 +61,7 @@ public class metaScript2 : MonoBehaviour
                 vueltaDosB.SetActive(true);
                 vueltaTresB.SetActive(false);
                 GameManager.Instance.palmeraMala = true;
+                palmeraMala = true;
             }
             if (vueltasDos == 2)
             {
@@ -91,6 +96,7 @@ public class metaScript2 : MonoBehaviour
                 vueltaDos.SetActive(true);
                 vueltaTres.SetActive(false);
                 GameManager.Instance.palmeraMala = true;
+                palmeraMala = true;
             }
             if (vueltasUno == 2)
             {
@@ -107,5 +113,13 @@ public class metaScript2 : MonoBehaviour
             
         }
 
+        if (palmeraMala == true)
+        {
+            ActivarAnimacion("palmeraCae");
+        }
+        void ActivarAnimacion(string palmeraCae)
+        {
+            animator.SetTrigger(palmeraCae);
+        }
     }
 }
