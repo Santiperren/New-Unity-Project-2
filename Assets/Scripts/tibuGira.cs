@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class tibuGira : MonoBehaviour
 {
+    
     public float rotacion = 50f;
     // Start is called before the first frame update
     void Start()

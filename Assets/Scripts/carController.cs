@@ -232,9 +232,9 @@ public class carController : MonoBehaviour
                 }
                 else if (GameManager.Instance.checkRespawn == 2)
                 {
-                    transform.position = new Vector3(565, -1084, -236);
+                    transform.position = new Vector3(317, -1084, -185);
                     theRB1.isKinematic = true;
-                    theRB1.transform.position = new Vector3(565, -1084, -236);
+                    theRB1.transform.position = new Vector3(317, -1084, -185);
                     theRB1.isKinematic = false;
                     theRB1.useGravity = false;
                     Vector3 currentRotation = transform.rotation.eulerAngles;

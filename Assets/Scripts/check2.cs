@@ -23,7 +23,6 @@ public class check2 : MonoBehaviour
         {
             GameManager.Instance.checkRespawn = 2;
             GameManager.Instance.checkPoint2 = 1;
-            Debug.Log("c2");
         }
 
     }

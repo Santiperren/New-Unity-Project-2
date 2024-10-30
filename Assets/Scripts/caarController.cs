@@ -48,6 +48,11 @@ public class caarController : MonoBehaviour
     public GameObject noDoblaM;
     public Texture texturaUno;
     public Texture texturaDos;
+    public Texture texturaTres;
+    public Texture texturaCuatro;
+    public Texture texturaCinco;
+    public Texture texturaSeis;
+
     private Renderer rend;
     int i = 0;
     public int db = 1;
@@ -57,8 +62,10 @@ public class caarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<Renderer>();
-        rend.material.mainTexture = texturaUno;
+
+        //rend = GetComponent<Renderer>();
+        //rend.material.mainTexture = texturaUno;
+        //rend.material.mainTexture = texturaDos;
 
         theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal con razon, aaaaa, soy fan de campa        
         StartCoroutine(UpdateVariableAfterDelay());
@@ -261,9 +268,9 @@ public class caarController : MonoBehaviour
                 }
                 else if (GameManager.Instance.checkRespawn2 == 2)
                 {
-                    transform.position = new Vector3(565, -1084, -236);
+                    transform.position = new Vector3(317, -1084, -185);
                     theRB.isKinematic = true;
-                    theRB.transform.position = new Vector3(565, -1084, -236);
+                    theRB.transform.position = new Vector3(317, -1084, -185);
                     theRB.isKinematic = false;
                     theRB.useGravity = false;
                     Vector3 currentRotation = transform.rotation.eulerAngles;
