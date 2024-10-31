@@ -59,8 +59,7 @@ public class metaScript2 : MonoBehaviour
             {                
                 vueltaUnoB.SetActive(false);
                 vueltaDosB.SetActive(true);
-                vueltaTresB.SetActive(false);
-                GameManager.Instance.palmeraMala = true;
+                vueltaTresB.SetActive(false);                
                 palmeraMala = true;
             }
             if (vueltasDos == 2)
@@ -94,8 +93,7 @@ public class metaScript2 : MonoBehaviour
             {                
                 vueltaUno.SetActive(false);
                 vueltaDos.SetActive(true);
-                vueltaTres.SetActive(false);
-                GameManager.Instance.palmeraMala = true;
+                vueltaTres.SetActive(false);                
                 palmeraMala = true;
             }
             if (vueltasUno == 2)
