@@ -15,14 +15,14 @@ public class metaScript2 : MonoBehaviour
     public GameObject finish;
     public GameObject finish2;
     public bool palmeraMala = false;
-    private Animator animator;
+    
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
+        
         vueltaUnoB.SetActive(true);
         vueltaDosB.SetActive(false);
         vueltaTresB.SetActive(false);
@@ -113,13 +113,6 @@ public class metaScript2 : MonoBehaviour
             
         }
 
-        if (palmeraMala == true)
-        {
-            ActivarAnimacion("palmeraCae");
-        }
-        void ActivarAnimacion(string palmeraCae)
-        {
-            animator.SetTrigger(palmeraCae);
-        }
+        
     }
 }
