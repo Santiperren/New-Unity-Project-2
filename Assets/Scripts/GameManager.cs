@@ -38,6 +38,8 @@ public class GameManager : MonoBehaviour
     public bool palmeraMala = false;
     public bool j1Texture = false;
     public bool j2Texture = false;
+    public int autoUnoSkin;
+    public int autoDosSkin;
     public GameObject masVelocidadUno;
     public GameObject masVelocidaDos;
    

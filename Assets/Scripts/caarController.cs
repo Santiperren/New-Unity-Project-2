@@ -46,13 +46,12 @@ public class caarController : MonoBehaviour
     public GameObject power2;
     public GameObject power3;
     public GameObject noDoblaM;
-    public Texture texturaUno;
-    public Texture texturaDos;
-    public Texture texturaTres;
-    public Texture texturaCuatro;
-    public Texture texturaCinco;
-    public Texture texturaSeis;
-
+    public GameObject autoAmarillo;
+    public GameObject autoRojo;
+    public GameObject autoVioleta;
+    public GameObject autoRosa;
+    public GameObject autoCeleste;
+    public GameObject autoX;
     private Renderer rend;
     int i = 0;
     public int db = 1;

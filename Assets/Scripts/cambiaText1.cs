@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class cambiaText1 : MonoBehaviour
 {
-    public GameObject targetObject;   
-    public Texture[] textures;       
+    
+    public int[] textures;
+    public int autoSkin;
+    public GameObject autoAmarillo;
+    public GameObject autoRojo;
+    public GameObject autoVioleta;
+    public GameObject autoRosa;
+    public GameObject autoCeleste;
+    public GameObject autoX;
 
     private Renderer targetRenderer;
     // Start is called before the first frame update
     void Start()
     {
-        if (targetObject != null)
-        {
-            targetRenderer = targetObject.GetComponent<Renderer>();
-        }
+        
 
     }
 
@@ -28,11 +32,68 @@ public class cambiaText1 : MonoBehaviour
         
         if (targetRenderer != null && index >= 0 && index < textures.Length)
         {
-            targetRenderer.material.mainTexture = textures[index];
+            autoSkin = textures[index];
         }
-        else
+
+        if ( autoSkin == 0)
         {
-            Debug.LogWarning("Índice fuera de rango o renderer no asignado.");
+            autoRojo.SetActive(false);
+            autoVioleta.SetActive(false);
+            autoRosa.SetActive(false);
+            autoCeleste.SetActive(false);
+            autoX.SetActive(false);
+            autoAmarillo.SetActive(true);
+            GameManager.Instance.autoDosSkin = 0;
+        }
+        else if (autoSkin == 1)
+        {
+            autoRojo.SetActive(true);
+            autoVioleta.SetActive(false);
+            autoRosa.SetActive(false);
+            autoCeleste.SetActive(false);
+            autoX.SetActive(false);
+            autoAmarillo.SetActive(false);
+            GameManager.Instance.autoDosSkin = 0;
+        }
+        else if (autoSkin == 2)
+        {
+            autoRojo.SetActive(false);
+            autoVioleta.SetActive(true);
+            autoRosa.SetActive(false);
+            autoCeleste.SetActive(false);
+            autoX.SetActive(false);
+            autoAmarillo.SetActive(false);
+            GameManager.Instance.autoDosSkin = 0;
+        }
+        else if (autoSkin == 3)
+        {
+            autoRojo.SetActive(false);
+            autoVioleta.SetActive(false);
+            autoRosa.SetActive(true);
+            autoCeleste.SetActive(false);
+            autoX.SetActive(false);
+            autoAmarillo.SetActive(false);
+            GameManager.Instance.autoDosSkin = 0;
+        }
+        else if (autoSkin == 4)
+        {
+            autoRojo.SetActive(false);
+            autoVioleta.SetActive(false);
+            autoRosa.SetActive(false);
+            autoCeleste.SetActive(true);
+            autoX.SetActive(false);
+            autoAmarillo.SetActive(false);
+            GameManager.Instance.autoDosSkin = 0;
+        }
+        else if (autoSkin == 5)
+        {
+            autoRojo.SetActive(false);
+            autoVioleta.SetActive(false);
+            autoRosa.SetActive(false);
+            autoCeleste.SetActive(false);
+            autoX.SetActive(true);
+            autoAmarillo.SetActive(false);
+            GameManager.Instance.autoDosSkin = 0;
         }
     }
 }

@@ -45,6 +45,14 @@ public class carController : MonoBehaviour
     public Camera camaraNB;
     public Camera camara2B;
     public Camera camaraTibuB;
+    public GameObject autoAmarillo1;
+    public GameObject autoRojo1;
+    public GameObject autoVioleta1;
+    public GameObject autoRosa1;
+    public GameObject autoCeleste1;
+    public GameObject autoX;
+    private Renderer rend;
+  
 
 
     // Start is called before the first frame update
