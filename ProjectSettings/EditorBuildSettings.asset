@@ -12,8 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/SelectPlayer.unity
     guid: e1f363aedd635b24381acb9b25635f87
   - enabled: 1
+    path: Assets/Scenes/3ra.unity
+    guid: 7aac6ca7477b3134d9abb1e201f6ccbf
+  - enabled: 1
     path: Assets/Scenes/menu2.unity
     guid: bb318f92cd908264fb367c3cc05c6608
+  - enabled: 1
+    path: Assets/Scenes/menu3.unity
+    guid: 3f23c4c36b92cd64d88a074981e1be08
   - enabled: 1
     path: Assets/Scenes/Juego.unity
     guid: 74dd8d159cf265944b547811111f1e53

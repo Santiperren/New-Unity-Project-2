@@ -30,7 +30,7 @@ public class cambiaText1 : MonoBehaviour
     public void ChangeTexture(int index)
     {
         
-        if (targetRenderer != null && index >= 0 && index < textures.Length)
+        if (index >= 0 && index < textures.Length)
         {
             autoSkin = textures[index];
             Debug.Log("funciono");
