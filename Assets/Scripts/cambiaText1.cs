@@ -33,6 +33,7 @@ public class cambiaText1 : MonoBehaviour
         if (targetRenderer != null && index >= 0 && index < textures.Length)
         {
             autoSkin = textures[index];
+            Debug.Log("funciono");
         }
 
         if ( autoSkin == 0)
@@ -43,6 +44,7 @@ public class cambiaText1 : MonoBehaviour
             autoCeleste.SetActive(false);
             autoX.SetActive(false);
             autoAmarillo.SetActive(true);
+            Debug.Log("A");
             GameManager.Instance.autoDosSkin = 0;
         }
         else if (autoSkin == 1)
@@ -53,7 +55,8 @@ public class cambiaText1 : MonoBehaviour
             autoCeleste.SetActive(false);
             autoX.SetActive(false);
             autoAmarillo.SetActive(false);
-            GameManager.Instance.autoDosSkin = 0;
+            Debug.Log("R");
+            GameManager.Instance.autoDosSkin = 1;
         }
         else if (autoSkin == 2)
         {
@@ -63,7 +66,8 @@ public class cambiaText1 : MonoBehaviour
             autoCeleste.SetActive(false);
             autoX.SetActive(false);
             autoAmarillo.SetActive(false);
-            GameManager.Instance.autoDosSkin = 0;
+            Debug.Log("V");
+            GameManager.Instance.autoDosSkin = 2;
         }
         else if (autoSkin == 3)
         {
@@ -73,7 +77,8 @@ public class cambiaText1 : MonoBehaviour
             autoCeleste.SetActive(false);
             autoX.SetActive(false);
             autoAmarillo.SetActive(false);
-            GameManager.Instance.autoDosSkin = 0;
+            Debug.Log("Ros");
+            GameManager.Instance.autoDosSkin = 3;
         }
         else if (autoSkin == 4)
         {
@@ -83,7 +88,8 @@ public class cambiaText1 : MonoBehaviour
             autoCeleste.SetActive(true);
             autoX.SetActive(false);
             autoAmarillo.SetActive(false);
-            GameManager.Instance.autoDosSkin = 0;
+            Debug.Log("C");
+            GameManager.Instance.autoDosSkin = 4;
         }
         else if (autoSkin == 5)
         {
@@ -93,7 +99,8 @@ public class cambiaText1 : MonoBehaviour
             autoCeleste.SetActive(false);
             autoX.SetActive(true);
             autoAmarillo.SetActive(false);
-            GameManager.Instance.autoDosSkin = 0;
+            Debug.Log("AZ");
+            GameManager.Instance.autoDosSkin = 5;
         }
     }
 }
