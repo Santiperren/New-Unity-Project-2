@@ -33,7 +33,7 @@ public class cambiaText1 : MonoBehaviour
         if (index >= 0 && index < textures.Length)
         {
             autoSkin = textures[index];
-            Debug.Log("funciono");
+            Debug.Log("funcionoaaaaaaaaaaaaaaaaa");
         }
 
         if ( autoSkin == 0)
