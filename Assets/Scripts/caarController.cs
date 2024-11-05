@@ -61,12 +61,65 @@ public class caarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(GameManager.Instance.autoDosSkin == 0)
+        {
+            autoRojo.SetActive(false);
+            autoVioleta.SetActive(false);
+            autoRosa.SetActive(false);
+            autoCeleste.SetActive(false);
+            autoX.SetActive(false);
+            autoAmarillo.SetActive(true);
+        }
+        else if (GameManager.Instance.autoDosSkin == 1)
+        {
+            autoRojo.SetActive(true);
+            autoVioleta.SetActive(false);
+            autoRosa.SetActive(false);
+            autoCeleste.SetActive(false);
+            autoX.SetActive(false);
+            autoAmarillo.SetActive(false);
+        }
+        else if (GameManager.Instance.autoDosSkin == 2)
+        {
+            autoRojo.SetActive(false);
+            autoVioleta.SetActive(true);
+            autoRosa.SetActive(false);
+            autoCeleste.SetActive(false);
+            autoX.SetActive(false);
+            autoAmarillo.SetActive(false);
+        }
+        else if (GameManager.Instance.autoDosSkin == 3)
+        {
+            autoRojo.SetActive(false);
+            autoVioleta.SetActive(false);
+            autoRosa.SetActive(true);
+            autoCeleste.SetActive(false);
+            autoX.SetActive(false);
+            autoAmarillo.SetActive(false);
+        }
+        else if (GameManager.Instance.autoDosSkin == 4)
+        {
+            autoRojo.SetActive(false);
+            autoVioleta.SetActive(false);
+            autoRosa.SetActive(false);
+            autoCeleste.SetActive(true);
+            autoX.SetActive(false);
+            autoAmarillo.SetActive(false);
+        }
+        else if (GameManager.Instance.autoDosSkin == 5)
+        {
+            autoRojo.SetActive(false);
+            autoVioleta.SetActive(false);
+            autoRosa.SetActive(false);
+            autoCeleste.SetActive(false);
+            autoX.SetActive(true);
+            autoAmarillo.SetActive(false);
+        }
+            //rend = GetComponent<Renderer>();
+            //rend.material.mainTexture = texturaUno;
+            //rend.material.mainTexture = texturaDos;
 
-        //rend = GetComponent<Renderer>();
-        //rend.material.mainTexture = texturaUno;
-        //rend.material.mainTexture = texturaDos;
-
-        theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal con razon, aaaaa, soy fan de campa        
+            theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal con razon, aaaaa, soy fan de campa        
         StartCoroutine(UpdateVariableAfterDelay());
         if (theRB == null)
         {

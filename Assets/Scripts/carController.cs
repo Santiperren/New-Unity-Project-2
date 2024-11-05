@@ -58,6 +58,9 @@ public class carController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+
+
         theRB1.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal        
         StartCoroutine(UpdateVariableAfterDelay());
         if (theRB1 == null)
