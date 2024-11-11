@@ -119,8 +119,13 @@ public class caarController : MonoBehaviour
             //rend.material.mainTexture = texturaUno;
             //rend.material.mainTexture = texturaDos;
 
-            theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal con razon, aaaaa, soy fan de campa        
-        StartCoroutine(UpdateVariableAfterDelay());
+            theRB.transform.parent = null;// AAAAAAAAAAAAAAAAAAAAAAAAAAAA mal con razon, aaaaa, soy fan de campa
+        if (GameManager.Instance.delay == true)
+        {
+            StartCoroutine(UpdateVariableAfterDelay());
+            GameManager.Instance.delay = false;
+        }                                  
+        
         if (theRB == null)
         {
             theRB = GetComponent<Rigidbody>();

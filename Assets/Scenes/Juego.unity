@@ -60105,7 +60105,7 @@ MonoBehaviour:
   autoVioleta1: {fileID: 1749926609}
   autoRosa1: {fileID: 997684326}
   autoCeleste1: {fileID: 2095705520}
-  autoX: {fileID: 1276058476}
+  autoX1: {fileID: 1276058476}
 --- !u!1 &6684550920345014133
 GameObject:
   m_ObjectHideFlags: 0

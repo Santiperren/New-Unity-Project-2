@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
     public bool j2Texture = false;
     public int autoUnoSkin;
     public int autoDosSkin;
+    public bool delay = true;
     public GameObject masVelocidadUno;
     public GameObject masVelocidaDos;
    
@@ -68,7 +69,19 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G))
         {
+            canMove = false;
+            noDobla1 = false;
+            noDobla2 = false;
+            noDobla1B = false;
+            noDobla2B = false;
+            masVelocidad1 = false;
+            masVelocidad2 = false;
+            mancha1B = false;
+            mancha2B = false;
+            mancha1 = false;
+            mancha2 = false;
             ChangeScene("Juego");
+            delay = true;
             
         }
 
