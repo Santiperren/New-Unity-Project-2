@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
     public bool mancha2 = false;
     public bool mancha2B = false;
     public bool mancha1B = false;
+    public bool bala1 = false;
+    public bool bala2 = false;
     public bool afueraPista = false;
     public bool honguitoMalo = false;
     public bool palmeraMala = false;

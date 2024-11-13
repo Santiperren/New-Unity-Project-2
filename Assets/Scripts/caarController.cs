@@ -52,6 +52,7 @@ public class caarController : MonoBehaviour
     public GameObject autoRosa;
     public GameObject autoCeleste;
     public GameObject autoX;
+    public GameObject bala2;
     private Renderer rend;
     int i = 0;
     public int db = 1;
@@ -154,6 +155,14 @@ public class caarController : MonoBehaviour
                 Invoke("noDobla", 0.6f);
                 noRepite = true;
                 Invoke("repite", 5f);
+            }
+        }
+
+        if (GameManager.Instance.bala2 == true)
+        {
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                bala2.SetActive(true);
             }
         }
 

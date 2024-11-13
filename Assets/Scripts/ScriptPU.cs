@@ -35,13 +35,13 @@ public class ScriptPU : MonoBehaviour
         
             if (other.CompareTag(GameManager.Instance.autoUno))
             {
-            if (GameManager.Instance.masVelocidad1 == true ||  GameManager.Instance.noDobla1 == true ||  GameManager.Instance.mancha1 == true )
+            if (GameManager.Instance.masVelocidad1 == true ||  GameManager.Instance.noDobla1 == true ||  GameManager.Instance.mancha1 == true || GameManager.Instance.bala1 )
             {
 
             }
             else
             {
-                int randomNumber = GetRandomNumber(1, 3);
+                int randomNumber = GetRandomNumber(1, 4);
 
                 HandleRandomNumber(randomNumber);
             }
@@ -49,13 +49,13 @@ public class ScriptPU : MonoBehaviour
             }
             else if (other.CompareTag(GameManager.Instance.autoDos))
             {
-            if ( GameManager.Instance.masVelocidad2 == true || GameManager.Instance.noDobla2 == true ||  GameManager.Instance.mancha2 == true)
+            if ( GameManager.Instance.masVelocidad2 == true || GameManager.Instance.noDobla2 == true ||  GameManager.Instance.mancha2 == true || GameManager.Instance.bala2)
             {
 
             }
             else
             {
-                int randomNumber2 = GetRandomNumber(1, 3);
+                int randomNumber2 = GetRandomNumber(1, 4);
                 HandleRandomNumber2(randomNumber2);
             }
             
@@ -102,6 +102,10 @@ public class ScriptPU : MonoBehaviour
                 GameManager.Instance.mancha1=true;
                 Debug.Log("3");
                 break;
+            case 4:
+                GameManager.Instance.bala1 = true;
+                Debug.Log("4");
+                break;
         }
     }
     void HandleRandomNumber2(int number)
@@ -121,6 +125,10 @@ public class ScriptPU : MonoBehaviour
             case 3:
                 GameManager.Instance.mancha2 = true;
                 Debug.Log("3b");
+                break;
+            case 4:
+                GameManager.Instance.bala2 = true;
+                Debug.Log("4");
                 break;
         }
     }
