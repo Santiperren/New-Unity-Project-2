@@ -484,6 +484,7 @@ public class caarController : MonoBehaviour
         }
     }
     
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Plano"))

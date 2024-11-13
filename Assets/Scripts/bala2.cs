@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class bala2 : MonoBehaviour
 {
+    public GameObject puntoDedisparo;
+    public float velocidadBala = 17000f;
+    public Rigidbody bodi;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,9 @@ public class bala2 : MonoBehaviour
     void Update()
     {
         
+        if (bodi != null)
+        {
+            bodi.velocity = puntoDedisparo.forward * velocidadBala; 
+        }
     }
 }
