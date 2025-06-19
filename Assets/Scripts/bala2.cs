@@ -19,7 +19,7 @@ public class bala2 : MonoBehaviour
         
         if (bodi != null)
         {
-            bodi.velocity = puntoDedisparo.forward * velocidadBala; 
+            bodi.velocity = puntoDedisparo.transform.forward * velocidadBala * Time.deltaTime; 
         }
     }
 }
